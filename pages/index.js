@@ -1185,7 +1185,64 @@ function Page({
             </Box>
           </>
         )}
-        <MailingList />
+              <Box
+        as="section"
+        id="apply"
+        sx={{
+          py: 6,
+          px: 3,
+          backgroundImage:
+            'radial-gradient(ellipse at 5% 5%, #e86494 0%, rgba(232,100,148,0) 75%),radial-gradient(ellipse at 95% 5%, #e86494 0%, rgba(232,100,148,0) 75%),radial-gradient(ellipse at 95% 95%, #baa8d3 0%, rgba(186,168,211,0) 75%),radial-gradient(ellipse at 5% 95%, #fa9f69 0%, rgba(250,159,105,0) 75%)',
+          position: 'relative'
+        }}
+      >
+        <Box
+          sx={{
+            position: 'absolute',
+            inset: 0,
+            height: '100%',
+            zIndex: 0,
+            backgroundSize: '48px 48px',
+            backgroundImage: `linear-gradient(to right,  #fcc8bf 1px, transparent 1px),
+                              linear-gradient(to bottom, #fcc8bf 1px, transparent 1px)`,
+            backgroundPosition: 'top left',
+            maskImage: `linear-gradient(180deg, transparent 0%, white 3%)`,
+            opacity: 0.1
+          }}
+        />
+        <Flex
+          sx={{
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textAlign: 'center',
+            gap: 3
+          }}
+        >
+          <Link href="/fiscal-sponsorship/apply" passHref legacyBehavior>
+            <Button
+              as="a"
+              variant="lg"
+              sx={{
+                bg: 'white',
+                mixBlendMode: 'screen',
+                color: 'black !important',
+                fontSize: [58, 96],
+                width: ['100%', 'auto'],
+                py: 4,
+                px: [4, null, 6],
+                lineHeight: 0.9,
+                textTransform: 'none'
+              }}
+            >
+              Apply now
+            </Button>
+          </Link>
+          <Text as="p" variant="lead" sx={{ color: 'white', mb: [0, 0] }}>
+            <Balancer>No startup fees, no&nbsp;minimum balance.</Balancer>
+          </Text>
+        </Flex>
+      </Box>
       </Box>
       <Footer
         dark
