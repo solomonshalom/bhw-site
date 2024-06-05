@@ -10,6 +10,7 @@ import {
   Text
 } from 'theme-ui'
 import React, { useEffect, useRef, useState } from 'react'
+import { Balancer } from 'react-wrap-balancer'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Meta from '@hackclub/meta'
@@ -1237,6 +1238,9 @@ function Page({
               Apply now
             </Button>
           </Link>
+          <Text as="p" variant="lead" sx={{ color: 'white', mb: [0, 0] }}>
+            <Balancer>No startup fees, no&nbsp;minimum balance.</Balancer>
+          </Text>
         </Flex>
       </Box>
       </Box>
