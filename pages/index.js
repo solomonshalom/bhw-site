@@ -105,17 +105,11 @@ function Page({
   const [count, setCount] = useState(0)
 
   let images = [
-    { alt: 'Map of Hack Clubs around the world', src: '/home/map.png' },
+    { alt: 'Map of Hack Clubs around the world (We are one of them!)', src: '/home/map.png' },
     {
-      alt: 'Hack Clubbers at SpaceX HQ in LA',
-      src: '/home/zephyr-spacex.jpeg'
-    },
-    {
-      alt: 'MA Hacks, Hack Clubber organized hackathon',
+      alt: 'Looked pretty cool so I put it here :D (its MA Hacks)',
       src: '/hackathons/mahacks.jpeg'
-    },
-    { alt: 'AMA with Sal Khan', src: '/home/ama.png' },
-    { alt: 'Hack Clubbers at Flagship, 2019', src: '/home/flagship_4.jpg' }
+    }
   ]
 
   // janky right now and does not show last image
