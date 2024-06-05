@@ -229,7 +229,7 @@ function Page({
               }}
               as="h4"
             >
-              Welcome to Hack&nbsp;Club
+              Welcome to Bethel&nbsp;Hacks!
             </Text>
             <Heading>
               <Text
@@ -245,7 +245,7 @@ function Page({
                   width: '100%'
                 }}
               >
-                We are <Comma>{slackData.total_members_count}</Comma>{' '}
+                Welcome <Comma>{slackData.total_members_count}</Comma>{' '}
                 <Text
                   sx={{
                     color: 'transparent',
@@ -274,21 +274,21 @@ function Page({
                     }}
                     aria-hidden="true"
                   >
-                    teen hackers
+                    hackers
                   </Text>
-                  teen hackers
+                    hackers
                 </Text>
-                <br sx={{ display: ['inline', 'none', 'none'] }} /> from around
-                the world who code together
+                <br sx={{ display: ['inline', 'none', 'none'] }} />, join us to 
+                create tech that glorifies God!
               </Text>
               <Button
                 variant="ctaLg"
                 as="a"
-                href="/slack"
+                href="#"
                 mt={[3, 0, 0]}
                 sx={{ transformOrigin: 'center left' }}
               >
-                Join our community
+                Join Now!
               </Button>
             </Heading>
           </Box>
