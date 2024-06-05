@@ -32,7 +32,6 @@ import Announcement from '../components/announcement'
 import Konami from 'react-konami-code'
 import JSConfetti from 'js-confetti'
 import Secret from '../components/secret'
-import MailingList from '../components/index/cards/mailing-list'
 import Slack from '../components/index/cards/slack'
 import Icon from '../components/icon'
 import GitHub from '../components/index/github'
@@ -1238,9 +1237,6 @@ function Page({
               Apply now
             </Button>
           </Link>
-          <Text as="p" variant="lead" sx={{ color: 'white', mb: [0, 0] }}>
-            <Balancer>No startup fees, no&nbsp;minimum balance.</Balancer>
-          </Text>
         </Flex>
       </Box>
       </Box>
