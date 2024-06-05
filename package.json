@@ -36,7 +36,7 @@
     "airtable-plus": "^1.0.4",
     "animated-value": "^0.2.4",
     "animejs": "^3.2.2",
-    "axios": "^1.6.7",
+    "axios": "^1.7.2",
     "camelcase": "^8.0.0",
     "cookies-next": "^4.0.0",
     "country-list": "^2.3.0",
