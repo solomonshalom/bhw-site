@@ -20,7 +20,6 @@ import ForceTheme from '../components/force-theme'
 import Footer from '../components/footer'
 import Stage from '../components/stage'
 import Carousel from '../components/index/carousel'
-import Pizza from '../components/index/cards/pizza'
 import Sprig from '../components/index/cards/sprig'
 import Sinerider from '../components/index/cards/sinerider'
 import SprigConsole from '../components/index/cards/sprig-console'
@@ -40,7 +39,6 @@ import Photo from '../components/photo'
 import Comma from '../components/comma'
 import Haxidraw from '../components/index/cards/haxidraw'
 import Onboard from '../components/index/cards/onboard'
-import Trail from '../components/index/cards/trail'
 
 /** @jsxImportSource theme-ui */
 
@@ -364,7 +362,8 @@ function Page({
                 maxWidth: '62ch'
               }}
             >
-              Every day, thousands of Hack&nbsp;Clubbers gather online and
+              For the firs time, hundreds of programmers, designers, musicians, and anybody with a creative taste 
+              gather online and
               in-person to make things with code. Whether you’re a beginner
               programmer or have years of experience, there’s a place for you at
               Hack&nbsp;Club. Read about our{' '}
@@ -533,14 +532,10 @@ function Page({
                   </Text>
                   <Text as="p" variant="subtitle">
                     <strong sx={{ mb: 1 }}>
-                      Connect with other teenage coders
+                      Apply to the program!
                     </strong>
-                    Have a coding question? Looking for project feedback? You’ll
-                    find hundreds of fabulous people to talk to in our global{' '}
-                    <Link href="/slack" target="_blank" rel="noopener">
-                      Slack{' '}
-                    </Link>
-                    (like Discord), active at all hours.
+                    You can join as part of a team or as an individual! Even if just starting out or don't have
+                    the tech that you need, we are here to support you! So, DW!
                   </Text>
                 </Grid>
                 <Grid
@@ -567,14 +562,13 @@ function Page({
                     }}
                   >
                     <strong sx={{ mb: 1 }}>
-                      Build open source learning tools
+                      Join our community!
                     </strong>
-                    We build large open source projects together (
+                    We have a pretty cool community at discord (
                     <Link href="https://github.com/hackclub" target="_blank">
-                      3k+&nbsp;PRs a year
+                      link to join!
                     </Link>
-                    ) like this website, a game engine, daily streak system, and
-                    more!
+                    ) where you can learn, collaberate, and do great!
                   </Text>
                 </Grid>
                 <Grid
@@ -595,16 +589,7 @@ function Page({
                   </Text>
                   <Text as="p" variant="subtitle">
                     <strong sx={{ mb: 1 }}>Gather IRL with other makers</strong>
-                    Meet other Hack&nbsp;Clubbers in your community to build
-                    together at one of the 400+{' '}
-                    <Link href="/clubs" target="_blank" rel="noopener">
-                      Hack&nbsp;Clubs
-                    </Link>{' '}
-                    and{' '}
-                    <Link href="/hackathons" target="_blank" rel="noopener">
-                      high school hackathons
-                    </Link>
-                    .
+                    On June, you will have the chance to hack and build, IRL and togther!
                   </Text>
                 </Grid>
               </Grid>
@@ -675,8 +660,6 @@ function Page({
                 and make things together!
               </Text>
             </Box>
-            <Pizza />
-            <Trail />
             <Slack slackKey={slackKey} data={slackData} events={events} />
           </Box>
         </Box>

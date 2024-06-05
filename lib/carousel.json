@@ -3,7 +3,7 @@
     "background": "linear-gradient(to bottom right, #993CCF 0%, rgba(170, 77, 181, 0.95) 17.19%, rgba(193, 99, 146, 0.90) 31.77%, rgba(223, 129, 101, 0.71) 52.08%, rgba(240, 146, 75, 0.60) 63.54%)",
     "titleColor": "white",
     "descriptionColor": "white",
-    "title": "Jams",
+    "title": "Just Jam!",
     "description": "Collaborative coding workshops where sparks ignite, fears dissolve, and inventions come to life",
     "img": "https://cloud-7xyxcf3f6-hack-club-bot.vercel.app/0new_project__3_.png",
     "link": "https://jams.hackclub.com"
@@ -12,53 +12,33 @@
     "background": "snow",
     "titleColor": "dark",
     "descriptionColor": "black",
-    "title": "Putting The \"You\" In CPU",
-    "description": "Curious exactly what happens when you run a program on your computer? Read this.",
+    "title": "Beginner?",
+    "description": "No matter where you are in the field of technology, we will get you up and running in no time!",
     "img": "https://cloud-eg2ex8nol-hack-club-bot.vercel.app/0favicon-on-light-removebg-preview.png",
     "link": "https://cpu.land"
-  },
-  {
-    "background": "#e5e6da",
-    "titleColor": "black",
-    "descriptionColor": "black",
-    "title": "The Bin",
-    "description": "A free electronics starter kit for high schoolers, shipped to your door.",
-    "img": "https://cloud-e3pxf7bt9-hack-club-bot.vercel.app/0ezgif.com-resize.gif",
-    "link": "https://hackclub.com/bin"
   },
   {
     "background": "#000",
     "titleColor": "green",
     "descriptionColor": "white",
-    "title": "Sprig",
-    "description": "Join hundreds of teenagers making tile-based JavaScript games",
-    "img": "https://emoji.slack-edge.com/T0266FRGM/sprig-dino/6f01fec60b51b343.png",
-    "link": "https://sprig.hackclub.com"
+    "title": "The Ultimate Support",
+    "description": "We don't just offer pre-projec support but also after! Regardless if you win or not <3",
+    "img": "https://emoji.slack-edge.com/T0266FRGM/sprig-dino/6f01fec60b51b343.png"
   },
   {
     "background": "snow",
     "titleColor": "dark",
     "descriptionColor": "black",
-    "title": "Some Assembly Required",
-    "description": "The 4th most starred Assembly repository on GitHub",
-    "img": "https://emoji.slack-edge.com/T0266FRGM/someassemblyrequired/cfacfacaaa2d8b1d.png",
-    "link": "https://github.com/hackclub/some-assembly-required"
-  },
-  {
-    "background": "#271932",
-    "titleColor": "#CAB4D4",
-    "textColor": "#CAB4D4",
-    "title": "SineRider",
-    "description": "Help build a game about love, math, and graphing 💖",
-    "img": "https://emoji.slack-edge.com/T0266FRGM/sinerider/68a0bc1208e885dd.png",
-    "link": "https://sinerider.com"
+    "title": "Tech Support (Literally)",
+    "description": "Don't have the tech you need to power your team or your project? We got you!",
+    "img": "https://emoji.slack-edge.com/T0266FRGM/someassemblyrequired/cfacfacaaa2d8b1d.png"
   },
   {
     "background": "dark",
     "titleColor": "green",
     "descriptionColor": "white",
-    "title": "OnBoard",
-    "description": "Join 1k teens designing PCBs, learning hardware, and building electronics",
+    "title": "Circuits",
+    "description": "Wanna build something 'physical'? We got you for that too!",
     "img": "https://cloud-jrox24mrn.vercel.app/orpheus_leap_micro_final.png",
     "link": "/onboard"
   },
@@ -66,19 +46,9 @@
     "background": "dark",
     "titleColor": "blue",
     "textColor": "white",
-    "title": "Blot",
-    "description": "An open source drawing machine and online editor for generative art",
-    "img": "https://emoji.slack-edge.com/T0266FRGM/tw_pencil2/c6afadc2280e571d.png",
-    "link": "https://blot.hackclub.dev"
-  },
-  {
-    "background": "#e9e9e9",
-    "titleColor": "black",
-    "textColor": "black",
-    "descriptionColor":"black",
-    "title": "Nest",
-    "description": "Free Debian backend hosting provided by Hack Club for all teenagers in Hack Club",
+    "title": "Visual Arts",
+    "description": "Good in music, art, or a creative field? Welcome!",
     "img": "https://cloud-56h978nbq-hack-club-bot.vercel.app/0logo.png",
-    "link": "https://guides.hackclub.app"
+    "link": "https://blot.hackclub.dev"
   }
 ]
