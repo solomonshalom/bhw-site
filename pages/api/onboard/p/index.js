@@ -1,39 +1,31 @@
-// returns a list of all projects
-
 export const getAllOnboardProjects = async () => {
-  const url = 'https://api.github.com/repos/hackclub/onboard/contents/projects'
-  const fetchOptions = {}
+  const url = 'https://api.github.com/repos/hackclub/onboard/contents/projects';
+  const fetchOptions = {};
   if (process.env.GITHUB_TOKEN) {
-    // this field is optional because we do heavy caching in production, but nice to have for local development
     fetchOptions.headers = {
       Authorization: `Bearer ${process.env.GITHUB_TOKEN}`
-    }
+    };
   }
 
   let res;
-  try { res = await fetch(url, fetchOptions).then(r => r.json()) }
-  catch (e) {
-    console.error('Failed to fetch projects from GitHub', e)
-    return []
+  try {
+    res = await fetch(url, fetchOptions).then(r => r.json());
+  } catch (e) {
+    console.error('Failed to fetch projects from GitHub:', e);
+    return [];
   }
 
   if (res.message && res.message.startsWith('API rate limit exceeded')) {
-    console.error('GitHub API rate limit exceeded')
-    return []
+    console.error('GitHub API rate limit exceeded');
+    return [];
   }
-  if(!res) return []
+  if (!res) return [];
 
-  const projects = []
+  const projects = [];
 
   res.forEach(p => {
-    if (p.type !== 'dir') {
-      return
-    }
-    if (p.name[0] === '.') {
-      return
-    }
-    if (p.name[0] === '!') {
-      return
+    if (p.type !== 'dir' || p.name[0] === '.' || p.name[0] === '!') {
+      return;
     }
 
     const projectData = {
@@ -44,19 +36,18 @@ export const getAllOnboardProjects = async () => {
       readmeURL: `https://raw.githubusercontent.com/hackclub/OnBoard/main/projects/${p.name}/README.md`,
       schematicURL: `https://raw.githubusercontent.com/hackclub/OnBoard/main/projects/${p.name}/schematic.pdf`,
       gerberURL: `https://raw.githubusercontent.com/hackclub/OnBoard/main/projects/${p.name}/gerber.zip`
-    }
+    };
 
-    projectData.imageTop = `/api/onboard/svg/${encodeURIComponent(projectData.gerberURL)}/top`
-    projectData.imageBottom = `/api/onboard/svg/${encodeURIComponent(projectData.gerberURL)}/bottom`
+    projectData.imageTop = `/api/onboard/svg/${encodeURIComponent(projectData.gerberURL)}/top`;
+    projectData.imageBottom = `/api/onboard/svg/${encodeURIComponent(projectData.gerberURL)}/bottom`;
 
-    projects.push(projectData)
-  })
+    projects.push(projectData);
+  });
 
-  return projects
-}
+  return projects;
+};
 
 export default async function handler(req, res) {
-  const projects = await getAllOnboardProjects()
-
-  res.json(projects)
+  const projects = await getAllOnboardProjects();
+  res.json(projects);
 }
