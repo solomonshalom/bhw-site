@@ -822,53 +822,6 @@ function Page({
                 position: 'relative'
               }}
             >
-              <Box>
-                <Text
-                  variant="title"
-                  as="h2"
-                  sx={{
-                    fontSize: ['36px', '48px', '72px'],
-                    width: '18ch',
-                    textAlign: 'center',
-                    margin: 'auto'
-                  }}
-                >
-                  Find your{' '}
-                  <Text
-                    as="span"
-                    sx={{
-                      borderRadius: 'default',
-                      mx: 0,
-                      whiteSpace: 'nowrap',
-                      color: 'orange'
-                    }}
-                  >
-                    IRL community.
-                  </Text>
-                </Text>
-                <Text
-                  variant="subtitle"
-                  as="p"
-                  sx={{
-                    fontSize: ['18px', '24px', '32px'],
-                    margin: 'auto',
-                    pt: 2,
-                    textAlign: 'center'
-                  }}
-                >
-                  Thousands of Hack Clubbers organize and participate in
-                  hackathons and after school coding clubs.
-                </Text>
-              </Box>
-              <Clubs />
-              <Hackathons
-                delay={400}
-                data={hackathonsData}
-                stars={stars.hackathons.stargazerCount}
-              />
-
-              {/* <Events events={events} /> */}
-              <HCB data={bankData} />
             </Box>
           </Box>
         </Box>
