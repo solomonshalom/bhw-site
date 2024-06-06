@@ -373,7 +373,7 @@ const PizzaPage = () => {
               projects, & attend events.
             </Text>
             <Button
-              href="/slack"
+              href="/discord"
               as="a"
               sx={{ marginTop: 16, backgroundColor: '#fff', color: '#EEA820' }}
             >
@@ -682,7 +682,7 @@ const PizzaPage = () => {
                 <Button
                   variant="cta"
                   as="a"
-                  href="/slack"
+                  href="/discord"
                   mt={[3, 0, 0]}
                   sx={{
                     fontSize: '18px'

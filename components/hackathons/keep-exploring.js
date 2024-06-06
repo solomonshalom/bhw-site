@@ -34,7 +34,7 @@ export default function KeepExploring() {
             sx={{ display: ['none', 'flex', 'flex'] }}
           />
         </Heading>
-        <Link href="/slack" passHref>
+        <Link href="/discord" passHref>
           <Button
             sx={{
               bg: 'white',

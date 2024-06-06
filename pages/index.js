@@ -711,7 +711,7 @@ function Page({
             >
               <Card
                 as="a"
-                href="/slack"
+                href="/discord"
                 target="_blank"
                 rel="noopener"
                 variant="interactive"

@@ -50,7 +50,7 @@ export default function Recap() {
         <Card
           variant="interactive"
           as="a"
-          href="/slack"
+          href="/discord"
           sx={{
             background: 'linear-gradient(-32deg, #6f31b7 14%, #fb558e 82%)',
             color: 'white',

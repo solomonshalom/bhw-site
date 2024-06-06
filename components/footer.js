@@ -141,7 +141,7 @@ const Footer = ({
             }}
           >
             <Service
-              href="/slack"
+              href="/discord"
               icon="slack-fill"
               name="Slack"
               target="_self"
