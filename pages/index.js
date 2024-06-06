@@ -729,8 +729,6 @@ function Page({
             </Heading>
             <Text sx={{ fontSize: 22 }}>
             That's right! Being part of BHH is more than just coding or designing, it's also about eating some of the best pizza in town!
-
-P.S. The picture in the right isn't of us, but it did look cool! (for context, it's one of the hackclubs!)
             </Text>
           </Box>
           <Box>
