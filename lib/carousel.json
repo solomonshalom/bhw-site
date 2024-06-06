@@ -5,8 +5,7 @@
     "descriptionColor": "white",
     "title": "Just Jam!",
     "description": "Collaborative coding workshops where sparks ignite, fears dissolve, and inventions come to life",
-    "img": "https://cloud-7xyxcf3f6-hack-club-bot.vercel.app/0new_project__3_.png",
-    "link": "https://jams.hackclub.com"
+    "img": "https://cloud-7xyxcf3f6-hack-club-bot.vercel.app/0new_project__3_.png"
   },
   {
     "background": "snow",
@@ -14,8 +13,7 @@
     "descriptionColor": "black",
     "title": "Beginner?",
     "description": "No matter where you are in the field of technology, we will get you up and running in no time!",
-    "img": "https://cloud-eg2ex8nol-hack-club-bot.vercel.app/0favicon-on-light-removebg-preview.png",
-    "link": "https://cpu.land"
+    "img": "https://cloud-eg2ex8nol-hack-club-bot.vercel.app/0favicon-on-light-removebg-preview.png"
   },
   {
     "background": "#000",
@@ -39,8 +37,7 @@
     "descriptionColor": "white",
     "title": "Circuits",
     "description": "Wanna build something 'physical'? We got you for that too!",
-    "img": "https://cloud-jrox24mrn.vercel.app/orpheus_leap_micro_final.png",
-    "link": "/onboard"
+    "img": "https://cloud-jrox24mrn.vercel.app/orpheus_leap_micro_final.png"
   },
   {
     "background": "dark",
@@ -48,7 +45,6 @@
     "textColor": "white",
     "title": "Visual Arts",
     "description": "Good in music, art, or a creative field? Welcome!",
-    "img": "https://cloud-56h978nbq-hack-club-bot.vercel.app/0logo.png",
-    "link": "https://blot.hackclub.dev"
+    "img": "https://cloud-56h978nbq-hack-club-bot.vercel.app/0logo.png"
   }
 ]
