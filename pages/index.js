@@ -642,7 +642,77 @@ function Page({
               </Text>
             </Box>
             <Slack slackKey={slackKey} data={slackData} events={events} />
-            <Grid
+            <br />
+            <Container
+        sx={{
+          display: 'flex',
+          width: 'calc(100% - 32px)',
+          position: 'relative',
+          marginTop: '-196px',
+          padding: '32px',
+          border: '1px solid #FF8C37',
+          borderRadius: '16px'
+        }}
+      >
+        {/* <Tilt>
+    <Image sx={{position: "absolute", marginTop: "-82px", marginLeft: "-82px"}} src="https://cloud-okty851hq-hack-club-bot.vercel.app/0mushroom.png"/>
+    </Tilt>
+    <Tilt>
+    <Image sx={{position: "absolute", marginTop: "-82px", right: 0, marginRight: "96px"}} src="https://cloud-fiv5rwxlo-hack-club-bot.vercel.app/0pineapple.png"/>
+    </Tilt>
+    <Tilt>
+    <Image sx={{position: "absolute", bottom: 0, marginBottom: "-182px", marginLeft: "-82px"}} src="https://cloud-bsv5adze8-hack-club-bot.vercel.app/0tomato.png"/>
+    </Tilt> */}
+        <Box sx={{ position: 'absolute', top: -48, left: -48 }}>
+          <Tilt options={{ perspective: 75 }}>
+            <Image
+              alt="mushroom"
+              sx={{
+                imageRendering: 'pixelated',
+                display: ['none', 'none', 'flex']
+              }}
+              src="https://cloud-okty851hq-hack-club-bot.vercel.app/0mushroom.png"
+            />
+          </Tilt>
+        </Box>
+        <Box sx={{ position: 'absolute', top: -48, right: -48 }}>
+          <Tilt options={{ perspective: 75 }}>
+            <Image
+              alt="pineapple"
+              sx={{
+                imageRendering: 'pixelated',
+                display: ['none', 'none', 'flex']
+              }}
+              src="https://cloud-fiv5rwxlo-hack-club-bot.vercel.app/0pineapple.png"
+            />
+          </Tilt>
+        </Box>
+        <Box sx={{ position: 'absolute', bottom: -48, left: -48 }}>
+          <Tilt options={{ perspective: 75 }}>
+            <Image
+              alt="tomato"
+              sx={{
+                imageRendering: 'pixelated',
+                display: ['none', 'none', 'flex']
+              }}
+              src="https://cloud-bsv5adze8-hack-club-bot.vercel.app/0tomato.png"
+            />
+          </Tilt>
+        </Box>
+        <Box sx={{ position: 'absolute', bottom: -48, right: -48 }}>
+          <Tilt options={{ perspective: 75 }}>
+            <Image
+              alt="pizza"
+              sx={{
+                imageRendering: 'pixelated',
+
+                display: ['none', 'none', 'flex']
+              }}
+              src="https://cloud-4my12nuf0-hack-club-bot.vercel.app/0pizza.png"
+            />
+          </Tilt>
+        </Box>
+        <Grid
           sx={{ alignItems: 'center', position: 'relative' }}
           gap={[2, 3]}
           columns={[null, null, null, '3fr 2fr']}
@@ -664,12 +734,12 @@ function Page({
                 }
               }}
             >
-              We also got free pizza ;D
+              Get'em Pizza!
             </Heading>
             <Text sx={{ fontSize: 22 }}>
-              That's right! Being part of BHH is more than just coding or designing, it's also about eating some of the best pizza in town!
+            That's right! Being part of BHH is more than just coding or designing, it's also about eating some of the best pizza in town!
 
-              P.S. The picture in the right isn't of us, but it did look cool! (for context, it's one of the hackclubs!)
+P.S. The picture in the right isn't of us, but it did look cool! (for context, it's one of the hackclubs!)
             </Text>
           </Box>
           <Box>
@@ -680,6 +750,8 @@ function Page({
             />
           </Box>
         </Grid>
+        <br />
+      </Container>
           </Box>
         </Box>
         <Box py={[4, 5, '82px']}>
