@@ -36,20 +36,9 @@ import Image from 'next/image'
 /** @jsxImportSource theme-ui */
 
 function Page({
-  hackathonsData,
-  bankData,
   slackData,
-  gitHubData,
-  gitHubDataLength,
-  consoleCount,
-  stars,
-  // githubData2,
-  dataPieces,
-  game,
-  gameTitle,
   events,
   carouselCards,
-  context
 }) {
   let [reveal, setReveal] = useState(false)
   const [hover, setHover] = useState(true)
@@ -1140,79 +1129,8 @@ const withCommas = x => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
 export async function getStaticProps() {
   const carouselCards = require('../lib/carousel.json')
 
-  // HCB: get total raised
-  let bankData = []
-  let initialBankData = await fetch('https://hcb.hackclub.com/stats').then(r =>
-    r.json()
-  )
-  let raised = initialBankData.raised / 100
-
-  bankData.push(
-    `💰 ${raised.toLocaleString('en-US', {
-      style: 'currency',
-      currency: 'USD'
-    })} raised`
-  )
-
-  // Slack: get total raised
-  const { Slack: Slacky } = require('./api/slack')
-  let slackData = await Slacky()
-
-  // GitHub: get latest github activity (currently this is erroring and
-  // preventing the site from deploying
-
-  const { fetchGitHub } = require('./api/github')
-  let gitHubData = await fetchGitHub()
-
-  //   let gitHubData = null
-
-  // GitHub: get latest GitHub stars
-  const { fetchStars } = require('./api/stars')
-  let stars = await fetchStars()
-
-  // Sprig: get newest games
-  const { getGames } = require('./api/games')
-  let game = await getGames()
-
-  let gameTitle = []
-
-  gameTitle = game.map(r => r.title)
-
-  // Sprig: get console count
-  const { getConsoles } = require('./api/sprig-console')
-  const consoleCount = await getConsoles()
-
-  // Hackathons: get latest hackathons
-  let hackathonsData
-  try {
-    const response = await fetch(
-      'https://hackathons.hackclub.com/api/events/upcoming'
-    )
-    if (response.ok) {
-      hackathonsData = await response.json()
-    } else {
-      hackathonsData = [] // or some default value if the fetch fails
-    }
-  } catch (error) {
-    hackathonsData = [] // or some default value if an error occurs
-  }
-  hackathonsData.sort((a, b) => new Date(a.start) - new Date(b.start))
-
-  let events = await fetch(
-    'https://events.hackclub.com/api/events/upcoming/'
-  ).then(res => res.json())
-
   return {
     props: {
-      game,
-      gameTitle,
-      gitHubData,
-      consoleCount,
-      hackathonsData,
-      bankData,
-      slackData,
-      stars,
-      events,
       carouselCards
     },
     revalidate: 60
