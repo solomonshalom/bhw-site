@@ -42,7 +42,7 @@ const Service = ({ href, icon, name = '', ...props }) => (
     target="_blank"
     rel="noopener me"
     href={href}
-    title={`Hack Club on ${name ? name : icon}`}
+    title={`Bethel AG Church on ${name ? name : icon}`}
     {...props}
   >
     <Icon glyph={icon} />
