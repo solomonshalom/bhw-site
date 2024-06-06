@@ -27,6 +27,7 @@ import Clubs from '../components/index/cards/clubs'
 import Workshops from '../components/index/cards/workshops'
 import HCB from '../components/index/cards/hcb'
 import Hackathons from '../components/index/cards/hackathons'
+import ContactBanner from '../../components/fiscal-sponsorship/contact'
 import OuternetImgFile from '../public/home/outernet-110.jpg'
 import Announcement from '../components/announcement'
 import Konami from 'react-konami-code'
@@ -528,7 +529,7 @@ function Page({
                     <strong sx={{ mb: 1 }}>
                       Apply to the program!
                     </strong>
-                    You can join as part of a team or as an individual! Even if just starting out or don't have
+                    You can join as part of a team or as an individual! Even if you are just starting out or don't have
                     the tech that you need, we are here to support you! So, DW!
                   </Text>
                 </Grid>
@@ -583,7 +584,7 @@ function Page({
                   </Text>
                   <Text as="p" variant="subtitle">
                     <strong sx={{ mb: 1 }}>Gather IRL with other makers</strong>
-                    On June, you will have the chance to hack and build, IRL and togther!
+                    On June, you will have the chance to hack and build, together IRL!
                   </Text>
                 </Grid>
               </Grid>
@@ -759,8 +760,8 @@ function Page({
                 <Stage
                   icon="slack"
                   color="white"
-                  name="Join Our Slack"
-                  desc="Connect with other technical teenagers on Slack and hack on things together."
+                  name="Apply!"
+                  desc="Apply  and join our community to connect with other technical teenagers on Discord and hack on things together."
                   sx={{
                     p: {
                       fontSize: ['18px', '20px', '22px']
@@ -791,7 +792,7 @@ function Page({
                   }
                 }}
                 as="a"
-                href="https://github.com/hackclub"
+                href="#"
                 variant="interactive"
                 target="_blank"
                 rel="noopener"
@@ -813,8 +814,8 @@ function Page({
                 <Stage
                   icon="github"
                   color="white"
-                  name="Explore Our Open Source Tools"
-                  desc="We’re currently building a game engine, daily streak system, graphing game, and more!"
+                  name="Explore and Learn!"
+                  desc="By joining the community and exploring our wiki, you can get a pretty good headtstart and jump right in on the day of the hackathon!"
                   sx={{
                     p: {
                       fontSize: [1, '16px', '20px']
@@ -868,7 +869,7 @@ function Page({
                   icon="clubs"
                   color="white"
                   name="Start A Club"
-                  desc="Build an in-person community of high school hackers, and we’re here to help."
+                  desc="On the day of the hackathon, you will compete against individuals and teams to be the first champion of BH!"
                   sx={{
                     p: {
                       fontSize: ['18px', '20px', '22px']
@@ -1012,6 +1013,7 @@ function Page({
         </Flex>
       </Box>
       </Box>
+      <ContactBanner sx={{ justifyContent: 'center' }} />
       <Footer
         dark
         sx={{
