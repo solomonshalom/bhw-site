@@ -122,6 +122,7 @@ export default function Hackathons({ data }) {
                 you can apply by clicking here or through the (numerous) "Apply"
                 or "Join Us" buttons scattered across the site!
                 <br />
+                <br />
                 Once done, you can join our <Link href="/discord">Discord community</Link>, where you’ll be
                 able ask questions & chat, share projects, & (WIP) live events
               </>
