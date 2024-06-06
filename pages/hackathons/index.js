@@ -1,4 +1,4 @@
-import { Box, Container } from 'theme-ui'
+import { Box, Container, Grid, Heading, Link, Text } from 'theme-ui'
 import Meta from '@hackclub/meta'
 import Head from 'next/head'
 import ForceTheme from '../../components/force-theme'
