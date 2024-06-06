@@ -385,7 +385,7 @@ const ShipPage = () => {
             </Link>
             . Ask in the{' '}
             <Link href={slackLink} target="_blank">
-              Hack Club Slack
+              Bethel Hacks Discord
             </Link>{' '}
             if you have any questions!
           </Text>
@@ -760,7 +760,7 @@ const ShipPage = () => {
 
           <Flex sx={{ flex: 1, flexDirection: 'column', gap: 4, py: 5 }}>
             <Heading as="h2" sx={{ fontSize: 36, fontWeight: 500 }}>
-              <Balancer>Join the Hack Club Slack</Balancer>
+              <Balancer>Join the Bethel Hacks Discord</Balancer>
             </Heading>
             <Text as="p" sx={{ fontSize: 24 }}>
               Meet others learning how to make their own circuit boards.
@@ -881,7 +881,7 @@ const ShipPage = () => {
               <Text as="h3">Community</Text>
               <Text as="p">
                 Share progress with fellow participants and ask for help in the
-                Hack Club Slack.
+                Bethel Hacks Discord.
               </Text>
               <Button variant="outline" as="a" href={slackLink} target="_blank">
                 Join Slack

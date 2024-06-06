@@ -155,12 +155,10 @@ export default function Philosophy() {
             sx={{ fontSize: [36, 48] }}
             color="rgb(228, 45, 66);"
           >
-            Coding is a <Super>superpower.</Super>
+            Code to glorify <Super>God.</Super>
           </Heading>
           <Box sx={{ fontSize: [3, 3] }}>
-            Learning to code is uniquely like gaining a superpower: it converts
-            you from a consumer to a creator. Suddenly, computers become a tool
-            for creating.
+            The ultimate goal at the end of the day is the glorify God and code, does help in doing that!
           </Box>
         </Row>
         <Row>
@@ -187,12 +185,11 @@ export default function Philosophy() {
           </Heading>
           <Box sx={{ fontSize: [3, 3] }}>
             <strong>
-              The goal of Hack Club is to help you become a hacker.
+              The goal of Bethel Hacks is to help you become more than just a builder.
             </strong>{' '}
-            We want a space at every school where people are making interesting
-            things with code, every week. Schools don’t provide that, so we’re
-            creating it in every school to make building things accessible to
-            everyone.
+            We are creating a space where people are making interesting
+            things with code, every week. BUT, we also make sure that every builder also
+            becomes a better person throug the implementation of biblical values, learning, collaberations, and building
           </Box>
         </Row>
         <Row>
@@ -217,8 +214,7 @@ export default function Philosophy() {
           </Heading>
           <Box sx={{ fontSize: [3, 3] }}>
             Just as the best carpenters didn’t learn in the classroom, neither
-            did the best programmers. Through our{' '}
-            <Link href="/workshops">workshops</Link>, you’ll be walked through
+            did the best programmers. Through our workshops, you’ll be walked through
             building projects. Starting out, you won’t understand how the code
             works, but you’ll build understanding as you go. You’ll get stuck
             along the way, but we’re here to help.
@@ -233,7 +229,7 @@ export default function Philosophy() {
             Be part of a community.
           </Heading>
           <Box sx={{ fontSize: [3, 3] }}>
-            Hack Club gives you a worldwide community of thousands of other
+            BH (AKA Bethel Hacks) Club gives you a worldwide community of thousands of other
             young makers to talk to. We’re artists, writers, engineers,
             tinkerers, campers, filmmakers, volunteers. We make things. We help
             one another. We have fun. Join us.

@@ -31,7 +31,7 @@ const Content = () => (
     }}
   >
     <Text as="p" variant="eyebrow" sx={{ color: 'white', opacity: 0.75 }}>
-      ~ The Hack Club Slack ~
+      ~ The Bethel Hacks Discord ~
     </Text>
     <Heading as="h2" variant="title">
       Come for the skills, <br /> stay for the people.
@@ -41,7 +41,7 @@ const Content = () => (
       Slack. Coding is often seen as an isolating activity. Plenty of groups
       exist for kids who are interested in sports, theater, or chess, but the
       stereotype of a programmer is a person who sits alone in a dark room.{' '}
-      <strong>It doesn't have to be this way</strong>—in the Hack Club Slack
+      <strong>It doesn't have to be this way</strong>—in the Bethel Hacks Discord
       (Discord-style online groupchat), you'll find a group of {formatted}+{' '}
       <Highlight>fabulous people</Highlight> to talk to, active at all hours.
     </Text>

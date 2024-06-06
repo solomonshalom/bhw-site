@@ -315,7 +315,7 @@ const Page = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            Hack Club Slack
+            Bethel Hacks Discord
           </Link>
           , you'll work with our community to create the best and most inclusive
           place on the internet for technical teenagers. To work at Hack Club,

@@ -106,7 +106,7 @@ export default function Landing({ rsvpCount }) {
                   textShadow: '2px 2px 10px rgba(255, 255, 255, 1)'
                 }}
               >
-                Hack Club Slack
+                Bethel Hacks Discord
               </Link>
               .
             </Text>

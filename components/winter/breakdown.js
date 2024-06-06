@@ -68,7 +68,7 @@ function Breakdown() {
               icon="friend"
               color="#5bc0de"
               text="Friends"
-              description="Find support from our community of 20k+ teenagers in the Hack Club Slack."
+              description="Find support from our community of 20k+ teenagers in the Bethel Hacks Discord."
               delay="300"
               href="/slack"
             />

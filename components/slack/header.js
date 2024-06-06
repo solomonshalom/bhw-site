@@ -24,7 +24,7 @@ const Content = () => (
           mb: [2, 3]
         }}
       >
-        Hack Club Slack
+        Bethel Hacks Discord
       </Heading>
     </Box>
     <SlideUp sx={{ zIndex: 5, display: 'flex', alignItems: 'center' }}>

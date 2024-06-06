@@ -83,7 +83,7 @@ help with a part, click the "?" above it.
 If you want to see examples, check here:
 https://hack.club/bin-example
 
-You can get help by chatting with other high schoolers on the Hack Club Slack in
+You can get help by chatting with other high schoolers on the Bethel Hacks Discord in
 the #electronics channel:
 👉 https://hackclub.com/slack 👈
 

@@ -29,7 +29,7 @@ export default function Join() {
             variant="title"
             sx={{ mb: 3, fontSize: ['36px', '48px', '56px'] }}
           >
-            Discover the Hack Club Slack
+            Discover the Bethel Hacks Discord
           </Text>
           <Link
             href="#"
