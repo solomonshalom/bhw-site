@@ -725,7 +725,7 @@ function Page({
                 }
               }}
             >
-               Get'em Pizza!
+               Get'em Pizza :D
             </Heading>
             <Text sx={{ fontSize: 22 }}>
             That's right! Being part of BHH is more than just coding or designing, it's also about eating some of the best pizza in town!
