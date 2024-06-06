@@ -17,10 +17,10 @@ const Content = () => (
     }}
   >
     <Text as="p" variant="eyebrow" sx={{ color: 'white', opacity: 0.75 }}>
-      The Hack Club Community
+      The Bethel Hacks Community
     </Text>
     <Heading as="h2" variant="title">
-      A hackathon organizer's{' '}
+      A hackathon particpant's{' '}
       <Text
         as="span"
         sx={{
@@ -47,16 +47,15 @@ const Content = () => (
         }}
       >
         <Link
-          href="https://hackclub.slack.com/archives/C03QSGGCJN7"
+          href="#"
           sx={{ textDecoration: 'none', color: 'currentColor' }}
           target="_blank"
         >
-          #hackathon-organizers
+          #hackathon
         </Link>
       </Box>{' '}
-      channel is where teenagers around the world ask questions and share their
-      own hackathon organizing experiences—from finding a venue to securing
-      sponsorships to ordering food.
+      channel is where participants ask questions and share their
+      own experiences—from finding a team to solving a problem!
     </Text>
     <NextLink href="/discord" passHref>
       <Button
@@ -66,7 +65,7 @@ const Content = () => (
           background: 'linear-gradient(-132deg, #338eda 14%, #33d6a6 82%)'
         }}
       >
-        Join us on Slack →
+        Join us on Discord
       </Button>
     </NextLink>
   </Container>

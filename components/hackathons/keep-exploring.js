@@ -49,9 +49,9 @@ export default function KeepExploring() {
           </Button>
         </Link>
 
-        <Link href="https://hackathons.hackclub.com" passHref>
+        <Link href="https://bethelagindia.org" passHref>
           <Button sx={{ bg: 'white', color: 'red', fontSize: [2, 3] }} as="a">
-            Discover more hackathons
+            Discover Bethel
           </Button>
         </Link>
       </Box>
@@ -70,22 +70,20 @@ export default function KeepExploring() {
             variant="lead"
             sx={{ mt: 0, a: { variant: 'styles.a', color: 'blue' } }}
           >
-            Teenagers organize hackathons like{' '}
+            The hackathon is built by a dedicated{' '}
             <a
-              href="https://assemble.hackclub.com"
+              href="/team"
               target="_blank"
               rel="noreferrer"
             >
-              Assemble
-            </a>{' '}
-            &{' '}
-            <a href="https://windyhacks.com" target="_blank" rel="noreferrer">
-              Windy&nbsp;City&nbsp;Hacks
+              Team
             </a>
-            . The&nbsp;hack’s the limit.
             <Box as="div" sx={{ mt: 3 }}></Box>
-            Hack Club is providing grants, support, and more, to help you run
-            the next amazing hackathon.
+            Bethel Hacks / Youth is also actively seeking more volunteers! Looks like you?
+            contact us at our socials!*
+            <br />
+            <br />
+            *Have to be a member of Bethel AG Church, Malayalam.
           </Text>
         </Grid>
       </Container>
