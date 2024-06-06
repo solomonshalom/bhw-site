@@ -68,7 +68,7 @@ export default function Landing() {
                     span: { color: 'white', display: 'block' }
                   }}
                 >
-                  Welcome to {' '}
+                  Welcome to Bethel's first ever{' '}
                   <Text
                     as="span"
                     variant="ultratitle"
@@ -79,7 +79,7 @@ export default function Landing() {
                       whiteSpace: [null, null, 'nowrap']
                     }}
                   >
-                    Bethel's first every hackathon!
+                    hackathon!
                   </Text>
                 </Heading>
                 <Text
