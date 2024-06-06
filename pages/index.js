@@ -1098,7 +1098,7 @@ function Page({
         </Flex>
       </Box>
       </Box>
-      <ContactBanner sx={{ justifyContent: 'center' }} />
+      <ContactBanner />
       <Footer
         dark
         sx={{
