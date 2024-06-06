@@ -1095,7 +1095,7 @@ P.S. The picture in the right isn't of us, but it did look cool! (for context, i
             </Button>
           </Link>
           <Text as="p" variant="lead" sx={{ color: 'white', mb: [0, 0] }}>
-            <Balancer>No startup fees, no&nbsp;minimum balance.</Balancer>
+            <Balancer>It's completely free to join!</Balancer>
           </Text>
         </Flex>
       </Box>
