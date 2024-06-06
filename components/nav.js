@@ -130,21 +130,13 @@ const Navigation = props => (
   // REMINDER: This should be no more than 7 links :)
   <NavBar role="navigation" {...props}>
     <NextLink href="/clubs" passHref>
-      <Link>Clubs</Link>
-    </NextLink>
-    <NextLink href="/fiscal-sponsorship" passHref>
-      <Link>Fiscal&nbsp;Sponsorship</Link>
+      <Link>Apply</Link>
     </NextLink>
     <NextLink href="/hackathons" passHref>
       <Link>Hackathons</Link>
     </NextLink>
     <NextLink href="/slack" passHref>
       <Link>Community</Link>
-    </NextLink>
-    <Link href="https://scrapbook.hackclub.com/">Scrapbook</Link>
-    <Link href="https://toolbox.hackclub.com/">Toolbox</Link>
-    <NextLink href="/onboard" passHref>
-      <Link>OnBoard</Link>
     </NextLink>
   </NavBar>
 )

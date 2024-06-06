@@ -467,24 +467,6 @@ const Page = () => (
               </>
             }
           ></Feature>
-          {/* <Feature
-            name="A comprehensive leader guide"
-            desc={
-              <>
-                Need help getting started? Watch real club leaders run meetings, and
-                learn how to run them in your own club, with{' '}
-                <a href="https://meetings.hackclub.com">Hack Club Meetings</a>.
-              </>
-            }
-          >
-            <Photo
-              src="/home/meetings.png"
-              alt="Claire running a workshop on Generative Art in an online meeting"
-              width={1000}
-              height={653}
-              sx={{ maxWidth: [null, 332] }}
-            />
-          </Feature> */}
           <Feature
             name="Stickers"
             desc={
@@ -538,12 +520,6 @@ const Page = () => (
               </>
             }
           />
-          {/* <Feature
-            icon="sam"
-            color="blue"
-            name="Free Zoom Pro"
-            desc="24/7 access to Zoom Pro enabled meeting rooms for your club (that means no time limit)."
-          /> */}
         </Grid>
         <Feature
           icon="welcome"

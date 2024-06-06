@@ -748,7 +748,7 @@ function Page({
                   }}
                 />
                 <Stage
-                  icon="slack"
+                  icon="send"
                   color="white"
                   name="Apply!"
                   desc="Apply  and join our community to connect with other technical teenagers on Discord and hack on things together."
