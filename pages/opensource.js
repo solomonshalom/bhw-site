@@ -50,7 +50,7 @@ export const BankProject = ({ name, url }) => (
   </Card>
 )
 
-const Page = ({ repos, transparentAccounts }) => (
+const Page = ({ repos }) => (
   <>
     <Meta
       as={Head}
@@ -165,5 +165,5 @@ export async function getStaticProps() {
     org: 'hackclub'
   })
 
-  return { props: { repos, transparentAccounts }, revalidate: 30 }
+  return { props: { repos }, revalidate: 30 }
 }
