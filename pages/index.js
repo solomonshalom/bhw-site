@@ -36,11 +36,7 @@ import Image from 'next/image'
 
 /** @jsxImportSource theme-ui */
 
-function Page({
-  slackData,
-  events,
-  carouselCards,
-}) {
+function Page({ slackData, events, carouselCards }) {
   let [reveal, setReveal] = useState(false)
   const [hover, setHover] = useState(true)
   let [slackKey] = useState(0)
@@ -61,7 +57,6 @@ function Page({
 
     jsConfetti.current.addConfetti({
       confettiColors: [
-        // Hack Club colours!
         '#ec3750',
         '#ff8c37',
         '#f1c40f',
@@ -91,18 +86,12 @@ function Page({
     }
   ]
 
-  // janky right now and does not show last image
-
   useEffect(() => {
-    console.log(
-      `White sheets of paper\nWaiting to be printed on\nA blank console waits`
-    )
     if (count === images.length - 1) {
       setCount(0)
     }
   }, [count, images.length])
 
-  // Spotlight effect
   const spotlightRef = useRef()
   useEffect(() => {
     const handler = event => {
@@ -147,7 +136,6 @@ function Page({
           reveal={reveal}
           onMouseEnter={() => {
             setHover(true)
-            console.log(hover)
           }}
           onMouseOut={() => {
             setReveal(false)
@@ -202,66 +190,65 @@ function Page({
               Welcome to Bethel&nbsp;Hacks!
             </Text>
             <Heading>
-  <Text
-    as="h1"
-    variant="title"
-    sx={{
-      color: 'white',
-      mb: [3, 4],
-      zIndex: 1,
-      textAlign: 'left',
-      fontSize: ['42px', '52px', '64px'],
-      lineHeight: 1.2,
-      width: '100%'
-    }}
-  >
-    Welcome <Comma>{slackData?.total_members_count}</Comma>{' '}
-    <Text
-      sx={{
-        color: 'transparent',
-        ml: 2,
-        mr: 3,
-        whiteSpace: 'nowrap'
-      }}
-    >
-      <Text
-        onClick={() => {
-          !reveal ? setReveal(true) : setReveal(false)
-        }}
-        sx={{
-          // lineHeight: 0.875,
-          px: 2,
-          backgroundColor: 'red',
-          position: 'absolute',
-          borderRadius: 10,
-          transform: 'rotate(-3deg) translateY(-5px)',
-          color: 'white',
-          whiteSpace: 'nowrap',
-          textDecoration: 'none',
-          '&:hover': {
-            cursor: 'pointer'
-          }
-        }}
-        aria-hidden="true"
-      >
-        hackers
-      </Text>
-      hackers
-    </Text>
-    <br sx={{ display: ['inline', 'none', 'none'] }} />, join us to 
-    create tech that glorifies God!
-  </Text>
-  <Button
-    variant="ctaLg"
-    as="a"
-    href="#"
-    mt={[3, 0, 0]}
-    sx={{ transformOrigin: 'center left' }}
-  >
-    Join Now!
-  </Button>
-</Heading>
-
+              <Text
+                as="h1"
+                variant="title"
+                sx={{
+                  color: 'white',
+                  mb: [3, 4],
+                  zIndex: 1,
+                  textAlign: 'left',
+                  fontSize: ['42px', '52px', '64px'],
+                  lineHeight: 1.2,
+                  width: '100%'
+                }}
+              >
+                Welcome <Comma>{slackData?.total_members_count}</Comma>{' '}
+                <Text
+                  sx={{
+                    color: 'transparent',
+                    ml: 2,
+                    mr: 3,
+                    whiteSpace: 'nowrap'
+                  }}
+                >
+                  <Text
+                    onClick={() => {
+                      !reveal ? setReveal(true) : setReveal(false)
+                    }}
+                    sx={{
+                      // lineHeight: 0.875,
+                      px: 2,
+                      backgroundColor: 'red',
+                      position: 'absolute',
+                      borderRadius: 10,
+                      transform: 'rotate(-3deg) translateY(-5px)',
+                      color: 'white',
+                      whiteSpace: 'nowrap',
+                      textDecoration: 'none',
+                      '&:hover': {
+                        cursor: 'pointer'
+                      }
+                    }}
+                    aria-hidden="true"
+                  >
+                    hackers
+                  </Text>
+                    hackers
+                </Text>
+                <br sx={{ display: ['inline', 'none', 'none'] }} />, join us to 
+                create tech that glorifies God!
+              </Text>
+              <Button
+                variant="ctaLg"
+                as="a"
+                href="#"
+                mt={[3, 0, 0]}
+                sx={{ transformOrigin: 'center left' }}
+              >
+                Join Now!
+              </Button>
+            </Heading>
           </Box>
           <Box
             sx={{
@@ -286,7 +273,6 @@ function Page({
                 fontWeight: 'normal',
                 ':hover': { opacity: 1 },
                 transition: '0.3s ease'
-                // mixBlendMode: 'multiply'
               }}
               title="📸 Photo by Matt Gleich, Hack Clubber in NH!"
             >
@@ -335,7 +321,7 @@ function Page({
                 maxWidth: '62ch'
               }}
             >
-              For the firs time, hundreds of programmers, designers, musicians, and anybody with a creative taste 
+              For the first time, hundreds of programmers, designers, musicians, and anybody with a creative taste 
               gather online and
               in-person to make things with code. Whether you’re a beginner
               programmer or have years of experience, there’s a place for you at
@@ -646,15 +632,6 @@ function Page({
           borderRadius: '16px'
         }}
       >
-        {/* <Tilt>
-    <Image sx={{position: "absolute", marginTop: "-82px", marginLeft: "-82px"}} src="https://cloud-okty851hq-hack-club-bot.vercel.app/0mushroom.png"/>
-    </Tilt>
-    <Tilt>
-    <Image sx={{position: "absolute", marginTop: "-82px", right: 0, marginRight: "96px"}} src="https://cloud-fiv5rwxlo-hack-club-bot.vercel.app/0pineapple.png"/>
-    </Tilt>
-    <Tilt>
-    <Image sx={{position: "absolute", bottom: 0, marginBottom: "-182px", marginLeft: "-82px"}} src="https://cloud-bsv5adze8-hack-club-bot.vercel.app/0tomato.png"/>
-    </Tilt> */}
         <Box sx={{ position: 'absolute', top: -48, left: -48 }}>
           <Tilt options={{ perspective: 75 }}>
             <Image
@@ -697,7 +674,6 @@ function Page({
               alt="pizza"
               sx={{
                 imageRendering: 'pixelated',
-
                 display: ['none', 'none', 'flex']
               }}
               src="https://cloud-4my12nuf0-hack-club-bot.vercel.app/0pizza.png"
@@ -996,9 +972,9 @@ P.S. The picture in the right isn't of us, but it did look cool! (for context, i
                   height="315"
                   src="https://www.youtube-nocookie.com/embed/sJNK4VKeoBM?si=zvhDKhb9C5G2b4TJ&controls=1&autoplay=1&mute=1"
                   title="YouTube video player"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
+                  allowFullScreen
                 ></iframe>
               </Box>
             </Box>
@@ -1016,9 +992,9 @@ P.S. The picture in the right isn't of us, but it did look cool! (for context, i
                 height="315"
                 src="https://www.youtube-nocookie.com/embed/ChBg4aowzX8?si=X2J_T95yiaKXB2q4&controls=1&autoplay=1&mute=1"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </Box>
             <Box
@@ -1035,9 +1011,9 @@ P.S. The picture in the right isn't of us, but it did look cool! (for context, i
                 height="315"
                 src="https://www.youtube-nocookie.com/embed/JDQr1vICu54?si=U6-9AFtk7EdTabfp&autoplay=1&mute=1"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </Box>
           </>
