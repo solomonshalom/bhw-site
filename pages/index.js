@@ -36,20 +36,9 @@ import Comma from '../components/comma'
 /** @jsxImportSource theme-ui */
 
 function Page({
-  hackathonsData,
-  bankData,
   slackData,
-  gitHubData,
-  gitHubDataLength,
-  consoleCount,
-  stars,
-  // githubData2,
-  dataPieces,
-  game,
-  gameTitle,
   events,
   carouselCards,
-  context
 }) {
   let [reveal, setReveal] = useState(false)
   const [hover, setHover] = useState(true)
@@ -1193,7 +1182,6 @@ export async function getStaticProps() {
     props: {
       game,
       gameTitle,
-      gitHubData,
       consoleCount,
       hackathonsData,
       bankData,
