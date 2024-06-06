@@ -20,14 +20,7 @@ import ForceTheme from '../components/force-theme'
 import Footer from '../components/footer'
 import Stage from '../components/stage'
 import Carousel from '../components/index/carousel'
-import Sprig from '../components/index/cards/sprig'
-import Sinerider from '../components/index/cards/sinerider'
-import SprigConsole from '../components/index/cards/sprig-console'
-import Clubs from '../components/index/cards/clubs'
-import Workshops from '../components/index/cards/workshops'
-import HCB from '../components/index/cards/hcb'
-import Hackathons from '../components/index/cards/hackathons'
-import ContactBanner from '../../components/fiscal-sponsorship/contact'
+import ContactBanner from '../components/fiscal-sponsorship/contact'
 import OuternetImgFile from '../public/home/outernet-110.jpg'
 import Announcement from '../components/announcement'
 import Konami from 'react-konami-code'
@@ -35,11 +28,8 @@ import JSConfetti from 'js-confetti'
 import Secret from '../components/secret'
 import Slack from '../components/index/cards/slack'
 import Icon from '../components/icon'
-import GitHub from '../components/index/github'
 import Photo from '../components/photo'
 import Comma from '../components/comma'
-import Haxidraw from '../components/index/cards/haxidraw'
-import Onboard from '../components/index/cards/onboard'
 
 /** @jsxImportSource theme-ui */
 
@@ -812,7 +802,7 @@ function Page({
                   }}
                 />
                 <Stage
-                  icon="github"
+                  icon="emoji"
                   color="white"
                   name="Explore and Learn!"
                   desc="By joining the community and exploring our wiki, you can get a pretty good headtstart and jump right in on the day of the hackathon!"
