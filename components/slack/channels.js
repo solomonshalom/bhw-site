@@ -79,7 +79,7 @@ export default function Channels() {
             letterSpacing: 'headline'
           }}
         >
-          Live from our&nbsp;Discord <br />
+          Join our&nbsp;Discord <br />
         </Heading>
         <Text
           as="p"
@@ -91,7 +91,7 @@ export default function Channels() {
             mb: '16px'
           }}
         >
-          Join Now!
+          Trust me, Bro
         </Text>
         <SlackEvents />
       </Box>
