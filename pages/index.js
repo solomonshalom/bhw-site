@@ -1186,7 +1186,6 @@ export async function getStaticProps() {
       hackathonsData,
       bankData,
       slackData,
-      stars,
       events,
       carouselCards
     },
