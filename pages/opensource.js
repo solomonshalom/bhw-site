@@ -76,19 +76,19 @@ const Page = ({ repos, transparentAccounts }) => (
           variant="title"
           sx={{ color: 'primary', mt: [2.5, 4] }}
         >
-          Open Source at Hack Club
+          Open Source at Bethel Hacks Club
         </Heading>
         <Heading as="h2" variant="subtitle" sx={{ mt: 3, color: 'text' }}>
-          Explore our finances, code, planning documents and more.
+          Explore the winnning and other participating repositories!
         </Heading>
         <Button
           variant="outline"
           as="a"
           target="_blank"
           mt={3}
-          href="https://contribute.hackclub.com"
+          href="https://github.com/solomonshalom"
         >
-          Contribute to Our Projects
+          Check out our Github!
         </Button>
       </Container>
     </Box>
@@ -99,87 +99,6 @@ const Page = ({ repos, transparentAccounts }) => (
         h2: { variant: 'text.headline' }
       }}
     >
-      <Heading
-        variant="headline"
-        sx={{ marginBlockEnd: '0em', mb: '4px!important' }}
-      >
-        Finances
-      </Heading>
-      <Text sx={{ fontSize: 2, color: 'placeholder' }}>
-        All open sourced through HCB Transparency Mode.
-      </Text>
-      <Grid columns={2} gap={3} mt={2} mb={[4]}>
-        {transparentAccounts.map(account => (
-          <BankProject
-            key={account.id}
-            name={account.name}
-            url={`https://hcb.hackclub.com/${account.slug}`}
-          />
-        ))}
-      </Grid>
-      <Heading
-        variant="headline"
-        sx={{ marginBlockEnd: '0em', mb: '4px!important' }}
-      >
-        Events
-      </Heading>
-      <Text sx={{ fontSize: 2, color: 'placeholder' }}>
-        Includes planning documents, partnership emails, meeting notes etc.
-      </Text>
-      <Grid columns={2} gap={3} mt={2} mb={[4]}>
-        <BankProject
-          name="Outernet"
-          url={`https://github.com/hackclub/outernet`}
-        />
-        <BankProject name="Epoch" url={`https://github.com/hackclub/epoch`} />
-        <BankProject
-          name="Assemble"
-          url={`https://github.com/hackclub/assemble`}
-        />
-        <BankProject
-          name="The Hacker Zephyr"
-          url={`https://github.com/hackclub/the-hacker-zephyr`}
-        />
-        <BankProject
-          name="Hack Camp"
-          url={`https://github.com/hackclub/camp`}
-        />
-      </Grid>
-      <Heading
-        variant="headline"
-        sx={{ marginBlockEnd: '0em', mb: '12px!important' }}
-      >
-        Content
-      </Heading>
-      <Grid columns={3} gap={3} mt={2} mb={[4]}>
-        <BankProject name="Jams" url={`https://github.com/hackclub/jams`} />
-        <BankProject
-          name="Workshops"
-          url={`https://github.com/hackclub/hackclub/tree/main/workshops`}
-        />
-        <BankProject
-          name="VIP Newsletter"
-          url={`https://github.com/hackclub/vip-newsletters`}
-        />
-        <BankProject
-          name="Community Newsletter"
-          url={`https://github.com/hackclub/newsletter`}
-        />
-        <BankProject name="Meetings" url={`https://meetings.hackclub.com`} />
-      </Grid>
-      <Heading
-        variant="headline"
-        sx={{ marginBlockEnd: '0em', mb: '12px!important' }}
-      >
-        GitHub Repositories
-      </Heading>
-
-      <Link
-        href="https://contribute.hackclub.com/"
-        sx={{ fontSize: 2, display: 'block', mb: 3 }}
-      >
-        Want to contribute?
-      </Link>
 
       {repos
         .sort(function (a, b) {
@@ -198,7 +117,7 @@ const Page = ({ repos, transparentAccounts }) => (
               textDecoration: 'none'
             }}
             as="a"
-            href={`https://github.com/hackclub/${repo.name}`}
+            href={`https://github.com/solomonshalom/${repo.name}`}
             target="_blank"
           >
             <Text
@@ -245,12 +164,6 @@ export async function getStaticProps() {
   const repos = await octokit.paginate('GET /orgs/{org}/repos', {
     org: 'hackclub'
   })
-
-  const transparentAccounts = (
-    await fetch('https://hcb.hackclub.com/api/v3/organizations').then(res =>
-      res.json()
-    )
-  ).filter(account => account.category?.replaceAll(' ', '_') === 'hack_club_hq')
 
   return { props: { repos, transparentAccounts }, revalidate: 30 }
 }

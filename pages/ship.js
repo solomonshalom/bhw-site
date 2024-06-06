@@ -77,7 +77,7 @@ const ShipPage = ({ posts = [] }) => (
           All aboard!
         </Text>
         <Heading as="h1" variant="ultratitle" sx={{ mb: [3, 4] }}>
-          Hack Clubbers focus on one thing: <ShipBadge>shipping.</ShipBadge>
+          Bethel Hackers focus on one thing: <ShipBadge>shipping.</ShipBadge>
         </Heading>
         <Text as="p" variant="subtitle">
           After building a project, like an app or website, “shipping” is
@@ -123,7 +123,6 @@ const ShipPage = ({ posts = [] }) => (
       >
         Recently shipped…
       </Heading>
-      <Posts data={posts} />
     </Box>
     <Box
       as="section"
@@ -139,13 +138,13 @@ const ShipPage = ({ posts = [] }) => (
           Want to ship your own projects?
         </Heading>
         <Text variant="subtitle" sx={{ lineHeight: 'caption', mb: 3 }}>
-          The #ship channel on the Hack&nbsp;Club Slack is where {thousands}k+
+          The #ship channel on the Bethel&nbsp;Hacks Discord is where many
           teenagers from around the world share what they’re working on & help
           each other.
         </Text>
-        <NextLink href="/slack" passHref>
+        <NextLink href="" passHref>
           <Button variant="cta" sx={{ py: 2, px: 3, fontSize: 2 }} as="a">
-            Join our Slack
+            Join our Discord
           </Button>
         </NextLink>
       </Container>
@@ -155,18 +154,3 @@ const ShipPage = ({ posts = [] }) => (
 )
 
 export default ShipPage
-
-export const getStaticProps = async () => {
-  const posts = await fetch('https://scrapbook.hackclub.com/api/r/ship')
-    .then(r => r.json())
-    .then(posts =>
-      filter(posts, p =>
-        ['jpg', 'jpeg', 'png'].includes(
-          p.attachments[0]?.split('.')[p.attachments[0]?.split('.').length - 1]
-        )
-      )
-    )
-    .then(posts => orderBy(posts, 'postedAt', 'desc'))
-    .then(posts => take(posts, 24))
-  return { props: { posts }, revalidate: 2 }
-}
