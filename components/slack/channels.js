@@ -114,7 +114,7 @@ export default function Channels() {
       </NextLink>
       <Card
         as="a"
-        href="https://scrapbook.hackclub.com/"
+        href="#"
         variant="interactive"
         sx={{
           gridColumn: ['span 2', 'span 5'],
