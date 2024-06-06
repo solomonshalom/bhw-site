@@ -12,6 +12,7 @@ export default function ContactBanner({ sx }) {
         alignItems: 'center',
         p: 3,
         gap: [3, 2],
+        justifyContent: 'center',
         ...sx
       }}
     >
