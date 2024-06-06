@@ -30,6 +30,7 @@ import Slack from '../components/index/cards/slack'
 import Icon from '../components/icon'
 import Photo from '../components/photo'
 import Comma from '../components/comma'
+import Image from 'next/image'
 
 /** @jsxImportSource theme-ui */
 
@@ -49,13 +50,9 @@ function Page({
   carouselCards,
   context
 }) {
-  let [gameImage, setGameImage] = useState('')
-  let [gameImage1, setGameImage1] = useState('')
   let [reveal, setReveal] = useState(false)
   const [hover, setHover] = useState(true)
-  let [github, setGithub] = useState(0)
-  let [slackKey, setSlackKey] = useState(0)
-  let [key, setKey] = useState(0)
+  let [slackKey] = useState(0)
 
   const { asPath } = useRouter()
 
@@ -136,9 +133,8 @@ function Page({
     <>
       <Meta
         as={Head}
-        title="A Home for High School Hackers"
-        description="Hack Club is a global nonprofit network of high school makers & student-led coding clubs where young people build the agency, the network, & the technical talent to think big & do big things in the world."
-        image="https://cloud-lgl7kg862-hack-club-bot.vercel.app/0start__1_.png"
+        title="Bethel Hacks"
+        description="Bethel Hacks, Builds, and does Great!"
       />
       <Head>
         <meta
@@ -351,7 +347,7 @@ function Page({
               gather online and
               in-person to make things with code. Whether you’re a beginner
               programmer or have years of experience, there’s a place for you at
-              Hack&nbsp;Club. Read about our{' '}
+              Bethel&nbsp;Hacks. Read about our{' '}
               <Link href="/philosophy" target="_blank" rel="noopener">
                 hacker ethic
               </Link>

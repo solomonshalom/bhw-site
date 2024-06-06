@@ -1,21 +1,15 @@
 import Meta from '@hackclub/meta'
 import Head from 'next/head'
-import { Box, Container, Heading, Text } from 'theme-ui'
+import { Container, Heading, Text } from 'theme-ui'
 import { useRef } from 'react'
-import { ScrollMenu } from 'react-horizontal-scrolling-menu'
 import 'react-horizontal-scrolling-menu/dist/styles.css'
 
-import { thousands } from '../lib/members'
-import projects from '../components/slack/projects'
 import Channels from '../components/slack/channels'
 import Join from '../components/slack/join'
 import Footer from '../components/footer'
 import ForceTheme from '../components/force-theme'
 import Nav from '../components/nav'
 import Header from '../components/slack/header'
-import Project from '../components/slack/project'
-import Quote from '../components/slack/quote'
-import Arrows from '../components/slack/arrows'
 
 const DiscordPage = () => {
   const nameInputRef = useRef(null)
@@ -39,7 +33,7 @@ const DiscordPage = () => {
       </style>
       <Meta
         as={Head}
-        name="Join our Slack"
+        name="Join our Discord"
         description={`The Bethel Hacks Discord is a community of builders around the world. Chat, meet new friends, code together, share your work.`}
       />
       <ForceTheme theme="light" />
@@ -62,27 +56,6 @@ const DiscordPage = () => {
           worlds that suit you.
         </Text>
         <Channels />
-        {/*<Flex
-          sx={{
-            gridRow: [null, 'span 2'],
-            gridColumn: ['span 2', 'span 3'],
-            maxHeight: '100%',
-            overflow: 'hidden'
-          }}
-        >
-          <Heading
-            as="h2"
-            variant="subheadline"
-            sx={{
-              textTransform: 'uppercase',
-              letterSpacing: 'headline',
-              width: '400px'
-            }}
-          >
-            Live from our&nbsp;Slack...
-          </Heading>
-          <SlackEvents />
-        </Flex>*/}
       </Container>
 
       <Container sx={{ py: [4, 5] }}>
