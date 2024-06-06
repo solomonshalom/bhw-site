@@ -38,26 +38,6 @@ export default function Overview() {
               make things too.
             </Text>
           </Grid>
-          <Grid columns={[null, null, 2]} gap={[3, 4]} mt={4}>
-            <iframe
-              width="100%"
-              height="300px"
-              src="https://www.youtube.com/embed/PnK4gzO6S3Q"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-            <iframe
-              width="100%"
-              height="300px"
-              src="https://www.youtube.com/embed/KLx4NZZPzMc"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </Grid>
         </Container>
       </Box>
     </>

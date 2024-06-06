@@ -28,8 +28,10 @@ export default function ContactBanner({ sx }) {
           a: { color: 'inherit', mx: '0.125em', whiteSpace: 'nowrap' }
         }}
       >
+        <center>
         Questions? Email <Link href={`mailto:${email}`}>{email}</Link>{' '}
         or&nbsp;call <Link href={`tel:${phoneNumberUri}`}>{phoneNumber}</Link>
+        </center>
       </Text>
     </Flex>
   )

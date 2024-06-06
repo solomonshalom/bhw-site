@@ -42,7 +42,7 @@ export default function Landing() {
                   as="a"
                   target="_blank"
                   variant="cta"
-                  href="https://hackathons.hackclub.com"
+                  href=""
                   sx={{
                     backgroundImage: t => t.util.gx('yellow', 'pink'),
                     position: 'absolute',
@@ -56,7 +56,7 @@ export default function Landing() {
                     display: ['none', 'inline', 'inline']
                   }}
                 >
-                  Looking for hackathons?{' '}
+                  Apply!{' '}
                   <Icon glyph="external" size={30} sx={{ pl: 1 }} />
                 </Button>
 
@@ -68,7 +68,7 @@ export default function Landing() {
                     span: { color: 'white', display: 'block' }
                   }}
                 >
-                  Welcome to the{' '}
+                  Welcome to {' '}
                   <Text
                     as="span"
                     variant="ultratitle"
@@ -79,7 +79,7 @@ export default function Landing() {
                       whiteSpace: [null, null, 'nowrap']
                     }}
                   >
-                    high school hackathon.
+                    Bethel's first every hackathon!
                   </Text>
                 </Heading>
                 <Text

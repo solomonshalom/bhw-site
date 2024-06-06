@@ -88,10 +88,10 @@ export default function Hackathons({ data }) {
       >
         <Box as="header" sx={{ textAlign: [null, 'center'], pb: [4, 5] }}>
           <Text as="p" variant="eyebrow">
-            Hit the ground running
+            Got Questions?
           </Text>
           <Heading as="h2" variant="title">
-            Get your club{' '}
+            Here's some cool{' '}
             <Text
               as="span"
               sx={{
@@ -104,9 +104,8 @@ export default function Hackathons({ data }) {
                 whiteSpace: ['wrap', 'nowrap']
               }}
             >
-              going & growing
+              FAQs!
             </Text>
-            with Hack&nbsp;Club.
           </Heading>
         </Box>
         <Grid
@@ -115,27 +114,28 @@ export default function Hackathons({ data }) {
           sx={{ alignItems: 'end', span: { color: 'white' } }}
         >
           <Feature
-            icon="slack-fill"
+            icon="send-fill"
             color="#5d114c"
-            name="Chat with 100s of club leaders"
+            name="How can I apply and join the community"
             desc={
               <>
-                In our <Link href="/discord">Slack community</Link>, you’ll be
-                invited to a space for Hack&nbsp;Club leaders to ask questions &
-                chat, share projects, & attend weekly live events.
+                you can apply by clicking here or through the (numerous) "Apply"
+                or "Join Us" buttons scattered across the site!
+                <br />
+                Once done, you can join our <Link href="/discord">Discord community</Link>, where you’ll be
+                able ask questions & chat, share projects, & (WIP) live events
               </>
             }
           />
           <Feature
             icon="bolt"
             color="green"
-            name="Tools to hack on"
+            name="Will we get swag?"
             desc={
               <>
-                We build tools, such as{' '}
-                <a href="https://sprig.hackclub.com">Sprig</a>, that your
-                members can use to make projects with in meetings! Build more of
-                them with us in our <Link href="/discord">Slack community</Link>.
+                Yes! At EOD, hackers will walk away with a collection of artifacts from the event (Regardless if you win :D)! 
+                (P.S You may get some rare, one-off, special edition swags too ;D)
+
               </>
             }
           ></Feature>
@@ -145,48 +145,18 @@ export default function Hackathons({ data }) {
             name="Meeting content"
             desc={
               <>
-                Come prepared to every meeting with over 100{' '}
-                <a href="https://workshops.hackclub.com">workshops</a> (3 years’
-                worth!) and 19 <a href="https://jams.hackclub.com">Jams</a> that
-                guide your club members through making fun, creative projects.
+                Yep! You will have access to over 10+ workshops and many talks that will get you up and running
+                in no time, no matter if your a beginner or a experience hackathon machine, there's something for everyone!
               </>
             }
           ></Feature>
           <Feature
-            name="Stickers"
+            name="When, where, and how?"
             desc={
               <>
-                Get <Link href="/stickers">amazing stickers</Link> for marketing
-                your club shipped directly to you & your club members.
-              </>
-            }
-            color="purple"
-            icon="sticker"
-          ></Feature>
-          <Feature
-            icon="bank-account"
-            color="black"
-            name="A nonprofit fund"
-            desc={
-              <>
-                Use our 501(c)(3) status and a restricted fund with{' '}
-                <Link href="/fiscal-sponsorship">HCB</Link> to fundraise, accept donations, and
-                buy things!
-              </>
-            }
-          />
-          <Feature
-            name="Weekly events"
-            desc={
-              <>
-                From <Link href="/night">Hack Night</Link> to{' '}
-                <Link href="/amas">AMAs</Link>
-                {' to '}
-                <a href="https://twitter.com/hackclub/status/1300494921997193217?s=21">
-                  weirder events
-                </a>
-                , the Slack community has live events for leaders & members
-                alike every week.
+                It's happening on the 25th of this June at the{' '} <a href="https://bethelagindia.org">Bethel AG Church</a>, Malayalam!
+                <br />
+                The event will take place as a hybrid, with a in-person and online event happening simultaneously
               </>
             }
             icon="event-code"
@@ -195,13 +165,12 @@ export default function Hackathons({ data }) {
           <Feature
             icon="purse"
             color="orange"
-            name="A basket of free tools"
+            name="I don't have a machine or the required tech to participate, what can I do?"
             desc={
               <>
-                We're always building new tools for leaders, such as{' '}
-                <a href="https://sprig.hackclub.com">Sprig</a>! We've also got
-                free subscriptions to Figma Pro, Postman, and more for running a
-                great computer science club club.
+                DW! if you don't have a machine or the required tech, we will try sourcing and providing you them! 
+                All you have to do is to send us a request through this{' '}
+                <a href="#">form</a>!
               </>
             }
           />
@@ -209,14 +178,11 @@ export default function Hackathons({ data }) {
         <Feature
           icon="welcome"
           color="rgb(255,88,88)"
-          name="Existing clubs welcome"
+          name="Will I be supported during the hackathon?"
           desc={
             <>
-              When established Computer Science clubs join, they get all the Hack&nbsp;Club
-              benefits: Zoom&nbsp;Pro, stickers, our Slack community,{' '}
-              <a href="https://workshops.hackclub.com/">workshops</a>, the
-              works. They’re welcome to use the “Hack&nbsp;Club” name or keep
-              their existing one.
+              Absolutely! In addition to the workshops conducted, you will also have the oppertunity to seek help 
+              from designers, musicians, engineers, and as such!
             </>
           }
           as="aside"

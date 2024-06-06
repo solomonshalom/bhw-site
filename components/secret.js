@@ -125,7 +125,7 @@ export default function Secret({ reveal, ...props }) {
             sx={{ margin: 'auto' }}
             alt="a secret dino!"
           />
-          <Text>print kc</Text>
+          <Text>oh, hii</Text>
         </Box>
       </Box>
     </Box>

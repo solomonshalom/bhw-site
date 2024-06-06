@@ -51,7 +51,7 @@ const Service = ({ href, icon, name = '', ...props }) => (
 
 const Footer = ({
   dark = false,
-  email = 'team@hackclub.com',
+  email = 'info@bethelagindia.org',
   children,
   ...props
 }) => (
@@ -88,7 +88,7 @@ const Footer = ({
       >
         <Box>
           <Heading as="h2" variant="subheadline" mb={3}>
-            Hack&nbsp;Club
+            Bethel&nbsp;Hacks
           </Heading>
           <NextLink href="/philosophy" passHref>
             <Link>Philosophy</Link>
@@ -96,29 +96,14 @@ const Footer = ({
           <NextLink href="/team" passHref>
             <Link>Our Team & Board</Link>
           </NextLink>
-          <NextLink href="/jobs" passHref>
-            <Link>Jobs</Link>
-          </NextLink>
-          <NextLink href="/brand" passHref>
-            <Link>Branding</Link>
-          </NextLink>
-          <NextLink href="/press" passHref>
-            <Link>Press Inquiries</Link>
-          </NextLink>
-          <NextLink href="/philanthropy" passHref>
-            <Link>Donate</Link>
-          </NextLink>
         </Box>
         <Box>
           <Heading as="h2" variant="subheadline" mb={3}>
             Resources
           </Heading>
-          <Link href="https://hackclub.com/pizza">Clubs Pizza Grant</Link>
-          <Link href="https://events.hackclub.com/">Community Events</Link>
-          <Link href="https://jams.hackclub.com/">Jams</Link>
-          <Link href="https://toolbox.hackclub.com/">Toolbox</Link>
-          <Link href="https://directory.hackclub.com/">Clubs Directory</Link>
-          <Link href="https://hackclub.com/conduct/">Code of Conduct</Link>
+          <Link href="https://bethelagindia.org">Bethel AG Church</Link>
+          <Link href="https://bethelagindia.org/events/">Upcoming Church Events</Link>
+          <Link href="https://bethelagindia.org/contact-us/">Contact Us</Link>
         </Box>
         <Box sx={{ gridColumn: ['span 2', 'span 1'] }}>
           <Logo aria-label="Hack Club logo" width={128} height={45} />
@@ -147,7 +132,7 @@ const Footer = ({
               target="_self"
             />
             <Service
-              href="https://twitter.com/hackclub"
+              href="https://x.com/bethelagindia"
               icon="twitter"
               name="Twitter"
             />
@@ -157,38 +142,28 @@ const Footer = ({
               name="GitHub"
             />
             <Service
-              href="https://figma.com/@hackclub"
-              icon="figma-fill"
-              name="Figma"
-            />
-            <Service
-              href="https://social.dino.icu/@hackclub"
-              icon="mastodon"
-              name="Mastodon"
-            />
-            <Service
-              href="https://www.youtube.com/c/HackClubHQ"
+              href="https://www.youtube.com/channel/UCeTQ7drM66R0SRYG9D52gPw"
               icon="youtube"
               name="YouTube"
             />
             <Service
-              href="https://www.instagram.com/starthackclub"
+              href="https://www.instagram.com/bethelagindia"
               icon="instagram"
               name="Instagram"
             />
             <Service href={`mailto:${email}`} icon="email-fill" />
           </Grid>
           <Text my={2}>
-            <Link href="tel:1-855-625-HACK">1-855-625-HACK</Link>
+            <Link href="tel:+91 91080 24050">+91 91080 24050</Link>
             <br />
             <Text as="span" color="muted">
-              (call toll-free)
+              (10.00AM to 05.00PM IST, Monday through Saturday)
             </Text>
           </Text>
         </Box>
       </Grid>
       <Text as="p" variant="caption" sx={{ mt: 3 }}>
-        © {new Date().getFullYear()} Hack&nbsp;Club. 501(c)(3) nonprofit (EIN:
+        © {new Date().getFullYear()} bethel&nbsp;AG Church. 501(c)(3) nonprofit (EIN:
         81-2908499)
       </Text>
     </Container>

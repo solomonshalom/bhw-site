@@ -187,9 +187,9 @@ function Page({
             gradient="linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.45))"
           />
 	  <Announcement
-            copy="Build in public at the Hack Arcade June 1 - 7"
-            caption="Get domains, breadboards & multimeters, and drawing tablets."
-            href="/arcade/"
+            copy="Build in public at Bethel Hacks June 25th"
+            caption="Make the coolest tech, get the coolest swag!"
+            href="#"
             imgSrc="https://cloud-gyu8zgkki-hack-club-bot.vercel.app/0_______.png"
           />
           <Box
@@ -646,6 +646,44 @@ function Page({
               </Text>
             </Box>
             <Slack slackKey={slackKey} data={slackData} events={events} />
+            <Grid
+          sx={{ alignItems: 'center', position: 'relative' }}
+          gap={[2, 3]}
+          columns={[null, null, null, '3fr 2fr']}
+        >
+          <Box>
+            <Heading
+              as="h2"
+              variant="heading"
+              sx={{
+                fontSize: [40, 40, 42],
+                lineHeight: '100%',
+                paddingBottom: '16px',
+                span: {
+                  background:
+                    'linear-gradient(180deg, #FF8C37 25%, #EC3750 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextStroke: 'currentColor',
+                  WebkitTextFillColor: 'transparent'
+                }
+              }}
+            >
+              We also got free pizza ;D
+            </Heading>
+            <Text sx={{ fontSize: 22 }}>
+              That's right! Being part of BHH is more than just coding or designing, it's also about eating some of the best pizza in town!
+
+              P.S. The picture in the right isn't of us, but it did look cool! (for context, it's one of the hackclubs!)
+            </Text>
+          </Box>
+          <Box>
+            <Image
+              alt="teens collaborating on tech products"
+              sx={{ borderRadius: '16px' }}
+              src="https://cloud-r38lu87ej-hack-club-bot.vercel.app/00meta__1_.png"
+            />
+          </Box>
+        </Grid>
           </Box>
         </Box>
         <Box py={[4, 5, '82px']}>
