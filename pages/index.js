@@ -725,7 +725,7 @@ function Page({
                 }
               }}
             >
-               Get'em Pizza :D
+               Get'em Pizza
             </Heading>
             <Text sx={{ fontSize: 22 }}>
             That's right! Being part of BHH is more than just coding or designing, it's also about eating some of the best pizza in town!
@@ -846,7 +846,7 @@ function Page({
                   icon="send"
                   color="white"
                   name="Apply!"
-                  desc="Apply  and join our community to connect with other technical teenagers on Discord and hack on things together."
+                  desc="Apply  and join our community to connect with other members on Discord and hack on things together."
                   sx={{
                     p: {
                       fontSize: ['18px', '20px', '22px']
@@ -900,7 +900,7 @@ function Page({
                   icon="emoji"
                   color="white"
                   name="Explore and Learn!"
-                  desc="By joining the community and exploring our wiki, you can get a pretty good headtstart and jump right in on the day of the hackathon!"
+                  desc="By joining the community and exploring our wiki, you can get a pretty good headstart and jump right in on the day of the hackathon!"
                   sx={{
                     p: {
                       fontSize: [1, '16px', '20px']
