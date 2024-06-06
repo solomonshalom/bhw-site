@@ -201,65 +201,66 @@ function Page({
               Welcome to Bethel&nbsp;Hacks!
             </Text>
             <Heading>
-              <Text
-                as="h1"
-                variant="title"
-                sx={{
-                  color: 'white',
-                  mb: [3, 4],
-                  zIndex: 1,
-                  textAlign: 'left',
-                  fontSize: ['42px', '52px', '64px'],
-                  lineHeight: 1.2,
-                  width: '100%'
-                }}
-              >
-                Welcome <Comma>{slackData.total_members_count}</Comma>{' '}
-                <Text
-                  sx={{
-                    color: 'transparent',
-                    ml: 2,
-                    mr: 3,
-                    whiteSpace: 'nowrap'
-                  }}
-                >
-                  <Text
-                    onClick={() => {
-                      !reveal ? setReveal(true) : setReveal(false)
-                    }}
-                    sx={{
-                      // lineHeight: 0.875,
-                      px: 2,
-                      backgroundColor: 'red',
-                      position: 'absolute',
-                      borderRadius: 10,
-                      transform: 'rotate(-3deg) translateY(-5px)',
-                      color: 'white',
-                      whiteSpace: 'nowrap',
-                      textDecoration: 'none',
-                      '&:hover': {
-                        cursor: 'pointer'
-                      }
-                    }}
-                    aria-hidden="true"
-                  >
-                    hackers
-                  </Text>
-                    hackers
-                </Text>
-                <br sx={{ display: ['inline', 'none', 'none'] }} />, join us to 
-                create tech that glorifies God!
-              </Text>
-              <Button
-                variant="ctaLg"
-                as="a"
-                href="#"
-                mt={[3, 0, 0]}
-                sx={{ transformOrigin: 'center left' }}
-              >
-                Join Now!
-              </Button>
-            </Heading>
+  <Text
+    as="h1"
+    variant="title"
+    sx={{
+      color: 'white',
+      mb: [3, 4],
+      zIndex: 1,
+      textAlign: 'left',
+      fontSize: ['42px', '52px', '64px'],
+      lineHeight: 1.2,
+      width: '100%'
+    }}
+  >
+    Welcome <Comma>{slackData?.total_members_count}</Comma>{' '}
+    <Text
+      sx={{
+        color: 'transparent',
+        ml: 2,
+        mr: 3,
+        whiteSpace: 'nowrap'
+      }}
+    >
+      <Text
+        onClick={() => {
+          !reveal ? setReveal(true) : setReveal(false)
+        }}
+        sx={{
+          // lineHeight: 0.875,
+          px: 2,
+          backgroundColor: 'red',
+          position: 'absolute',
+          borderRadius: 10,
+          transform: 'rotate(-3deg) translateY(-5px)',
+          color: 'white',
+          whiteSpace: 'nowrap',
+          textDecoration: 'none',
+          '&:hover': {
+            cursor: 'pointer'
+          }
+        }}
+        aria-hidden="true"
+      >
+        hackers
+      </Text>
+      hackers
+    </Text>
+    <br sx={{ display: ['inline', 'none', 'none'] }} />, join us to 
+    create tech that glorifies God!
+  </Text>
+  <Button
+    variant="ctaLg"
+    as="a"
+    href="#"
+    mt={[3, 0, 0]}
+    sx={{ transformOrigin: 'center left' }}
+  >
+    Join Now!
+  </Button>
+</Heading>
+
           </Box>
           <Box
             sx={{
@@ -1128,13 +1129,18 @@ const withCommas = x => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
 
 export async function getStaticProps() {
   const carouselCards = require('../lib/carousel.json')
+  
+  // Example of fetching slackData
+  const slackData = {
+    total_members_count: 12345 // Replace this with actual data fetching logic
+  }
 
   return {
     props: {
-      carouselCards
+      carouselCards,
+      slackData
     },
     revalidate: 60
   }
 }
-
 export default Page
