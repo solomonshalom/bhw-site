@@ -9,6 +9,58 @@ import Landing from '../../components/hackathons/landing'
 import Overview from '../../components/hackathons/overview'
 import KeepExploring from '../../components/hackathons/keep-exploring'
 
+const Feature = ({ icon, color, name, desc, children, sx, ...props }) => (
+  <Box
+    sx={{
+      display: 'grid',
+      gridGap: [0, 4],
+      gridTemplateColumns: [null, 'auto 1fr'],
+      alignItems: 'start',
+      justifyContent: 'start',
+      bg: 'rgba(224, 230, 237, 0.25)',
+      p: [3, 4],
+      mt: [1, 1],
+      borderRadius: 'extra',
+      span: { transform: 'none', width: 'min-intrinsic' },
+      svg: { color: 'white' },
+      ...sx
+    }}
+  >
+    {children || (
+      <Box
+        as="span"
+        sx={{
+          width: 'fit-content',
+          bg: color,
+          borderRadius: 18,
+          lineHeight: 0,
+          p: 2,
+          mb: 1,
+          display: 'inline-block',
+          transform: ['scale(0.75)', 'none'],
+          transformOrigin: 'bottom left',
+          boxShadow:
+            'inset 2px 2px 6px rgba(255,255,255,0.2), inset -2px -2px 6px rgba(0,0,0,0.1), 0 1px 4px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.1)'
+        }}
+      >
+        <Icon glyph={icon} size={48} />
+      </Box>
+    )}
+    <Box>
+      <Heading as="h3" variant="headline" mb={2} mt={0}>
+        {name}
+      </Heading>
+      <Text
+        as="p"
+        variant="subtitle"
+        sx={{ mt: 0, pb: 2, a: { variant: 'styles.a', color: 'blue' } }}
+      >
+        {desc}
+      </Text>
+    </Box>
+  </Box>
+)
+
 export default function Hackathons({ data }) {
   return (
     <>
