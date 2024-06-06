@@ -633,12 +633,13 @@ function Page({
               </Text>
             </Box>
             <Slack slackKey={slackKey} data={slackData} events={events} />
+            <br />
             <Container
         sx={{
           display: 'flex',
           width: 'calc(100% - 32px)',
           position: 'relative',
-          marginTop: '-196px',
+          marginTop: '-1px',
           padding: '32px',
           border: '1px solid #FF8C37',
           borderRadius: '16px'
@@ -724,12 +725,12 @@ function Page({
                 }
               }}
             >
-              Create A Space for Makers
+               Get'em Pizza!
             </Heading>
             <Text sx={{ fontSize: 22 }}>
-              Hack Club is a place for technical teens to get together and build
-              projects together. Create a club at your high school and help
-              others discover the joy of coding through building projects.
+            That's right! Being part of BHH is more than just coding or designing, it's also about eating some of the best pizza in town!
+
+P.S. The picture in the right isn't of us, but it did look cool! (for context, it's one of the hackclubs!)
             </Text>
           </Box>
           <Box>
