@@ -781,7 +781,7 @@ function Page({
                     '-webkit-text-fill-color': 'transparent'
                   }}
                 >
-                  Hack&nbsp;Club
+                  Bethel&nbsp;AG India
                 </Text>
               </Text>
             </Box>
