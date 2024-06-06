@@ -40,8 +40,7 @@ const SlackPage = () => {
       <Meta
         as={Head}
         name="Join our Slack"
-        description={`The Bethel Hacks Discord is a community of ${thousands}k+ high school hackers around the world. Chat, meet new friends, code together, share your work.`}
-        image="https://cloud-n6i5i4zb9-hack-club-bot.vercel.app/02020-07-25_d2dd4egb1th5k71w4uj0abbfkvvtnc01.jpeg"
+        description={`The Bethel Hacks Discord is a community of builders around the world. Chat, meet new friends, code together, share your work.`}
       />
       <ForceTheme theme="light" />
       <Nav slack={true} />
@@ -84,38 +83,9 @@ const SlackPage = () => {
           </Heading>
           <SlackEvents />
         </Flex>*/}
-        <Text as="h1" variant="title" sx={{ mt: [4, 5], mb: 3 }}>
-          Where the makers hang out...
-        </Text>
-        <Text as="p" variant="subtitle" sx={{ fontSize: [2, 3], mt: 3 }}>
-          You don't have to believe our word, why don't you hear from the people who join us!
-        </Text>
       </Container>
 
       <Container sx={{ py: [4, 5] }}>
-        <Box sx={{ gap: '2rem', display: ['grid', 'grid', 'flex'] }}>
-          <Quote
-            text="I knew it's where I wanted to be"
-            /*person="Shawn"
-            img="https://cloud-8u876lgxi-hack-club-bot.vercel.app/0shawn.png"
-            age={18}
-            location="MD"*/
-          />
-          <Quote
-            text="I felt so free- there were no expectations"
-            /*person="JC"
-            img="https://ca.slack-edge.com/T0266FRGM-U03MNFDRSGJ-e6fb939acfd8-512"
-            age={17}
-            location="MA"*/
-          />
-          <Quote
-            text="Finally, I found my people!"
-            /*person="Cheru"
-            img="https://ca.slack-edge.com/T0266FRGM-U02UYFZQ0G0-eb4e3c7fb0cf-512"
-            age={16}
-            location="VT"*/
-          />
-        </Box>
         <Join />
       </Container>
       <Footer />

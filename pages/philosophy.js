@@ -261,13 +261,13 @@ export default function Philosophy() {
               mx: 'auto'
             }}
             as="a"
-            href="https://apply.hackclub.com"
+            href="#"
           >
-            Start a club
+            Apply
           </Button>
-          <NextLink href="/slack" passHref>
+          <NextLink href="#" passHref>
             <Button sx={{ bg: 'white', color: 'red' }} as="a">
-              Join our Slack
+              Join our Discord
             </Button>
           </NextLink>
         </Box>

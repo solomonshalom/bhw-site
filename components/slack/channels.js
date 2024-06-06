@@ -207,11 +207,11 @@ export default function Channels() {
       <Card
         bg="red"
         sx={{
-          backgroundImage: ({ colors }) =>
-            `linear-gradient(-184deg, ${colors.red} 0%, ${colors.red} 16.6666%, ${colors.orange} 16.6666%, ${colors.orange} 33.333%, ${colors.yellow} 33.333%, ${colors.yellow} 50%, ${colors.green} 50%, ${colors.green} 66.6666%, ${colors.blue} 66.6666%, ${colors.blue} 83.3333%, ${colors.purple} 83.3333%, ${colors.purple} 100%)`
+          bg: 'blue',
+          backgroundImage: t => t.util.gx('cyan', 'blue')
         }}
       >
-        <h3>#lgbtq</h3>
+        <h3>#collab</h3>
       </Card>
     </Grid>
   )
