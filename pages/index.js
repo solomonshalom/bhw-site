@@ -7,6 +7,7 @@ import {
   Grid,
   Heading,
   Link,
+  Container,
   Text,
   Image
 } from 'theme-ui'
