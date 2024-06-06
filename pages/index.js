@@ -32,7 +32,6 @@ import Slack from '../components/index/cards/slack'
 import Icon from '../components/icon'
 import Photo from '../components/photo'
 import Comma from '../components/comma'
-import Image from 'next/image'
 
 /** @jsxImportSource theme-ui */
 
