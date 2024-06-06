@@ -7,8 +7,8 @@ import {
   Grid,
   Heading,
   Link,
-  Container,
-  Text
+  Text,
+  Image
 } from 'theme-ui'
 import React, { useEffect, useRef, useState } from 'react'
 import { Balancer } from 'react-wrap-balancer'
@@ -16,8 +16,8 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Meta from '@hackclub/meta'
 import Nav from '../components/nav'
-import BGImg from '../components/background-image'
 import Tilt from '../components/tilt'
+import BGImg from '../components/background-image'
 import ForceTheme from '../components/force-theme'
 import Footer from '../components/footer'
 import Stage from '../components/stage'
@@ -36,7 +36,22 @@ import Image from 'next/image'
 
 /** @jsxImportSource theme-ui */
 
-function Page({ slackData, events, carouselCards }) {
+function Page({
+  hackathonsData,
+  bankData,
+  slackData,
+  gitHubData,
+  gitHubDataLength,
+  consoleCount,
+  stars,
+  // githubData2,
+  dataPieces,
+  game,
+  gameTitle,
+  events,
+  carouselCards,
+  context
+}) {
   let [reveal, setReveal] = useState(false)
   const [hover, setHover] = useState(true)
   let [slackKey] = useState(0)
@@ -57,6 +72,7 @@ function Page({ slackData, events, carouselCards }) {
 
     jsConfetti.current.addConfetti({
       confettiColors: [
+        // Hack Club colours!
         '#ec3750',
         '#ff8c37',
         '#f1c40f',
@@ -86,12 +102,18 @@ function Page({ slackData, events, carouselCards }) {
     }
   ]
 
+  // janky right now and does not show last image
+
   useEffect(() => {
+    console.log(
+      `White sheets of paper\nWaiting to be printed on\nA blank console waits`
+    )
     if (count === images.length - 1) {
       setCount(0)
     }
   }, [count, images.length])
 
+  // Spotlight effect
   const spotlightRef = useRef()
   useEffect(() => {
     const handler = event => {
@@ -136,6 +158,7 @@ function Page({ slackData, events, carouselCards }) {
           reveal={reveal}
           onMouseEnter={() => {
             setHover(true)
+            console.log(hover)
           }}
           onMouseOut={() => {
             setReveal(false)
@@ -203,7 +226,7 @@ function Page({ slackData, events, carouselCards }) {
                   width: '100%'
                 }}
               >
-                Welcome <Comma>{slackData?.total_members_count}</Comma>{' '}
+                Welcome <Comma>{slackData.total_members_count}</Comma>{' '}
                 <Text
                   sx={{
                     color: 'transparent',
@@ -273,6 +296,7 @@ function Page({ slackData, events, carouselCards }) {
                 fontWeight: 'normal',
                 ':hover': { opacity: 1 },
                 transition: '0.3s ease'
+                // mixBlendMode: 'multiply'
               }}
               title="📸 Photo by Matt Gleich, Hack Clubber in NH!"
             >
@@ -321,7 +345,7 @@ function Page({ slackData, events, carouselCards }) {
                 maxWidth: '62ch'
               }}
             >
-              For the first time, hundreds of programmers, designers, musicians, and anybody with a creative taste 
+              For the firs time, hundreds of programmers, designers, musicians, and anybody with a creative taste 
               gather online and
               in-person to make things with code. Whether you’re a beginner
               programmer or have years of experience, there’s a place for you at
@@ -620,7 +644,6 @@ function Page({ slackData, events, carouselCards }) {
               </Text>
             </Box>
             <Slack slackKey={slackKey} data={slackData} events={events} />
-            <br />
             <Container
         sx={{
           display: 'flex',
@@ -632,6 +655,15 @@ function Page({ slackData, events, carouselCards }) {
           borderRadius: '16px'
         }}
       >
+        {/* <Tilt>
+    <Image sx={{position: "absolute", marginTop: "-82px", marginLeft: "-82px"}} src="https://cloud-okty851hq-hack-club-bot.vercel.app/0mushroom.png"/>
+    </Tilt>
+    <Tilt>
+    <Image sx={{position: "absolute", marginTop: "-82px", right: 0, marginRight: "96px"}} src="https://cloud-fiv5rwxlo-hack-club-bot.vercel.app/0pineapple.png"/>
+    </Tilt>
+    <Tilt>
+    <Image sx={{position: "absolute", bottom: 0, marginBottom: "-182px", marginLeft: "-82px"}} src="https://cloud-bsv5adze8-hack-club-bot.vercel.app/0tomato.png"/>
+    </Tilt> */}
         <Box sx={{ position: 'absolute', top: -48, left: -48 }}>
           <Tilt options={{ perspective: 75 }}>
             <Image
@@ -674,6 +706,7 @@ function Page({ slackData, events, carouselCards }) {
               alt="pizza"
               sx={{
                 imageRendering: 'pixelated',
+
                 display: ['none', 'none', 'flex']
               }}
               src="https://cloud-4my12nuf0-hack-club-bot.vercel.app/0pizza.png"
@@ -702,12 +735,12 @@ function Page({ slackData, events, carouselCards }) {
                 }
               }}
             >
-              Get'em Pizza!
+              Create A Space for Makers
             </Heading>
             <Text sx={{ fontSize: 22 }}>
-            That's right! Being part of BHH is more than just coding or designing, it's also about eating some of the best pizza in town!
-
-P.S. The picture in the right isn't of us, but it did look cool! (for context, it's one of the hackclubs!)
+              Hack Club is a place for technical teens to get together and build
+              projects together. Create a club at your high school and help
+              others discover the joy of coding through building projects.
             </Text>
           </Box>
           <Box>
@@ -932,7 +965,7 @@ P.S. The picture in the right isn't of us, but it did look cool! (for context, i
                 <Stage
                   icon="clubs"
                   color="white"
-                  name="Start A Club"
+                  name="Build!"
                   desc="On the day of the hackathon, you will compete against individuals and teams to be the first champion of BH!"
                   sx={{
                     p: {
@@ -972,9 +1005,9 @@ P.S. The picture in the right isn't of us, but it did look cool! (for context, i
                   height="315"
                   src="https://www.youtube-nocookie.com/embed/sJNK4VKeoBM?si=zvhDKhb9C5G2b4TJ&controls=1&autoplay=1&mute=1"
                   title="YouTube video player"
-                  frameBorder="0"
+                  frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
+                  allowfullscreen
                 ></iframe>
               </Box>
             </Box>
@@ -992,9 +1025,9 @@ P.S. The picture in the right isn't of us, but it did look cool! (for context, i
                 height="315"
                 src="https://www.youtube-nocookie.com/embed/ChBg4aowzX8?si=X2J_T95yiaKXB2q4&controls=1&autoplay=1&mute=1"
                 title="YouTube video player"
-                frameBorder="0"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
+                allowfullscreen
               ></iframe>
             </Box>
             <Box
@@ -1011,9 +1044,9 @@ P.S. The picture in the right isn't of us, but it did look cool! (for context, i
                 height="315"
                 src="https://www.youtube-nocookie.com/embed/JDQr1vICu54?si=U6-9AFtk7EdTabfp&autoplay=1&mute=1"
                 title="YouTube video player"
-                frameBorder="0"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
+                allowfullscreen
               ></iframe>
             </Box>
           </>
@@ -1052,7 +1085,7 @@ P.S. The picture in the right isn't of us, but it did look cool! (for context, i
             gap: 3
           }}
         >
-          <Link href="/fiscal-sponsorship/apply" passHref legacyBehavior>
+          <Link href="#" passHref legacyBehavior>
             <Button
               as="a"
               variant="lg"
@@ -1106,18 +1139,72 @@ const withCommas = x => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
 
 export async function getStaticProps() {
   const carouselCards = require('../lib/carousel.json')
-  
-  // Example of fetching slackData
-  const slackData = {
-    total_members_count: 12345 // Replace this with actual data fetching logic
+
+  // HCB: get total raised
+  let bankData = []
+  let initialBankData = await fetch('https://hcb.hackclub.com/stats').then(r =>
+    r.json()
+  )
+  let raised = initialBankData.raised / 100
+
+  bankData.push(
+    `💰 ${raised.toLocaleString('en-US', {
+      style: 'currency',
+      currency: 'USD'
+    })} raised`
+  )
+
+  // Slack: get total raised
+  const { Slack: Slacky } = require('./api/slack')
+  let slackData = await Slacky()
+
+  // Sprig: get newest games
+  const { getGames } = require('./api/games')
+  let game = await getGames()
+
+  let gameTitle = []
+
+  gameTitle = game.map(r => r.title)
+
+  // Sprig: get console count
+  const { getConsoles } = require('./api/sprig-console')
+  const consoleCount = await getConsoles()
+
+  // Hackathons: get latest hackathons
+  let hackathonsData
+  try {
+    const response = await fetch(
+      'https://hackathons.hackclub.com/api/events/upcoming'
+    )
+    if (response.ok) {
+      hackathonsData = await response.json()
+    } else {
+      hackathonsData = [] // or some default value if the fetch fails
+    }
+  } catch (error) {
+    hackathonsData = [] // or some default value if an error occurs
   }
+  hackathonsData.sort((a, b) => new Date(a.start) - new Date(b.start))
+
+  let events = await fetch(
+    'https://events.hackclub.com/api/events/upcoming/'
+  ).then(res => res.json())
 
   return {
     props: {
-      carouselCards,
-      slackData
+      game,
+      gameTitle,
+      gitHubData,
+      consoleCount,
+      hackathonsData,
+      bankData,
+      slackData,
+      stars,
+      events,
+      carouselCards
     },
     revalidate: 60
   }
 }
+
 export default Page
