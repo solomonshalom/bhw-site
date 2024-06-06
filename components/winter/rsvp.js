@@ -109,7 +109,7 @@ const Rsvp = () => {
               type="email"
               name="email"
               id="email"
-              placeholder="fiona@hackclub.com"
+              placeholder="fiona@bethelagindia.org"
               required
             />
           </div>

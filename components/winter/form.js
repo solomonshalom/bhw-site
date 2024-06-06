@@ -122,7 +122,7 @@ export default function Signup() {
         <Field
           label="Email address"
           name="userEmail"
-          placeholder="fiona@hackclub.com"
+          placeholder="fiona@bethelagindia.org"
           type="email"
           value={userEmail}
           onChange={e => setUserEmail(e.target.value)}

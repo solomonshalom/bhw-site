@@ -26,7 +26,7 @@ const RequestForm = () => {
         Email address (for tracking)
         <Input
           {...useField('email')}
-          placeholder="fiona@hackclub.com"
+          placeholder="fiona@bethelagindia.org"
           required
         />
       </Label>

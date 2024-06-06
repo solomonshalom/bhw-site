@@ -17,7 +17,7 @@ export default function RsvpForm() {
           <Text>Email</Text>
           <Input
             {...useField('email')}
-            placeholder="fiona@hackclub.com"
+            placeholder="fiona@bethelagindia.org"
             required
             sx={{ border: '1px solid', borderColor: 'muted', mb: 2 }}
           />

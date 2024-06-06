@@ -54,10 +54,10 @@ export default async function handler(req, res) {
   if (isAdult) {
     const mail = {
       to: data.email,
-      from: 'Bethel Hacks Discord <team@hackclub.com>',
+      from: 'Bethel Hacks Discord <team@bethelagindia.org>',
       subject: 'Slack Waiting List update',
       text: 'Hello world',
-      html: "Hey! Thanks for your interest in the Bethel Hacks Discord. <br/> Our online community is for minors, and thus only pre-approved adults are permitted.\nTo find out more about what all we do, check out our <a href='https://github.com/hackclub'>Github</a>. If you're a parent or educator & want to talk to a member of our team, send us a email at <a href='mailto:team@hackclub.com'>team@hackclub.com</a>.",
+      html: "Hey! Thanks for your interest in the Bethel Hacks Discord. <br/> Our online community is for minors, and thus only pre-approved adults are permitted.\nTo find out more about what all we do, check out our <a href='https://github.com/hackclub'>Github</a>. If you're a parent or educator & want to talk to a member of our team, send us a email at <a href='mailto:team@bethelagindia.org'>team@bethelagindia.org</a>.",
       imageUrl: 'https://assets.hackclub.com/icon-rounded.png'
     }
 

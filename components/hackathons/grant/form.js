@@ -38,7 +38,7 @@ const Form = () => {
         Your email
         <Input
           id="email"
-          placeholder="orpheus@hackclub.com"
+          placeholder="orpheus@bethelagindia.org"
           name="email"
           type="email"
           sx={{

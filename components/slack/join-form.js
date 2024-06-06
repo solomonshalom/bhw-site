@@ -72,7 +72,7 @@ const JoinForm = ({ sx = {}, router }) => {
             Email address
             <Input
               {...useField('email')}
-              placeholder="fiona@hackclub.com"
+              placeholder="fiona@bagc.family"
               required
             />
           </Label>
@@ -88,15 +88,15 @@ const JoinForm = ({ sx = {}, router }) => {
               </option>
               <option value="middle">Middle School</option>
               <option value="high">High School</option>
-              <option value="tertiary">Tertiary Education (18+)</option>
+              <option value="tertiary">Tertiary Education / Graduated (18+)</option>
             </Select>
           </Label>
         </Grid>
         <Label>
-          How did you hear about us/the Slack? What are you most looking forward to?
+          How did you hear about us? What are you most looking forward to?
           <Textarea
             {...useField('reason')}
-            placeholder="I heard about Hack Club from..."
+            placeholder="I heard about Bethel Hacks from..."
             required
           />
         </Label>
@@ -112,7 +112,7 @@ const JoinForm = ({ sx = {}, router }) => {
             <Link href="https://github.com/hackclub"> Github </Link>. If you're
             a parent or educator & want to talk to a member of our team, send us
             a email at{' '}
-            <Link href="mailto:team@hackclub.com">team@hackclub.com</Link>.
+            <Link href="mailto:team@bethelagindia.org">team@bethelagindia.org</Link>.
           </Text>
         )}*/}
         <Box>
@@ -120,7 +120,7 @@ const JoinForm = ({ sx = {}, router }) => {
             status={status}
             mt={'0px!important'}
             labels={{
-              default: useWaitlist ? 'Join Waitlist' : 'Join Now',
+              default: useWaitlist ? 'Join Now' : 'Join Waitlist',
               error: 'Something went wrong',
               success: useWaitlist
                 ? "You're on the Waitlist!"
@@ -140,7 +140,7 @@ const JoinForm = ({ sx = {}, router }) => {
               }}
             >
               Search for "Slack" in your mailbox! Not there?{' '}
-              <Link href="mailto:slack@hackclub.com" sx={{ ml: 1 }}>
+              <Link href="mailto:slack@bethelagindia.org" sx={{ ml: 1 }}>
                 Send us an email
               </Link>
             </Text>

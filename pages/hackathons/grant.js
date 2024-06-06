@@ -399,7 +399,7 @@ const HackathonGrant = () => {
         <Card
           as="a"
           variant="interactive"
-          href="mailto:hcb@hackclub.com"
+          href="mailto:hcb@bethelagindia.org"
           sx={{
             mx: 'auto',
             maxWidth: '52rem',
@@ -435,7 +435,7 @@ const HackathonGrant = () => {
           >
             <strong>Questions?</strong>
             <Text as="span" variant="caption" color="secondary" sx={{ pl: 3 }}>
-              Reach out to <Link>hcb@hackclub.com</Link>
+              Reach out to <Link>hcb@bethelagindia.org</Link>
             </Text>
           </Text>
         </Card>

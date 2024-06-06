@@ -28,7 +28,7 @@ export default function PersonalInfoForm({ requiredFields }) {
           name="userEmail"
           id="userEmail"
           type="email"
-          placeholder="fiona@hackclub.com"
+          placeholder="fiona@bethelagindia.org"
         />
       </Field>
 

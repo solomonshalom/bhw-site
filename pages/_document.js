@@ -17,7 +17,7 @@ const org = {
   contactPoint: [
     {
       '@type': 'ContactPoint',
-      email: 'team@hackclub.com',
+      email: 'team@bethelagindia.org',
       contactType: 'customer support',
       url: 'https://hackclub.com/'
     }
