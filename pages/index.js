@@ -7,6 +7,7 @@ import {
   Grid,
   Heading,
   Link,
+  Container,
   Text
 } from 'theme-ui'
 import React, { useEffect, useRef, useState } from 'react'
