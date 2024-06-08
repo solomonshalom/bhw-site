@@ -36,11 +36,7 @@ import Comma from '../components/comma'
 
 /** @jsxImportSource theme-ui */
 
-function Page({
-  slackData,
-  events,
-  carouselCards,
-}) {
+function Page({ slackData, events, carouselCards }) {
   let [reveal, setReveal] = useState(false)
   const [hover, setHover] = useState(true)
   let [slackKey] = useState(0)
@@ -84,7 +80,10 @@ function Page({
   const [count, setCount] = useState(0)
 
   let images = [
-    { alt: 'Map of Hack Clubs around the world (We are one of them!)', src: '/home/map.png' },
+    {
+      alt: 'Map of Hack Clubs around the world (We are one of them!)',
+      src: '/home/map.png'
+    },
     {
       alt: 'Looked pretty cool so I put it here :D (its MA Hacks)',
       src: '/hackathons/mahacks.jpeg'
@@ -173,7 +172,7 @@ function Page({
             priority
             gradient="linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.45))"
           />
-	  <Announcement
+          <Announcement
             copy="Build in public at Bethel Hacks June 25th"
             caption="Make the coolest tech, get the coolest swag!"
             href="#"
@@ -246,9 +245,9 @@ function Page({
                   >
                     hackers
                   </Text>
-                    hackers
+                  hackers
                 </Text>
-                <br sx={{ display: ['inline', 'none', 'none'] }} />, join us to 
+                <br sx={{ display: ['inline', 'none', 'none'] }} /> join us to
                 create tech that glorifies God!
               </Text>
               <Button
@@ -334,10 +333,10 @@ function Page({
                 maxWidth: '62ch'
               }}
             >
-              For the firs time, hundreds of programmers, designers, musicians, and anybody with a creative taste 
-              gather online and
-              in-person to make things with code. Whether you’re a beginner
-              programmer or have years of experience, there’s a place for you at
+              For the firs time, hundreds of programmers, designers, musicians,
+              and anybody with a creative taste gather online and in-person to
+              make things with code. Whether you’re a beginner programmer or
+              have years of experience, there’s a place for you at
               Bethel&nbsp;Hacks. Read about our{' '}
               <Link href="/philosophy" target="_blank" rel="noopener">
                 hacker ethic
@@ -381,15 +380,15 @@ function Page({
                         count === images.length - 2
                           ? images[0].src
                           : images.length - 1
-                          ? images[1].src
-                          : images[count + 2].src
+                            ? images[1].src
+                            : images[count + 2].src
                       }
                       alt={
                         count === images.length - 2
                           ? images[0].alt
                           : images.length - 1
-                          ? images[1].alt
-                          : images[count + 2].alt
+                            ? images[1].alt
+                            : images[count + 2].alt
                       }
                       width={3000}
                       height={2550}
@@ -503,11 +502,10 @@ function Page({
                     1
                   </Text>
                   <Text as="p" variant="subtitle">
-                    <strong sx={{ mb: 1 }}>
-                      Apply to the program!
-                    </strong>
-                    You can join as part of a team or as an individual! Even if you are just starting out or don't have
-                    the tech that you need, we are here to support you! So, DW!
+                    <strong sx={{ mb: 1 }}>Apply to the program!</strong>
+                    You can join as part of a team or as an individual! Even if
+                    you are just starting out or don't have the tech that you
+                    need, we are here to support you! So, DW!
                   </Text>
                 </Grid>
                 <Grid
@@ -533,9 +531,7 @@ function Page({
                       mt: 0
                     }}
                   >
-                    <strong sx={{ mb: 1 }}>
-                      Join our community!
-                    </strong>
+                    <strong sx={{ mb: 1 }}>Join our community!</strong>
                     We have a pretty cool community at discord (
                     <Link href="https://github.com/hackclub" target="_blank">
                       link to join!
@@ -561,7 +557,8 @@ function Page({
                   </Text>
                   <Text as="p" variant="subtitle">
                     <strong sx={{ mb: 1 }}>Gather IRL with other makers</strong>
-                    On June, you will have the chance to hack and build, together IRL!
+                    On June, you will have the chance to hack and build,
+                    together IRL!
                   </Text>
                 </Grid>
               </Grid>
@@ -635,17 +632,17 @@ function Page({
             <Slack slackKey={slackKey} data={slackData} events={events} />
             <br />
             <Container
-        sx={{
-          display: 'flex',
-          width: 'calc(100% - 32px)',
-          position: 'relative',
-          marginTop: '-1px',
-          padding: '32px',
-          border: '1px solid #FF8C37',
-          borderRadius: '16px'
-        }}
-      >
-        {/* <Tilt>
+              sx={{
+                display: 'flex',
+                width: 'calc(100% - 32px)',
+                position: 'relative',
+                marginTop: '-1px',
+                padding: '32px',
+                border: '1px solid #FF8C37',
+                borderRadius: '16px'
+              }}
+            >
+              {/* <Tilt>
     <Image sx={{position: "absolute", marginTop: "-82px", marginLeft: "-82px"}} src="https://cloud-okty851hq-hack-club-bot.vercel.app/0mushroom.png"/>
     </Tilt>
     <Tilt>
@@ -654,93 +651,95 @@ function Page({
     <Tilt>
     <Image sx={{position: "absolute", bottom: 0, marginBottom: "-182px", marginLeft: "-82px"}} src="https://cloud-bsv5adze8-hack-club-bot.vercel.app/0tomato.png"/>
     </Tilt> */}
-        <Box sx={{ position: 'absolute', top: -48, left: -48 }}>
-          <Tilt options={{ perspective: 75 }}>
-            <Image
-              alt="mushroom"
-              sx={{
-                imageRendering: 'pixelated',
-                display: ['none', 'none', 'flex']
-              }}
-              src="https://cloud-okty851hq-hack-club-bot.vercel.app/0mushroom.png"
-            />
-          </Tilt>
-        </Box>
-        <Box sx={{ position: 'absolute', top: -48, right: -48 }}>
-          <Tilt options={{ perspective: 75 }}>
-            <Image
-              alt="pineapple"
-              sx={{
-                imageRendering: 'pixelated',
-                display: ['none', 'none', 'flex']
-              }}
-              src="https://cloud-fiv5rwxlo-hack-club-bot.vercel.app/0pineapple.png"
-            />
-          </Tilt>
-        </Box>
-        <Box sx={{ position: 'absolute', bottom: -48, left: -48 }}>
-          <Tilt options={{ perspective: 75 }}>
-            <Image
-              alt="tomato"
-              sx={{
-                imageRendering: 'pixelated',
-                display: ['none', 'none', 'flex']
-              }}
-              src="https://cloud-bsv5adze8-hack-club-bot.vercel.app/0tomato.png"
-            />
-          </Tilt>
-        </Box>
-        <Box sx={{ position: 'absolute', bottom: -48, right: -48 }}>
-          <Tilt options={{ perspective: 75 }}>
-            <Image
-              alt="pizza"
-              sx={{
-                imageRendering: 'pixelated',
+              <Box sx={{ position: 'absolute', top: -48, left: -48 }}>
+                <Tilt options={{ perspective: 75 }}>
+                  <Image
+                    alt="mushroom"
+                    sx={{
+                      imageRendering: 'pixelated',
+                      display: ['none', 'none', 'flex']
+                    }}
+                    src="https://cloud-okty851hq-hack-club-bot.vercel.app/0mushroom.png"
+                  />
+                </Tilt>
+              </Box>
+              <Box sx={{ position: 'absolute', top: -48, right: -48 }}>
+                <Tilt options={{ perspective: 75 }}>
+                  <Image
+                    alt="pineapple"
+                    sx={{
+                      imageRendering: 'pixelated',
+                      display: ['none', 'none', 'flex']
+                    }}
+                    src="https://cloud-fiv5rwxlo-hack-club-bot.vercel.app/0pineapple.png"
+                  />
+                </Tilt>
+              </Box>
+              <Box sx={{ position: 'absolute', bottom: -48, left: -48 }}>
+                <Tilt options={{ perspective: 75 }}>
+                  <Image
+                    alt="tomato"
+                    sx={{
+                      imageRendering: 'pixelated',
+                      display: ['none', 'none', 'flex']
+                    }}
+                    src="https://cloud-bsv5adze8-hack-club-bot.vercel.app/0tomato.png"
+                  />
+                </Tilt>
+              </Box>
+              <Box sx={{ position: 'absolute', bottom: -48, right: -48 }}>
+                <Tilt options={{ perspective: 75 }}>
+                  <Image
+                    alt="pizza"
+                    sx={{
+                      imageRendering: 'pixelated',
 
-                display: ['none', 'none', 'flex']
-              }}
-              src="https://cloud-4my12nuf0-hack-club-bot.vercel.app/0pizza.png"
-            />
-          </Tilt>
-        </Box>
-        <Grid
-          sx={{ alignItems: 'center', position: 'relative' }}
-          gap={[2, 3]}
-          columns={[null, null, null, '3fr 2fr']}
-        >
-          <Box>
-            <Heading
-              as="h2"
-              variant="heading"
-              sx={{
-                fontSize: [40, 40, 42],
-                lineHeight: '100%',
-                paddingBottom: '16px',
-                span: {
-                  background:
-                    'linear-gradient(180deg, #FF8C37 25%, #EC3750 100%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextStroke: 'currentColor',
-                  WebkitTextFillColor: 'transparent'
-                }
-              }}
-            >
-               Get'em Pizza
-            </Heading>
-            <Text sx={{ fontSize: 22 }}>
-            That's right! Being part of BHH is more than just coding or designing, it's also about eating some of the best pizza in town!
-            </Text>
-          </Box>
-          <Box>
-            <Image
-              alt="teens collaborating on tech products"
-              sx={{ borderRadius: '16px' }}
-              src="https://cloud-r38lu87ej-hack-club-bot.vercel.app/00meta__1_.png"
-            />
-          </Box>
-        </Grid>
-        <br />
-      </Container>
+                      display: ['none', 'none', 'flex']
+                    }}
+                    src="https://cloud-4my12nuf0-hack-club-bot.vercel.app/0pizza.png"
+                  />
+                </Tilt>
+              </Box>
+              <Grid
+                sx={{ alignItems: 'center', position: 'relative' }}
+                gap={[2, 3]}
+                columns={[null, null, null, '3fr 2fr']}
+              >
+                <Box>
+                  <Heading
+                    as="h2"
+                    variant="heading"
+                    sx={{
+                      fontSize: [40, 40, 42],
+                      lineHeight: '100%',
+                      paddingBottom: '16px',
+                      span: {
+                        background:
+                          'linear-gradient(180deg, #FF8C37 25%, #EC3750 100%)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextStroke: 'currentColor',
+                        WebkitTextFillColor: 'transparent'
+                      }
+                    }}
+                  >
+                    Get'em Pizza
+                  </Heading>
+                  <Text sx={{ fontSize: 22 }}>
+                    That's right! Being part of BHH is more than just coding or
+                    designing, it's also about eating some of the best pizza in
+                    town!
+                  </Text>
+                </Box>
+                <Box>
+                  <Image
+                    alt="teens collaborating on tech products"
+                    sx={{ borderRadius: '16px' }}
+                    src="https://cloud-r38lu87ej-hack-club-bot.vercel.app/00meta__1_.png"
+                  />
+                </Box>
+              </Grid>
+              <br />
+            </Container>
           </Box>
         </Box>
         <Box py={[4, 5, '82px']}>
@@ -1039,66 +1038,66 @@ function Page({
             </Box>
           </>
         )}
-              <Box
-        as="section"
-        id="apply"
-        sx={{
-          py: 6,
-          px: 3,
-          backgroundImage:
-            'radial-gradient(ellipse at 5% 5%, #e86494 0%, rgba(232,100,148,0) 75%),radial-gradient(ellipse at 95% 5%, #e86494 0%, rgba(232,100,148,0) 75%),radial-gradient(ellipse at 95% 95%, #baa8d3 0%, rgba(186,168,211,0) 75%),radial-gradient(ellipse at 5% 95%, #fa9f69 0%, rgba(250,159,105,0) 75%)',
-          position: 'relative'
-        }}
-      >
         <Box
+          as="section"
+          id="apply"
           sx={{
-            position: 'absolute',
-            inset: 0,
-            height: '100%',
-            zIndex: 0,
-            backgroundSize: '48px 48px',
-            backgroundImage: `linear-gradient(to right,  #fcc8bf 1px, transparent 1px),
-                              linear-gradient(to bottom, #fcc8bf 1px, transparent 1px)`,
-            backgroundPosition: 'top left',
-            maskImage: `linear-gradient(180deg, transparent 0%, white 3%)`,
-            opacity: 0.1
-          }}
-        />
-        <Flex
-          sx={{
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            textAlign: 'center',
-            gap: 3
+            py: 6,
+            px: 3,
+            backgroundImage:
+              'radial-gradient(ellipse at 5% 5%, #e86494 0%, rgba(232,100,148,0) 75%),radial-gradient(ellipse at 95% 5%, #e86494 0%, rgba(232,100,148,0) 75%),radial-gradient(ellipse at 95% 95%, #baa8d3 0%, rgba(186,168,211,0) 75%),radial-gradient(ellipse at 5% 95%, #fa9f69 0%, rgba(250,159,105,0) 75%)',
+            position: 'relative'
           }}
         >
-          <Link href="#" passHref legacyBehavior>
-            <Button
-              as="a"
-              variant="lg"
-              sx={{
-                bg: 'white',
-                mixBlendMode: 'screen',
-                color: 'black !important',
-                fontSize: [58, 96],
-                width: ['100%', 'auto'],
-                py: 4,
-                px: [4, null, 6],
-                lineHeight: 0.9,
-                textTransform: 'none'
-              }}
-            >
-              Apply now
-            </Button>
-          </Link>
-          <Text as="p" variant="lead" sx={{ color: 'white', mb: [0, 0] }}>
-            <Balancer>It's completely free to join!</Balancer>
-          </Text>
-        </Flex>
+          <Box
+            sx={{
+              position: 'absolute',
+              inset: 0,
+              height: '100%',
+              zIndex: 0,
+              backgroundSize: '48px 48px',
+              backgroundImage: `linear-gradient(to right,  #fcc8bf 1px, transparent 1px),
+                              linear-gradient(to bottom, #fcc8bf 1px, transparent 1px)`,
+              backgroundPosition: 'top left',
+              maskImage: `linear-gradient(180deg, transparent 0%, white 3%)`,
+              opacity: 0.1
+            }}
+          />
+          <Flex
+            sx={{
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              textAlign: 'center',
+              gap: 3
+            }}
+          >
+            <Link href="#" passHref legacyBehavior>
+              <Button
+                as="a"
+                variant="lg"
+                sx={{
+                  bg: 'white',
+                  mixBlendMode: 'screen',
+                  color: 'black !important',
+                  fontSize: [58, 96],
+                  width: ['100%', 'auto'],
+                  py: 4,
+                  px: [4, null, 6],
+                  lineHeight: 0.9,
+                  textTransform: 'none'
+                }}
+              >
+                Apply now
+              </Button>
+            </Link>
+            <Text as="p" variant="lead" sx={{ color: 'white', mb: [0, 0] }}>
+              <Balancer>It's completely free to join!</Balancer>
+            </Text>
+          </Flex>
+        </Box>
       </Box>
-      </Box>
-      <ContactBanner sx={{justifyContent: 'center'}} />
+      <ContactBanner sx={{ justifyContent: 'center' }} />
       <Footer
         dark
         sx={{
