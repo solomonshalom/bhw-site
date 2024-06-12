@@ -129,7 +129,7 @@ const NavBar = styled(Box)`
 const Navigation = props => (
   // REMINDER: This should be no more than 7 links :)
   <NavBar role="navigation" {...props}>
-    <NextLink href="#" passHref>
+    <NextLink href="https://forms.gle/AoitB5HwZ6N4s39W6" passHref>
       <Link>Apply</Link>
     </NextLink>
     <NextLink href="/hackathons" passHref>

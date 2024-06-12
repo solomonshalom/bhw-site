@@ -175,7 +175,7 @@ function Page({ slackData, events, carouselCards }) {
           <Announcement
             copy="Build in public at Bethel Hacks June 25th"
             caption="Make the coolest tech, get the coolest swag!"
-            href="#"
+            href="https://forms.gle/AoitB5HwZ6N4s39W6"
             imgSrc="https://cloud-gyu8zgkki-hack-club-bot.vercel.app/0_______.png"
           />
           <Box
@@ -253,7 +253,7 @@ function Page({ slackData, events, carouselCards }) {
               <Button
                 variant="ctaLg"
                 as="a"
-                href="#"
+                href="https://forms.gle/AoitB5HwZ6N4s39W6"
                 mt={[3, 0, 0]}
                 sx={{ transformOrigin: 'center left' }}
               >
@@ -876,7 +876,7 @@ function Page({ slackData, events, carouselCards }) {
                   }
                 }}
                 as="a"
-                href="#"
+                href="https://discord.gg/DDd4Uw4SFT"
                 variant="interactive"
                 target="_blank"
                 rel="noopener"
@@ -1072,7 +1072,7 @@ function Page({ slackData, events, carouselCards }) {
               gap: 3
             }}
           >
-            <Link href="#" passHref legacyBehavior>
+            <Link href="https://forms.gle/AoitB5HwZ6N4s39W6" passHref legacyBehavior>
               <Button
                 as="a"
                 variant="lg"

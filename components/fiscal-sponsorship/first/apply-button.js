@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function ApplyButton() {
   return (
-    <Link href="/fiscal-sponsorship/apply" passHref legacyBehavior>
+    <Link href="https://forms.gle/AoitB5HwZ6N4s39W6" passHref legacyBehavior>
       <Button
         variant="ctaLg"
         as="a"

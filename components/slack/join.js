@@ -32,7 +32,7 @@ export default function Join() {
             Discover the Bethel Hacks Discord
           </Text>
           <Link
-            href="#"
+            href="https://discord.gg/DDd4Uw4SFT"
             sx={{
               mb: 3,
               cursor: 'pointer',

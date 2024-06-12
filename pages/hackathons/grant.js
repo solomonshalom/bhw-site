@@ -153,7 +153,7 @@ const HackathonGrant = () => {
             <Button
               variant="ctaLg"
               as="a"
-              href="https://hackathons.hackclub.com"
+              href="https://forms.gle/AoitB5HwZ6N4s39W6"
               sx={{
                 ml: [0, 3],
                 mt: 2,

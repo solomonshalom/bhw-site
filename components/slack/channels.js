@@ -114,7 +114,7 @@ export default function Channels() {
       </NextLink>
       <Card
         as="a"
-        href="#"
+        href="https://discord.gg/DDd4Uw4SFT"
         variant="interactive"
         sx={{
           gridColumn: ['span 2', 'span 5'],

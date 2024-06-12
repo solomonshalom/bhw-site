@@ -249,7 +249,7 @@ export default function Philosophy() {
           }}
         >
           <Heading as="h1" sx={{ fontSize: 5, mb: 2 }}>
-            Join the movement!
+            Join Now!
           </Heading>
           <Button
             mr={[0, 3]}
@@ -261,11 +261,11 @@ export default function Philosophy() {
               mx: 'auto'
             }}
             as="a"
-            href="#"
+            href="https://forms.gle/AoitB5HwZ6N4s39W6"
           >
             Apply
           </Button>
-          <NextLink href="#" passHref>
+          <NextLink href="https://discord.gg/DDd4Uw4SFT" passHref>
             <Button sx={{ bg: 'white', color: 'red' }} as="a">
               Join our Discord
             </Button>
