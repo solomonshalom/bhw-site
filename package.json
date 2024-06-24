@@ -53,7 +53,7 @@
     "jszip": "^3.10.1",
     "jszip-utils": "^0.1.0",
     "lodash": "^4.17.21",
-    "million": "^2.6.4",
+    "million": "^3.1.11",
     "next": "^12.3.1",
     "next-transpile-modules": "^10.0.1",
     "nextjs-current-url": "^1.0.3",
