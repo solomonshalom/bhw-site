@@ -243,9 +243,9 @@ function Page({ slackData, events, carouselCards }) {
                     }}
                     aria-hidden="true"
                   >
-                    hackers
+                    builders
                   </Text>
-                  hackers
+                  builders
                 </Text>
                 <br sx={{ display: ['inline', 'none', 'none'] }} /> join us to
                 create tech that glorifies God!
@@ -288,7 +288,7 @@ function Page({ slackData, events, carouselCards }) {
               }}
               title="📸 Photo by Matt Gleich, Hack Clubber in NH!"
             >
-              Hackers at Outernet in Vermont
+              Builders at Outernet in Vermont
             </Badge>
           </Box>
         </Box>

@@ -51,7 +51,7 @@ export default function Testimonials() {
             quote="Overall, [HCB] has opened more opportunities for Poseidon, allowing us to undertake larger projects, both on the playing field and in our community."
             hackerName="Ian Marwong"
             hackerRole="Team Lead"
-            hackerAvatarUrl="/hackers/ian-marwong.jpg"
+            hackerAvatarUrl="/builders/ian-marwong.jpg"
             transparency="poseidon-robotics"
           />
           <Organization
@@ -63,7 +63,7 @@ export default function Testimonials() {
             budgetLabel="in grants"
             website="killabytez.club"
             url="http://www.killabytez.club/"
-            hackerAvatarUrl="/hackers/brian-cisto.jpeg"
+            hackerAvatarUrl="/builders/brian-cisto.jpeg"
             hackerName="Brian Cisto"
             hackerRole="Team Captain & Software Lead"
             imgSrc="https://cloud-oelh6sp7b-hack-club-bot.vercel.app/0screen_shot_2022-11-06_at_8.45.37_pm.png"

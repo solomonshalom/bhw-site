@@ -221,7 +221,7 @@ export default function Inspect() {
     &:before,
     &:after {
       color: #000;
-      content: 'Hacker? Inspect 🔍 this page to learn more.';
+      content: 'Builder? Inspect 🔍 this page to learn more.';
       position: absolute;
       // background: #303039;
       width: fit-content;
@@ -246,10 +246,10 @@ export default function Inspect() {
   return (
     <>
       {prefersMotion ? (
-        <Glitch>Hacker? Inspect 🔍 this page to learn more.</Glitch>
+        <Glitch>Builder? Inspect 🔍 this page to learn more.</Glitch>
       ) : (
         <Text sx={{ display: 'absolute', bottom: '50px', left: 0 }}>
-          Hacker? Inspect 🔍 this page to learn more
+          Builder? Inspect 🔍 this page to learn more
         </Text>
       )}
     </>

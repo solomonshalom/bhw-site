@@ -43,7 +43,7 @@ export default function Hackathons({ data, stars }) {
           mt: -4,
           zIndex: 0
         }}
-        alt="A crowd of hackers cheering at Epoch"
+        alt="A crowd of builders cheering at Epoch"
       />
       <Cover />
       <Text

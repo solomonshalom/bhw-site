@@ -134,7 +134,7 @@ export default function Hackathons({ data }) {
             name="Will we get swag?"
             desc={
               <>
-                Yes! At EOD, hackers will walk away with a collection of artifacts from the event (Regardless if you win :D)! 
+                Yes! At EOD, builders will walk away with a collection of artifacts from the event (Regardless if you win :D)! 
                 (P.S You may get some rare, one-off, special edition swags too ;D)
 
               </>

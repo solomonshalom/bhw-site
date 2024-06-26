@@ -23,9 +23,9 @@ const Content = () => (
       Spread the word about your hackathon.
     </Heading>
     <Text as="p" variant="lead" sx={{ maxWidth: 'copyPlus', mx: 'auto' }}>
-      Reach hackers worldwide by listing your event on hackathons.hackclub.com,
+      Reach builders worldwide by listing your event on hackathons.hackclub.com,
       the first Google search result for "high school hackathons." Your event
-      will also be emailed to a network of high school hackers in your area.
+      will also be emailed to a network of high school builders in your area.
     </Text>
     <Link href="https://hackathons.hackclub.com" passHref>
       <Button

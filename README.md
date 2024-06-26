@@ -57,7 +57,7 @@ If there's a Hack Club or Hack Club community-led project (past or present) that
     "background": "dark",
     "titleColor": "white",
     "descriptionColor": "white",
-    "title": "Hackers Wanted",
+    "title": "Builders Wanted",
     "description": "Our open love letter to hackers",
     "img": "https://a.slack-edge.com/production-standard-emoji-assets/14.0/apple-large/1f4bb@2x.png",
     "link": "/hackers-wanted"

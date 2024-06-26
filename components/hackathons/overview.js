@@ -25,7 +25,7 @@ export default function Overview() {
               </Box>
               A hackathon is a space that helps give makers everything they need
               to start building–mentors, collaborators, inspiration, and a goal
-              to work towards. Hackers will leave a hackathon with a project of
+              to work towards. Builders will leave a hackathon with a project of
               their own, ready and excited to keep hacking once they get home.
             </Text>
             <Text as="p" variant="subtitle">
@@ -33,7 +33,7 @@ export default function Overview() {
                 We're at our best when we're <b>making</b>.
               </Box>
               Hack Club is a global community of thousands of high school
-              makers. We're organizers, coders, hackers, painters, engineers,
+              makers. We're organizers, coders, builders, painters, engineers,
               musicians, writers, volunteers. We make things. We want others to
               make things too.
             </Text>

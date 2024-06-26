@@ -18,7 +18,7 @@ const ElonPage = () => (
     <Meta
       as={Head}
       title="Elon Musk is Giving $500K"
-      description="We’re thrilled to announce Elon Musk has donated $500k to Hack Club, a global nonprofit network of high school hackers & coding clubs."
+      description="We’re thrilled to announce Elon Musk has donated $500k to Hack Club, a global nonprofit network of high school builders & coding clubs."
       image="https://assets.hackclub.com/log/HC-500k@1080w.png"
     />
     <ForceTheme theme="light" />

@@ -10,7 +10,7 @@ const projects = [
   {
     title: 'A free domain service.',
     description:
-      'The teenage hackers behind Oblong are building a free domain service and non-profit to break down the barriers of entry for building a website.',
+      'The teenage builders behind Oblong are building a free domain service and non-profit to break down the barriers of entry for building a website.',
     img: 'oblong',
     color: ['#ff8c37', '#F2A510'],
     itemId: 1

@@ -158,7 +158,7 @@ export default function Epoch() {
         </Box>
         <Box ml={[0, 0, 3]}>
           <Text as="p" variant="subtitle" sx={{ mt: 0 }}>
-            Join us this winter as 150+ teenage hackers from all around the
+            Join us this winter as 150+ teenage builders from all around the
             world travel to Delhi, India for Epoch! Together, we’ll build the
             unexpected, share what we’ve learnt in 2022, and experience the
             thrill of being in-person together.

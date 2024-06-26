@@ -45,7 +45,7 @@ export default function KeepExploring() {
             }}
             as="a"
           >
-            Meet other hackers
+            Meet other builders
           </Button>
         </Link>
 

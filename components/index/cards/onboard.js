@@ -85,7 +85,7 @@ export default function Onboard({ stars }) {
             Learn how to design a PCB
           </Buttons>
           <Buttons icon="friend" link="/slack?event=onboard" id="61">
-            See what other hackers have built
+            See what other builders have built
           </Buttons>
         </Flex>
       </Grid>

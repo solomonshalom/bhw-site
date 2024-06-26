@@ -77,7 +77,7 @@ const ShipPage = ({ posts = [] }) => (
           All aboard!
         </Text>
         <Heading as="h1" variant="ultratitle" sx={{ mb: [3, 4] }}>
-          Bethel Hackers focus on one thing: <ShipBadge>shipping.</ShipBadge>
+          Bethel Builders focus on one thing: <ShipBadge>shipping.</ShipBadge>
         </Heading>
         <Text as="p" variant="subtitle">
           After building a project, like an app or website, “shipping” is

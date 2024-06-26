@@ -40,7 +40,7 @@ export default function Sinerider({ stars }) {
         <Box sx={{ mt: ['-40px', '-40px', '-150px'] }}>
           <Text as="p" variant="subtitle">
             SineRider is a game about love and graphing, powered by teenage
-            hackers of all kinds: artists, musicians, programmers, storytellers…
+            builders of all kinds: artists, musicians, programmers, storytellers…
             so if that’s you, come join us! We can always use help keeping
             everything up to date and running smoothly.
           </Text>

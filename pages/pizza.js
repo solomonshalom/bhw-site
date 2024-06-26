@@ -364,11 +364,11 @@ const PizzaPage = () => {
               variant="heading"
               sx={{ padding: 0, marginBottom: '8px', fontSize: 36 }}
             >
-              Join A Community of Teen Hackers
+              Join A Community of Teen Builders
             </Heading>
 
             <Text sx={{ fontSize: 18, display: 'block' }}>
-              In our Slack community of over 25,000 hackers, you'll be invited
+              In our Slack community of over 25,000 builders, you'll be invited
               to a space for Hack Club leaders to ask questions & chat, share
               projects, & attend events.
             </Text>

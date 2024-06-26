@@ -141,7 +141,7 @@ export default function Team({ team }) {
                     as="h3"
                     sx={{ textAlign: 'center', fontSize: 4 }}
                   >
-                    Hacker Resources Team
+                    Builder Resources Team
                   </Text>
                   <Grid columns={[1, null, 2]} gap={2}>
                     {team.current
@@ -310,7 +310,7 @@ export default function Team({ team }) {
               <Bio
                 name="Sam Poder"
                 teamRole="Engineering & Operations"
-                text={`Originally from Australia, Sam's family moved to Singapore when he was young. In Singapore, he ran a Hack Club at his school and multiple hackathons with his friends. During his time in Hack Club, he worked on everything from events to engineering. The wildest things from his time at Hack Club include 4am rickshaw rides in New Delhi, attempting to oversee several raves, rickrolling the Slack twice, losing his voice waking up hundreds of sleeping hackers and heartstopping late-night launches. Now at university, Sam will never forget the crazy times at Hack Club and will always have his friends from Hack Club.`}
+                text={`Originally from Australia, Sam's family moved to Singapore when he was young. In Singapore, he ran a Hack Club at his school and multiple hackathons with his friends. During his time in Hack Club, he worked on everything from events to engineering. The wildest things from his time at Hack Club include 4am rickshaw rides in New Delhi, attempting to oversee several raves, rickrolling the Slack twice, losing his voice waking up hundreds of sleeping builders and heartstopping late-night launches. Now at university, Sam will never forget the crazy times at Hack Club and will always have his friends from Hack Club.`}
                 img="https://change-my-pfp.vercel.app/api/current/"
                 pronouns="he/him"
                 href="https://github.com/sampoder"
@@ -360,7 +360,7 @@ When not busy juggling different tasks he takes up, he enjoys tinkering & buildi
               <Bio
                 name="Abby Fischler"
                 teamRole="Junior Administrative Engineer"
-                text={`Abby is a high school junior from Los Angeles that loves technology! Since joining the Hack Club community in May 2020, she’s enjoyed learning with friends in the Slack and on board the Hacker Zephyr. She joined Hack Club to support Christina’s work in encouraging more girls to get involved. Abby has hosted events for the community and loves sharing her coding journey on the #ship channel.`}
+                text={`Abby is a high school junior from Los Angeles that loves technology! Since joining the Hack Club community in May 2020, she’s enjoyed learning with friends in the Slack and on board the Builder Zephyr. She joined Hack Club to support Christina’s work in encouraging more girls to get involved. Abby has hosted events for the community and loves sharing her coding journey on the #ship channel.`}
                 img="https://github.com/abbyfischler.png"
                 pronouns="she/her"
               />

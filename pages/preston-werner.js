@@ -27,7 +27,7 @@ const Page = () => (
     <Meta
       as={Head}
       title="Tom and Theresa Preston-Werner are Giving $500K"
-      description="We’re thrilled to announce Tom and Theresa Preston-Werner have donated $500k to Hack Club, a global nonprofit network of high school hackers & coding clubs."
+      description="We’re thrilled to announce Tom and Theresa Preston-Werner have donated $500k to Hack Club, a global nonprofit network of high school builders & coding clubs."
       image="https://workshop-cards.hackclub.com/Preston-Werner%20Gift%20Announcement.png?fontSize=175px&brand=HQ"
     />
     <ForceTheme theme="light" />
