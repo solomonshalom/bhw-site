@@ -437,7 +437,7 @@ When not busy juggling different tasks he takes up, he enjoys tinkering & buildi
                 img="/team/dina.jpg"
                 name="Dina Elhanan"
                 teamRole="Summer Intern"
-                text="Dina started a club in Canada in 2018. Since then she’s run a local hackathon, organized club events & trips, and spoke at Hack Club’s Flagship 2019 Summit. After graduating high school, Dina joined HQ as a ✨Vibes Influencer✨ summer intern. She now studies Electrical Engineering at McMaster University, class of 2024."
+                text="Dina started a club in Canada in 2018. Since then she’s run a local buildathon, organized club events & trips, and spoke at Hack Club’s Flagship 2019 Summit. After graduating high school, Dina joined HQ as a ✨Vibes Influencer✨ summer intern. She now studies Electrical Engineering at McMaster University, class of 2024."
                 pronouns="she/her"
               />
               <Bio

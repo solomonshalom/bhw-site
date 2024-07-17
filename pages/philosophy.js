@@ -261,7 +261,7 @@ export default function Philosophy() {
               mx: 'auto'
             }}
             as="a"
-            href="https://forms.gle/AoitB5HwZ6N4s39W6"
+            href="https://forms.gle/bsiNwYkxkEU7rbq26"
           >
             Apply
           </Button>

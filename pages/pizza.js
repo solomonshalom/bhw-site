@@ -70,7 +70,7 @@ const PizzaPage = () => {
       age: 17,
       from: 'Illinois',
       response:
-        "I love Costco pizza, and we had some at my Hack Club's hackathon! I decided to lead the Hersey Hack Club to bring the magic of code to my classmates and build a coding community at my high school. Open source projects like Code Jams have given the Hersey Hack Club a great stream of new, constantly improving workshops to host for members!"
+        "I love Costco pizza, and we had some at my Hack Club's buildathon! I decided to lead the Hersey Hack Club to bring the magic of code to my classmates and build a coding community at my high school. Open source projects like Code Jams have given the Hersey Hack Club a great stream of new, constantly improving workshops to host for members!"
     },
     {
       sprite:

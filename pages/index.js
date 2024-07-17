@@ -175,7 +175,7 @@ function Page({ slackData, events, carouselCards }) {
           <Announcement
             copy="Build in public at Bethel Hacks June 25th"
             caption="Make the coolest tech, get the coolest swag!"
-            href="https://forms.gle/AoitB5HwZ6N4s39W6"
+            href="https://forms.gle/bsiNwYkxkEU7rbq26"
             imgSrc="https://cloud-gyu8zgkki-hack-club-bot.vercel.app/0_______.png"
           />
           <Box
@@ -253,7 +253,7 @@ function Page({ slackData, events, carouselCards }) {
               <Button
                 variant="ctaLg"
                 as="a"
-                href="https://forms.gle/AoitB5HwZ6N4s39W6"
+                href="https://forms.gle/bsiNwYkxkEU7rbq26"
                 mt={[3, 0, 0]}
                 sx={{ transformOrigin: 'center left' }}
               >
@@ -899,7 +899,7 @@ function Page({ slackData, events, carouselCards }) {
                   icon="emoji"
                   color="white"
                   name="Explore and Learn!"
-                  desc="By joining the community and exploring our wiki, you can get a pretty good headstart and jump right in on the day of the hackathon!"
+                  desc="By joining the community and exploring our wiki, you can get a pretty good headstart and jump right in on the day of the buildathon!"
                   sx={{
                     p: {
                       fontSize: [1, '16px', '20px']
@@ -953,7 +953,7 @@ function Page({ slackData, events, carouselCards }) {
                   icon="clubs"
                   color="white"
                   name="Build!"
-                  desc="On the day of the hackathon, you will compete against individuals and teams to be the first champion of BH!"
+                  desc="On the day of the buildathon, you will compete against individuals and teams to be the first champion of BH!"
                   sx={{
                     p: {
                       fontSize: ['18px', '20px', '22px']
@@ -1072,7 +1072,7 @@ function Page({ slackData, events, carouselCards }) {
               gap: 3
             }}
           >
-            <Link href="https://forms.gle/AoitB5HwZ6N4s39W6" passHref legacyBehavior>
+            <Link href="https://forms.gle/bsiNwYkxkEU7rbq26" passHref legacyBehavior>
               <Button
                 as="a"
                 variant="lg"

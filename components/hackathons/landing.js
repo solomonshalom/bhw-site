@@ -79,7 +79,7 @@ export default function Landing() {
                       whiteSpace: [null, null, 'nowrap']
                     }}
                   >
-                    hackathon!
+                    buildathon!
                   </Text>
                 </Heading>
                 <Text

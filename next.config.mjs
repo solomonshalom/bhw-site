@@ -280,11 +280,11 @@ const nextConfig = {
         destination: 'https://map.hackclub.dev/$1'
       },
       {
-        source: '/how-to-organize-a-hackathon',
+        source: '/how-to-organize-a-buildathon',
         destination: 'https://expandables.hackclub.dev/organizing.html'
       },
       {
-        source: '/how-to-organize-a-hackathon/style.css',
+        source: '/how-to-organize-a-buildathon/style.css',
         destination: 'https://expandables.hackclub.dev/style.css'
       },
       {

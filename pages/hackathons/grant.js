@@ -57,13 +57,13 @@ const Requirement = ({ title, children, checkmark, background, size }) => {
 
 const HackathonGrant = () => {
   let open = true // applications are open
-  let channel = 'https://hackclub.slack.com/archives/C03TS0VKFPZ' // #hackathon-grants
+  let channel = 'https://hackclub.slack.com/archives/C03TS0VKFPZ' // #buildathon-grants
 
   return (
     <>
       <Meta
         as={Head}
-        title="Hackathon Grant"
+        title="Buildathon Grant"
         description="Hack Club is providing $500 grants to in-person high school hackathons happening until December 31st, 2024."
         image="https://cloud-7yw9f6xnv-hack-club-bot.vercel.app/0grant.png"
       />
@@ -71,7 +71,7 @@ const HackathonGrant = () => {
       <Box as="main" key="main">
         <Nav dark />
         <ForceTheme theme="dark" />
-        <Meta as={Head} title="Hackathon Grant" />
+        <Meta as={Head} title="Buildathon Grant" />
         <Box
           sx={{
             pt: [5, null, null, null, 6],
@@ -130,7 +130,7 @@ const HackathonGrant = () => {
                 </NextLink>
               </Flex>
               A <MSparkles>$500</MSparkles> grant for your{' '}
-              <a sx={{ whiteSpace: 'nowrap' }}>in-person</a> hackathon.
+              <a sx={{ whiteSpace: 'nowrap' }}>in-person</a> buildathon.
             </Heading>
             <Box
               sx={{
@@ -153,7 +153,7 @@ const HackathonGrant = () => {
             <Button
               variant="ctaLg"
               as="a"
-              href="https://forms.gle/AoitB5HwZ6N4s39W6"
+              href="https://forms.gle/bsiNwYkxkEU7rbq26"
               sx={{
                 ml: [0, 3],
                 mt: 2,
@@ -175,7 +175,7 @@ const HackathonGrant = () => {
             mb={3}
             sx={{ fontSize: [28, 30, 40], textAlign: 'center' }}
           >
-            Check if your hackathon qualifies
+            Check if your buildathon qualifies
           </Text>
           <Text
             as="p"
@@ -186,7 +186,7 @@ const HackathonGrant = () => {
               fontSize: [1, 2, 2]
             }}
           >
-            Your hackathon should be <Text as="b">free</Text> for all attendees
+            Your buildathon should be <Text as="b">free</Text> for all attendees
             and meet the following requirements:
           </Text>
 
@@ -223,8 +223,8 @@ const HackathonGrant = () => {
               background="https://icons.hackclub.com/api/icons/0x212025/glyph:profile.svg"
               size="36"
             >
-              To create a uniquely tailored high school hackathon, your
-              hackathon should be organized by high school students*. All
+              To create a uniquely tailored high school buildathon, your
+              buildathon should be organized by high school students*. All
               attendees should be 18 & under <strong>AND</strong> not full-time
               college students.
               <br />
@@ -246,7 +246,7 @@ const HackathonGrant = () => {
             >
               Hacking is a social activity, and we're supporting hackathons that
               bring builders together IRL. We believe that fully IRL (not hybrid)
-              events allow organisers to maximize the unique hackathon
+              events allow organisers to maximize the unique buildathon
               experience for attendees.
               <br />
               <br />
@@ -272,7 +272,7 @@ const HackathonGrant = () => {
               >
                 MOU
               </Link>{' '}
-              with your venue. Your scan should have the date of your hackathon
+              with your venue. Your scan should have the date of your buildathon
               and address, contact details, and the specific commitment of your
               venue.
               <br />
@@ -314,7 +314,7 @@ const HackathonGrant = () => {
                     color: 'muted'
                   }}
                 >
-                  guide on building hackathon websites
+                  guide on building buildathon websites
                 </Link>{' '}
                 or ask in{' '}
                 <Link

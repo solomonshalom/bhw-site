@@ -22,7 +22,7 @@ export default function OrganizationInfoForm({ requiredFields }) {
         <Input
           name="eventName"
           id="eventName"
-          placeholder="Shelburne School Hackathon"
+          placeholder="Shelburne School Buildathon"
         />
       </Field>
       <Field

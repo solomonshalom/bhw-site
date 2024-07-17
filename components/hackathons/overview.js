@@ -13,7 +13,7 @@ export default function Overview() {
               color: 'purple'
             }}
           >
-            A hackathon is a social coding marathon where teenagers{' '}
+            A buildathon is a social coding marathon where teenagers{' '}
             <Highlight>come together</Highlight> to{' '}
             <Highlight>build projects</Highlight> for a weekend and{' '}
             <Highlight>share them with the world</Highlight>.
@@ -23,9 +23,9 @@ export default function Overview() {
               <Box sx={{ color: 'blue', fontSize: 28, mb: 2 }}>
                 The best way to learn is by <b>building</b>.
               </Box>
-              A hackathon is a space that helps give makers everything they need
+              A buildathon is a space that helps give makers everything they need
               to start building–mentors, collaborators, inspiration, and a goal
-              to work towards. Builders will leave a hackathon with a project of
+              to work towards. Builders will leave a buildathon with a project of
               their own, ready and excited to keep hacking once they get home.
             </Text>
             <Text as="p" variant="subtitle">

@@ -100,7 +100,7 @@ const Apply = ({ channel }) => {
               color: 'muted'
             }}
           >
-            Get your hackathon funded.
+            Get your buildathon funded.
           </Heading>
         </Zoom>
       </Box>
@@ -146,7 +146,7 @@ const Apply = ({ channel }) => {
                 </Link>
                 , send your website to{' '}
                 <Link href={channel} target="_blank">
-                  #hackathon-grants
+                  #buildathon-grants
                 </Link>
               </>
             }
@@ -211,7 +211,7 @@ const Apply = ({ channel }) => {
         >
           Already have an account? Join the{' '}
           <Link href={channel} target="_blank">
-            #hackathon-grants
+            #buildathon-grants
           </Link>{' '}
           channel!
         </Box>

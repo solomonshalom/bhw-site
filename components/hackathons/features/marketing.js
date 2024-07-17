@@ -20,7 +20,7 @@ const Content = () => (
       hackathons.hackclub.com
     </Text>
     <Heading as="h2" variant="title">
-      Spread the word about your hackathon.
+      Spread the word about your buildathon.
     </Heading>
     <Text as="p" variant="lead" sx={{ maxWidth: 'copyPlus', mx: 'auto' }}>
       Reach builders worldwide by listing your event on hackathons.hackclub.com,
@@ -35,7 +35,7 @@ const Content = () => (
           backgroundImage: theme => theme.util.gx('yellow', 'red')
         }}
       >
-        Add your hackathon →
+        Add your buildathon →
       </Button>
     </Link>
   </Container>

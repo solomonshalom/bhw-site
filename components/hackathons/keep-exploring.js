@@ -70,7 +70,7 @@ export default function KeepExploring() {
             variant="lead"
             sx={{ mt: 0, a: { variant: 'styles.a', color: 'blue' } }}
           >
-            The hackathon is built by a dedicated{' '}
+            The buildathon is built by a dedicated{' '}
             <a
               href="/team"
               target="_blank"

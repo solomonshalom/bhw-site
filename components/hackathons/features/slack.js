@@ -20,7 +20,7 @@ const Content = () => (
       The Bethel Hacks Community
     </Text>
     <Heading as="h2" variant="title">
-      A hackathon particpant's{' '}
+      A buildathon particpant's{' '}
       <Text
         as="span"
         sx={{
@@ -51,7 +51,7 @@ const Content = () => (
           sx={{ textDecoration: 'none', color: 'currentColor' }}
           target="_blank"
         >
-          #hackathon
+          #buildathon
         </Link>
       </Box>{' '}
       channel is where participants ask questions and share their
@@ -87,7 +87,7 @@ const Cover = () => (
 )
 
 const Static = ({
-  // screenshot of messages from #hackathon-organizers
+  // screenshot of messages from #buildathon-organizers
   img = 'https://cloud-8611bon87-hack-club-bot.vercel.app/0screen_shot_2022-08-05_at_2.27.38_pm.png'
 }) => (
   <Box
@@ -121,7 +121,7 @@ const Slack = () => {
           muted
           loop
           playsInline
-          // screenshot of messages from #hackathon-organizers
+          // screenshot of messages from #buildathon-organizers
           poster="https://cloud-iwkoq2544-hack-club-bot.vercel.app/0screen_shot_2022-07-30_at_9.03.43_am.png"
           duration={2000}
           sx={{

@@ -71,7 +71,7 @@ export default function Hackathons({ data }) {
         <Meta
           as={Head}
           title="Hackathons"
-          description="Welcome to the high school hackathon. It's not an extracurricular or a club. It's not a class or a lecture. Hackathons are a playground to build things for fun and meet others doing the same."
+          description="Welcome to the high school buildathon. It's not an extracurricular or a club. It's not a class or a lecture. Hackathons are a playground to build things for fun and meet others doing the same."
           image="https://cloud-hkscyg8sg-hack-club-bot.vercel.app/0og-image.png"
         />
         <Box as="main">
@@ -147,7 +147,7 @@ export default function Hackathons({ data }) {
             desc={
               <>
                 Yep! You will have access to over 10+ workshops and many talks that will get you up and running
-                in no time, no matter if your a beginner or a experience hackathon machine, there's something for everyone!
+                in no time, no matter if your a beginner or a experience buildathon machine, there's something for everyone!
               </>
             }
           ></Feature>
@@ -179,7 +179,7 @@ export default function Hackathons({ data }) {
         <Feature
           icon="welcome"
           color="rgb(255,88,88)"
-          name="Will I be supported during the hackathon?"
+          name="Will I be supported during the buildathon?"
           desc={
             <>
               Absolutely! In addition to the workshops conducted, you will also have the oppertunity to seek help 

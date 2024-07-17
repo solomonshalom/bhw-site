@@ -215,7 +215,7 @@ export default function Epoch() {
               link="/slack"
               icon="idea"
             >
-              Help plan the hackathon
+              Help plan the buildathon
             </Buttons>
           </Flex>
         </Box>

@@ -98,9 +98,9 @@ export default function Wonderland() {
             }}
           >
             How would you and your friends use a 🥕 carrot or a 🧸 stuffed
-            animal in a hackathon project? In Wonderland, you'll explore 🧰
+            animal in a buildathon project? In Wonderland, you'll explore 🧰
             chests of random objects and software that you'll incorporate into
-            hackathon projects.
+            buildathon projects.
           </Text>
         </Box>
       </Grid>

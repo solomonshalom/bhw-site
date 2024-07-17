@@ -70,7 +70,7 @@ export default function Hackathons({ data, stars }) {
               link="https://hackathons.hackclub.com"
               primary="blue"
             >
-              Attend a hackathon
+              Attend a buildathon
             </Buttons>
             <Buttons
               // content="learn more about available resources"

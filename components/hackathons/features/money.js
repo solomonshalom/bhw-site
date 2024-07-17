@@ -45,8 +45,8 @@ const Content = () => (
           icon="bolt"
           leadText="All fees waived."
           body={`
-          Run your hackathon on HCB for free. All the money you raise goes 
-          directly towards your hackathon.`}
+          Run your buildathon on HCB for free. All the money you raise goes 
+          directly towards your buildathon.`}
         />
         <ListItem
           icon="rep"

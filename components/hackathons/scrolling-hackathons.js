@@ -41,7 +41,7 @@ export default function ScrollingHackathons({
               mt: 4
             }}
           >
-            Join other high-schoolers at an upcoming hackathon.
+            Join other high-schoolers at an upcoming buildathon.
           </Heading>
           <Box
             sx={{
