@@ -133,7 +133,7 @@ const Navigation = props => (
       <Link>Apply</Link>
     </NextLink>
     <NextLink href="/hackathons" passHref>
-      <Link>Hackathons</Link>
+      <Link>Buildthon</Link>
     </NextLink>
     <NextLink href="/discord" passHref>
       <Link>Community</Link>
