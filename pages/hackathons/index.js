@@ -124,7 +124,7 @@ export default function Hackathons({ data }) {
                 <br />
                 <br />
                 Once done, you can join our <Link href="/discord">Discord community</Link>, where you’ll be
-                able ask questions & chat, share projects, & (WIP) live events
+                able ask questions & chat, share projects, & (WIP) live events.
               </>
             }
           />
@@ -135,7 +135,9 @@ export default function Hackathons({ data }) {
             desc={
               <>
                 Yes! At EOD, builders will walk away with a collection of artifacts from the event (Regardless if you win :D)! 
-                (P.S You may get some rare, one-off, special edition swags too ;D)
+                <br>
+                <br>
+                P.S You may get some rare, one-off, special edition swags too ;D
 
               </>
             }
@@ -155,9 +157,9 @@ export default function Hackathons({ data }) {
             name="When, where, and how?"
             desc={
               <>
-                It's happening on the 25th of this June at the{' '} <a href="https://bethelagindia.org">Bethel AG Church</a>, Malayalam!
+                It's happening on the 7th of September at the{' '} <a href="https://bethelagindia.org">Bethel AG Church</a>, Malayalam!
                 <br />
-                The event will take place as a hybrid, with a in-person and online event happening simultaneously
+                The event will take place as a hybrid, with a in-person and online event happening simultaneously.
               </>
             }
             icon="event-code"
@@ -170,8 +172,10 @@ export default function Hackathons({ data }) {
             desc={
               <>
                 DW! if you don't have a machine or the required tech, we will try sourcing and providing you them! 
+                <br>
+                <br>
                 All you have to do is to send us a request through this{' '}
-                <a href="#">form</a>!
+                <a href="https://forms.gle/tGxks6QdPYsJGVxm7">form</a>!
               </>
             }
           />

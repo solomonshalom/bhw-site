@@ -173,7 +173,7 @@ function Page({ slackData, events, carouselCards }) {
             gradient="linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.45))"
           />
           <Announcement
-            copy="Build in public at Bethel Hacks June 25th"
+            copy="Build in public at Bethel Buildathon, September 7"
             caption="Make the coolest tech, get the coolest swag!"
             href="https://forms.gle/bsiNwYkxkEU7rbq26"
             imgSrc="https://cloud-gyu8zgkki-hack-club-bot.vercel.app/0_______.png"
@@ -271,7 +271,7 @@ function Page({ slackData, events, carouselCards }) {
           >
             <Badge
               as="a"
-              href="https://outernet.hackclub.com/"
+              href="#"
               target="_blank"
               rel="noopener"
               variant="pill"
@@ -288,7 +288,7 @@ function Page({ slackData, events, carouselCards }) {
               }}
               title="📸 Photo by Matt Gleich, Hack Clubber in NH!"
             >
-              Builders at Outernet in Vermont
+              Not us but looked pretty cool!
             </Badge>
           </Box>
         </Box>
@@ -557,7 +557,7 @@ function Page({ slackData, events, carouselCards }) {
                   </Text>
                   <Text as="p" variant="subtitle">
                     <strong sx={{ mb: 1 }}>Gather IRL with other makers</strong>
-                    On June, you will have the chance to hack and build,
+                    On September 7th, you will have the chance to build and win,
                     together IRL!
                   </Text>
                 </Grid>

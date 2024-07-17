@@ -42,7 +42,7 @@ export default function Landing() {
                   as="a"
                   target="_blank"
                   variant="cta"
-                  href=""
+                  href="https://forms.gle/tGxks6QdPYsJGVxm7"
                   sx={{
                     backgroundImage: t => t.util.gx('yellow', 'pink'),
                     position: 'absolute',
@@ -94,7 +94,7 @@ export default function Landing() {
                     It's not an extracurricular or a club. It's not a class or a
                     lecture.
                   </strong>{' '}
-                  Hackathons are a place to build things for fun and meet others
+                  Buildathons are a place to build things for fun and meet others
                   doing the same.
                 </Text>
               </Card>

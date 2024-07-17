@@ -13,7 +13,7 @@ export default function Overview() {
               color: 'purple'
             }}
           >
-            A buildathon is a social coding marathon where teenagers{' '}
+            A buildathon is a social coding marathon where people{' '}
             <Highlight>come together</Highlight> to{' '}
             <Highlight>build projects</Highlight> for a weekend and{' '}
             <Highlight>share them with the world</Highlight>.
@@ -32,10 +32,10 @@ export default function Overview() {
               <Box sx={{ color: 'green', fontSize: 28, mb: 2 }}>
                 We're at our best when we're <b>making</b>.
               </Box>
-              Hack Club is a global community of thousands of high school
+              Bethel Buildathon is a community of hundreds of
               makers. We're organizers, coders, builders, painters, engineers,
-              musicians, writers, volunteers. We make things. We want others to
-              make things too.
+              musicians, writers, volunteers. Our primary goal is to glorify God through
+              what we build!
             </Text>
           </Grid>
         </Container>
