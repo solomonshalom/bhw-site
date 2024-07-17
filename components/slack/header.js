@@ -1,6 +1,5 @@
 import { Box, Grid, Heading } from 'theme-ui'
 import SlideUp from '../slide-up'
-import JoinForm from './join-form'
 import usePrefersMotion from '../../lib/use-prefers-motion'
 import useHasMounted from '../../lib/use-has-mounted'
 
@@ -27,16 +26,6 @@ const Content = () => (
         Bethel Hacks Discord
       </Heading>
     </Box>
-    <SlideUp sx={{ zIndex: 5, display: 'flex', alignItems: 'center' }}>
-      <JoinForm
-        sx={{
-          variant: 'cards.translucent',
-          position: 'relative',
-          zIndex: 3,
-          maxWidth: 'null'
-        }}
-      />
-    </SlideUp>
   </Grid>
 )
 
