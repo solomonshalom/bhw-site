@@ -128,57 +128,56 @@ export default function Hackathons({ data }) {
               </>
             }
           />
-          <Feature
-            icon="bolt"
-            color="green"
-            name="Will we get swag?"
-            desc={
-              <>
-                Yes! At EOD, builders will walk away with a collection of artifacts from the event (Regardless if you win :D)! 
-                <br>
-                <br>
-                P.S You may get some rare, one-off, special edition swags too ;D
-
-              </>
-            }
-          ></Feature>
-          <Feature
-            icon="docs"
-            color="red"
-            name="Meeting content"
-            desc={
-              <>
-                Yep! You will have access to over 10+ workshops and many talks that will get you up and running
-                in no time, no matter if your a beginner or a experience buildathon machine, there's something for everyone!
-              </>
-            }
-          ></Feature>
-          <Feature
-            name="When, where, and how?"
-            desc={
-              <>
-                It's happening on the 7th of September at the{' '} <a href="https://bethelagindia.org">Bethel AG Church</a>, Malayalam!
-                <br />
-                The event will take place as a hybrid, with a in-person and online event happening simultaneously.
-              </>
-            }
-            icon="event-code"
-            color="blue"
-          ></Feature>
-          <Feature
-            icon="purse"
-            color="orange"
-            name="I don't have a machine or the required tech to participate, what can I do?"
-            desc={
-              <>
-                DW! if you don't have a machine or the required tech, we will try sourcing and providing you them! 
-                <br>
-                <br>
-                All you have to do is to send us a request through this{' '}
-                <a href="https://forms.gle/tGxks6QdPYsJGVxm7">form</a>!
-              </>
-            }
-          />
+              <Feature
+                icon="bolt"
+                color="green"
+                name="Will we get swag?"
+                desc={
+                  <>
+                    Yes! At EOD, builders will walk away with a collection of artifacts from the event (Regardless if you win :D)! 
+                    <br />
+                    <br />
+                    P.S You may get some rare, one-off, special edition swags too ;D
+                  </>
+                }
+              />
+              <Feature
+                icon="docs"
+                color="red"
+                name="Meeting content"
+                desc={
+                  <>
+                    Yep! You will have access to over 10+ workshops and many talks that will get you up and running
+                    in no time, no matter if you're a beginner or an experienced buildathon machine, there's something for everyone!
+                  </>
+                }
+              />
+              <Feature
+                name="When, where, and how?"
+                desc={
+                  <>
+                    It's happening on the 7th of September at the{' '} <a href="https://bethelagindia.org">Bethel AG Church</a>, Malayalam!
+                    <br />
+                    The event will take place as a hybrid, with an in-person and online event happening simultaneously.
+                  </>
+                }
+                icon="event-code"
+                color="blue"
+              />
+              <Feature
+                icon="purse"
+                color="orange"
+                name="I don't have a machine or the required tech to participate, what can I do?"
+                desc={
+                  <>
+                    DW! if you don't have a machine or the required tech, we will try sourcing and providing them for you! 
+                    <br />
+                    <br />
+                    All you have to do is send us a request through this{' '}
+                    <a href="https://forms.gle/tGxks6QdPYsJGVxm7">form</a>!
+                  </>
+                }
+              />
         </Grid>
         <Feature
           icon="welcome"
