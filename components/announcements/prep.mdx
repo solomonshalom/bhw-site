@@ -1,0 +1,83 @@
+import Amount from './amount'
+import Signature from '../signature'
+
+# Here's how to make your machine the <Amount amount="best" /> it can be!
+
+It's very important to configure your machine properly for an efficient and smooth coding experience. Here’s a step-by-step guide to get your development environment ready with VS Code and Git.
+
+## Configuring VS Code
+
+1. **Download and Install VS Code:**
+   - Go to the [VS Code download page](https://code.visualstudio.com/Download) and download the installer for your operating system.
+   - Follow the installation instructions specific to your OS.
+
+2. **Install Essential Extensions:**
+   - Open VS Code and navigate to the Extensions view by clicking the Extensions icon in the Activity Bar on the side of the window or pressing `Ctrl+Shift+X`.
+   - Search for and install the following extensions:
+     - **Prettier - Code formatter:** Helps in maintaining consistent code style.
+     - **ESLint:** Integrates ESLint into VS Code to find and fix problems in your JavaScript code.
+     - **Live Server:** Launch a development local server with live reload feature for static and dynamic pages.
+     - **GitLens:** Supercharges the built-in Git capabilities in VS Code.
+     - **Python (if you're using Python):** Provides support for Python development including linting, debugging, and more.
+
+3. **Configure User Settings:**
+   - Go to File > Preferences > Settings or press `Ctrl+,`.
+   - Search for and configure the following settings:
+     - **Editor: Format On Save:** Enables automatic code formatting when you save a file.
+     - **Editor: Tab Size:** Set the number of spaces per tab (commonly 2 or 4 spaces).
+
+4. **Setup Integrated Terminal:**
+   - VS Code comes with an integrated terminal. You can access it via View > Terminal or pressing ``Ctrl+` ``.
+   - Configure your default shell (e.g., Bash, PowerShell) in the terminal settings.
+
+## Configuring Git
+
+1. **Install Git:**
+   - Download Git from the [official Git website](https://git-scm.com/downloads).
+   - Follow the installation instructions specific to your operating system.
+
+2. **Set Up Git in VS Code:**
+   - Open VS Code and ensure Git is installed correctly by opening the terminal (`Ctrl+` `) and typing `git --version`.
+   - Configure your Git identity by running the following commands in the terminal:
+     ```bash
+     git config --global user.name "Your Name"
+     git config --global user.email "your.email@example.com"
+     ```
+
+3. **Initialize a Git Repository:**
+   - Open your project folder in VS Code.
+   - Initialize a new Git repository by opening the terminal and running:
+     ```bash
+     git init
+     ```
+
+4. **Commit Your Changes:**
+   - Stage your changes by running:
+     ```bash
+     git add .
+     ```
+   - Commit your changes with a meaningful message:
+     ```bash
+     git commit -m "Initial commit"
+     ```
+
+5. **Connect to a Remote Repository:**
+   - If you’re using GitHub, create a new repository on [GitHub](https://github.com/).
+   - Connect your local repository to the remote repository by running:
+     ```bash
+     git remote add origin https://github.com/yourusername/your-repository.git
+     ```
+   - Push your changes to the remote repository:
+     ```bash
+     git push -u origin main
+     ```
+
+## Conclusion
+
+By following these steps, your machine will be well-configured for a productive hackathon experience. Remember to keep your tools updated and explore additional extensions and settings that can further enhance your development workflow.
+
+Go forth and create amazing projects during the hackathon!
+
+<Signature fname="Solomon" lname="Shalom Lijo" />
+
+Solomon Shalom Lijo, Host

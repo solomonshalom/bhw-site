@@ -9,16 +9,16 @@ import Meta from '@hackclub/meta'
 import Nav from '../components/nav'
 import ForceTheme from '../components/force-theme'
 import Footer from '../components/footer'
-import ElonCopy from '../components/announcements/elon.mdx'
+import ElonCopy from '../components/announcements/prep.mdx'
 import SlackCTA from '../components/announcements/cta'
 import AnnouncementHolder from '../components/announcements/holder'
 
-const ElonPage = () => (
+const PrepPage = () => (
   <>
     <Meta
       as={Head}
-      title="Elon Musk is Giving $500K"
-      description="We’re thrilled to announce Elon Musk has donated $500k to Hack Club, a global nonprofit network of high school builders & coding clubs."
+      title="Configuring your workstation for the Buildathon!"
+      description="Configuring your workstation for the buildathon!"
       image="https://assets.hackclub.com/log/HC-500k@1080w.png"
     />
     <ForceTheme theme="light" />
@@ -45,20 +45,19 @@ const ElonPage = () => (
             }
           }}
         >
-          Hack Club “makes me feel <span>much more optimistic</span>{' '}
-          about&nbsp;the future.”
+          When we work, we work. When we pray, <span>“God works”</span>{' '}
         </Heading>
-        <Text variant="headline">—Elon Musk</Text>
+        <Text variant="headline">—James Hudson Taylor</Text>
       </Container>
     </Box>
     <AnnouncementHolder>
       <PillHolder>
         <AuthorPill
-          firstName="Zach"
-          tag="Zach Latta, founder"
+          firstName="Solomon"
+          tag="Solomon Shalom Lijo, host"
           image="https://hackclub.com/team/zach.jpg"
         />
-        <DatePill tag="May 15, 2020" />
+        <DatePill tag="September X, 2K24" />
       </PillHolder>
       <ElonCopy />
     </AnnouncementHolder>
@@ -67,4 +66,4 @@ const ElonPage = () => (
   </>
 )
 
-export default ElonPage
+export default PrepPage
