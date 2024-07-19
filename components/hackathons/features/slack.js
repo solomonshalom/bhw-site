@@ -17,7 +17,7 @@ const Content = () => (
     }}
   >
     <Text as="p" variant="eyebrow" sx={{ color: 'white', opacity: 0.75 }}>
-      The Bethel Hacks Community
+      The Bethel Buildathon Community
     </Text>
     <Heading as="h2" variant="title">
       A buildathon particpant's{' '}

@@ -96,7 +96,7 @@ const JoinForm = ({ sx = {}, router }) => {
           How did you hear about us? What are you most looking forward to?
           <Textarea
             {...useField('reason')}
-            placeholder="I heard about Bethel Hacks from..."
+            placeholder="I heard about Bethel Buildathon from..."
             required
           />
         </Label>

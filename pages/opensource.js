@@ -76,7 +76,7 @@ const Page = ({ repos }) => (
           variant="title"
           sx={{ color: 'primary', mt: [2.5, 4] }}
         >
-          Open Source at Bethel Hacks Club
+          Open Source at Bethel Buildathon Club
         </Heading>
         <Heading as="h2" variant="subtitle" sx={{ mt: 3, color: 'text' }}>
           Explore the winnning and other participating repositories!

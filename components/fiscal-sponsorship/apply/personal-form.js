@@ -77,13 +77,13 @@ export default function PersonalInfoForm({ requiredFields }) {
                 value="Slack"
                 onInput={() => setSelectedContactOption('Slack')}
               />
-              Bethel Hacks Discord
+              Bethel Buildathon Discord
             </Label>
             {selectedContactOption === 'Slack' ? (
               <>
                 <div />
                 <Field
-                  label="Your Bethel Hacks Discord username"
+                  label="Your Bethel Buildathon Discord username"
                   description="For teenagers only!"
                   name="slackUsername"
                   requiredFields={requiredFields}

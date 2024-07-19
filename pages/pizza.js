@@ -666,7 +666,7 @@ const PizzaPage = () => {
                 <Link href="https://hackclub.slack.com/archives/C05RZ6K7RS5">
                   #pizza-party
                 </Link>{' '}
-                on the Bethel Hacks Discord & draw a Pixel Pizza
+                on the Bethel Buildathon Discord & draw a Pixel Pizza
               </Text>
               <img
                 alt="pixel editor gif"

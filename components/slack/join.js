@@ -29,7 +29,7 @@ export default function Join() {
             variant="title"
             sx={{ mb: 3, fontSize: ['36px', '48px', '56px'] }}
           >
-            Discover the Bethel Hacks Discord
+            Discover the Bethel Buildathon Discord
           </Text>
           <Link
             href="https://discord.gg/DDd4Uw4SFT"

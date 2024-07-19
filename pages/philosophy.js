@@ -108,7 +108,7 @@ export default function Philosophy() {
       <Meta
         as={Head}
         title="Philosophy"
-        description="Read about Hack Club, a network of high school computer science clubs. We want to make building apps and websites accessible to everyone through programming clubs at every high school."
+        description="Bethel Buildathon!."
         image="https://cloud-cz9a6kt0a-hack-club-bot.vercel.app/0social-photo_2.jpg"
       />
       <Box>
@@ -134,7 +134,7 @@ export default function Philosophy() {
                 }}
                 caps
               >
-                The Hack Club
+                The Bethel Buildathon
               </Heading>
               <Heading
                 fontSize={[3, 4]}
@@ -185,7 +185,7 @@ export default function Philosophy() {
           </Heading>
           <Box sx={{ fontSize: [3, 3] }}>
             <strong>
-              The goal of Bethel Hacks is to help you become more than just a builder.
+              The goal of Bethel Buildathon is to help you become more than just a builder.
             </strong>{' '}
             We are creating a space where people are making interesting
             things with code, every week. BUT, we also make sure that every builder also
@@ -229,7 +229,7 @@ export default function Philosophy() {
             Be part of a community.
           </Heading>
           <Box sx={{ fontSize: [3, 3] }}>
-            BH (AKA Bethel Hacks) Club gives you a worldwide community of thousands of other
+            BH (AKA Bethel Buildathon) Club gives you a worldwide community of thousands of other
             young makers to talk to. We’re artists, writers, engineers,
             tinkerers, campers, filmmakers, volunteers. We make things. We help
             one another. We have fun. Join us.

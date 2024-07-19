@@ -23,7 +23,7 @@ const Content = () => (
           mb: [2, 3]
         }}
       >
-        Bethel Hacks Discord
+        Bethel Buildathon Discord
       </Heading>
     </Box>
   </Grid>

@@ -34,12 +34,12 @@ const DiscordPage = () => {
       <Meta
         as={Head}
         name="Join our Discord"
-        description={`The Bethel Hacks Discord is a community of builders around the world. Chat, meet new friends, code together, share your work.`}
+        description={`The Bethel Buildathon Discord is a community of builders around the world. Chat, meet new friends, code together, share your work.`}
       />
       <ForceTheme theme="light" />
       <Nav slack={true} />
       {/* <Box sx={{ position: 'fixed', mt: 5, maxWidth: '1024px', backgroundColor: 'red', zIndex: 100 }}>
-        <Text>Bethel Hacks Discord</Text>
+        <Text>Bethel Buildathon Discord</Text>
       </Box>*/}
       <Header nameInputRef={nameInputRef} />
       <Container sx={{ pt: [4, 5], pb: 4 }}>
