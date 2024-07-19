@@ -72,7 +72,7 @@ export default function KeepExploring() {
           >
             The buildathon is built by a dedicated{' '}
             <a
-              href="/team"
+              href="#"
               target="_blank"
               rel="noreferrer"
             >

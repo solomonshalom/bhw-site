@@ -71,7 +71,7 @@ export default function Hackathons({ data }) {
         <Meta
           as={Head}
           title="Hackathons"
-          description="Welcome to the high school buildathon. It's not an extracurricular or a club. It's not a class or a lecture. Hackathons are a playground to build things for fun and meet others doing the same."
+          description="Welcome to the Bethel Buildathon. It's not an extracurricular or a club. It's not a class or a lecture. Hackathons are a playground to build things for fun and meet others doing the same."
           image="https://cloud-hkscyg8sg-hack-club-bot.vercel.app/0og-image.png"
         />
         <Box as="main">
@@ -131,7 +131,7 @@ export default function Hackathons({ data }) {
               <Feature
                 icon="bolt"
                 color="green"
-                name="Will we get swag?"
+                name="Will we get swags?"
                 desc={
                   <>
                     Yes! At EOD, builders will walk away with a collection of artifacts from the event (Regardless if you win :D)! 
@@ -140,7 +140,7 @@ export default function Hackathons({ data }) {
                     P.S You may get some rare, one-off, special edition swags too ;D
                   </>
                 }
-              />
+              />{/*
               <Feature
                 icon="docs"
                 color="red"
@@ -151,7 +151,7 @@ export default function Hackathons({ data }) {
                     in no time, no matter if you're a beginner or an experienced buildathon machine, there's something for everyone!
                   </>
                 }
-              />
+              />*/}
               <Feature
                 name="When, where, and how?"
                 desc={
@@ -167,14 +167,10 @@ export default function Hackathons({ data }) {
               <Feature
                 icon="purse"
                 color="orange"
-                name="I don't have a machine or the required tech to participate, what can I do?"
+                name="Will we be provided Internet and any other requirements?"
                 desc={
                   <>
-                    DW! if you don't have a machine or the required tech, we will try sourcing and providing them for you! 
-                    <br />
-                    <br />
-                    All you have to do is send us a request through this{' '}
-                    <a href="https://forms.gle/tGxks6QdPYsJGVxm7">form</a>!
+                    Yep! All particpants will be provided with access to the Internet and charging stations will also be set! 
                   </>
                 }
               />
@@ -185,7 +181,7 @@ export default function Hackathons({ data }) {
           name="Will I be supported during the buildathon?"
           desc={
             <>
-              Absolutely! In addition to the workshops conducted, you will also have the oppertunity to seek help 
+              Absolutely! You will also have the oppertunity to seek help 
               from designers, musicians, engineers, and as such!
             </>
           }
