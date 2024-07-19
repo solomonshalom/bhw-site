@@ -79,11 +79,11 @@ export default function KeepExploring() {
               Team
             </a>
             <Box as="div" sx={{ mt: 3 }}></Box>
-            Bethel Hacks / Youth is also actively seeking more volunteers! Looks like you?
+            Bethel Buildathon / Youth is also actively seeking more volunteers! Looks like you?
             contact us at our socials!*
             <br />
             <br />
-            *Have to be a member of Bethel AG Church, Malayalam.
+            P.S. Have to be a member of Bethel AG Church!
           </Text>
         </Grid>
       </Container>
