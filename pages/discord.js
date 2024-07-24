@@ -35,6 +35,7 @@ const DiscordPage = () => {
         as={Head}
         name="Join our Discord"
         description={`The Bethel Buildathon Discord is a community of builders around the world. Chat, meet new friends, code together, share your work.`}
+        script defer src="https://cloud.umami.is/script.js" data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
       />
       <ForceTheme theme="light" />
       <Nav slack={true} />

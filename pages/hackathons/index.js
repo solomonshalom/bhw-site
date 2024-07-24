@@ -73,6 +73,7 @@ export default function Hackathons({ data }) {
           title="Hackathons"
           description="Welcome to the Bethel Buildathon. It's not an extracurricular or a club. It's not a class or a lecture. Hackathons are a playground to build things for fun and meet others doing the same."
           image="https://cloud-hkscyg8sg-hack-club-bot.vercel.app/0og-image.png"
+          script defer src="https://cloud.umami.is/script.js" data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
         />
         <Box as="main">
           <Landing />

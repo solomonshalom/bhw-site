@@ -16,6 +16,7 @@ export default function Team({ team }) {
           as={Head}
           title="Team"
           description="Meet the team that runs Hack Club, a global nonprofit network of high school computer science clubs."
+          script defer src="https://cloud.umami.is/script.js" data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
         />
         <Box
           pt={6}

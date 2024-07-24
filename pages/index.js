@@ -125,6 +125,7 @@ function Page({ slackData, events, carouselCards }) {
         as={Head}
         title="Bethel Buildathon"
         description="Bethel Buildathon, Builds, and does Great!"
+        script defer src="https://cloud.umami.is/script.js" data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
       />
       <Head>
         <meta
@@ -132,6 +133,8 @@ function Page({ slackData, events, carouselCards }) {
           content="https://assets.hackclub.com/icon-rounded.png"
           size="512x512"
         />
+
+      <script defer src="https://cloud.umami.is/script.js" data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"></script>
       </Head>
       <ForceTheme theme="light" />
       <Nav />

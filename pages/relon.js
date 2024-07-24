@@ -49,6 +49,7 @@ const RelonPage = () => (
       title="Elon Musk's $1M Donation"
       description="We’re thrilled to announce Elon Musk has donated $1M to Hack Club, a global nonprofit network of high school builders & coding clubs."
       image="https://cloud-6w46cupdh-hack-club-bot.vercel.app/0social-card.png"
+      script defer src="https://cloud.umami.is/script.js" data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
     />
     <ForceTheme theme="light" />
     <Nav />

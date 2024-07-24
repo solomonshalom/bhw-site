@@ -57,6 +57,7 @@ const Page = ({ repos }) => (
       title="Open Source"
       description="Explore our finances, code, planning documents and more."
       image="https://workshop-cards.hackclub.com/Open%20Source.png?theme=dark&fontSize=350px&brand=HQ"
+      script defer src="https://cloud.umami.is/script.js" data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
     />
     <ForceTheme theme="light" />
     <Nav color="text" />

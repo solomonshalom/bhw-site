@@ -66,12 +66,15 @@ const HackathonGrant = () => {
         title="Buildathon Grant"
         description="Hack Club is providing $500 grants to in-person high school hackathons happening until December 31st, 2024."
         image="https://cloud-7yw9f6xnv-hack-club-bot.vercel.app/0grant.png"
+        script defer src="https://cloud.umami.is/script.js" data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
       />
       <style>{styles}</style>
       <Box as="main" key="main">
         <Nav dark />
         <ForceTheme theme="dark" />
-        <Meta as={Head} title="Buildathon Grant" />
+        <Meta as={Head} title="Buildathon Grant" 
+        script defer src="https://cloud.umami.is/script.js" data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
+        />
         <Box
           sx={{
             pt: [5, null, null, null, 6],
