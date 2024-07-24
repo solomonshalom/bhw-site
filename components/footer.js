@@ -93,7 +93,7 @@ const Footer = ({
           <NextLink href="/philosophy" passHref>
             <Link>Philosophy</Link>
           </NextLink>
-          <NextLink href="/team" passHref>
+          <NextLink href="#" passHref>
             <Link>Our Team & Board</Link>
           </NextLink>
         </Box>
@@ -135,11 +135,6 @@ const Footer = ({
               href="https://x.com/bethelagindia"
               icon="twitter"
               name="Twitter"
-            />
-            <Service
-              href="https://github.com/hackclub"
-              icon="github"
-              name="GitHub"
             />
             <Service
               href="https://www.youtube.com/channel/UCeTQ7drM66R0SRYG9D52gPw"
