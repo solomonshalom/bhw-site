@@ -124,8 +124,7 @@ function Page({ slackData, events, carouselCards }) {
       <Meta
         as={Head}
         title="Bethel Buildathon"
-        description="Bethel Buildathon, Builds, and does Great!"
-        script defer src="https://cloud.umami.is/script.js" data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
+        description="Bethel Buildathon - Build Software that Glorifies God!"
       />
       <Head>
         <meta
@@ -134,7 +133,13 @@ function Page({ slackData, events, carouselCards }) {
           size="512x512"
         />
 
-      <script defer src="https://cloud.umami.is/script.js" data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"></script>
+      <script
+        async
+        src="https://cloud.umami.is/script.js"
+        data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
+      >
+      </script>
+
       </Head>
       <ForceTheme theme="light" />
       <Nav />

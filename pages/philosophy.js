@@ -105,12 +105,27 @@ export default function Philosophy() {
   return (
     <Box sx={{ bg: 'white', color: 'black', minHeight: '100vh' }}>
       <Nav />
+      <Head>
+        <title>Philosophy</title>
+        <meta
+          name="description"
+          content="Bethel Buildathon!."
+        />
+        <meta
+          name="image"
+          content="https://cloud-cz9a6kt0a-hack-club-bot.vercel.app/0social-photo_2.jpg"
+        />
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
+        ></script>
+      </Head>
       <Meta
         as={Head}
         title="Philosophy"
         description="Bethel Buildathon!."
         image="https://cloud-cz9a6kt0a-hack-club-bot.vercel.app/0social-photo_2.jpg"
-        script defer src="https://cloud.umami.is/script.js" data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
       />
       <Box>
         <Header>
@@ -190,7 +205,7 @@ export default function Philosophy() {
             </strong>{' '}
             We are creating a space where people are making interesting
             things with code, every week. BUT, we also make sure that every builder also
-            becomes a better person throug the implementation of biblical values, learning, collaberations, and building
+            becomes a better person through the implementation of biblical values, learning, collaborations, and building.
           </Box>
         </Row>
         <Row>

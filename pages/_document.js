@@ -1,11 +1,10 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-// import { InitializeColorMode } from 'theme-ui'
 
 const org = {
   '@context': 'http://schema.org',
   '@type': 'Organization',
-  name: 'Hack Club',
-  url: 'https://hackclub.com/',
+  name: 'Bethel Buildathon',
+  url: 'https://buildathon.bethelagindia.org',
   logo: 'https://hackclub.com/social.png',
   sameAs: [
     'https://twitter.com/hackclub',
@@ -17,9 +16,9 @@ const org = {
   contactPoint: [
     {
       '@type': 'ContactPoint',
-      email: 'team@bethelagindia.org',
-      contactType: 'customer support',
-      url: 'https://hackclub.com/'
+      email: 'info@bethelagindia.org',
+      contactType: 'email',
+      url: 'https://buildathon.bethelagindia.org'
     }
   ]
 }
@@ -39,11 +38,13 @@ class MyDocument extends Document {
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(org) }}
           />
-
-<script defer src="https://cloud.umami.is/script.js" data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"></script>
+          <script
+            async
+            src="https://cloud.umami.is/script.js"
+            data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
+          ></script>
         </Head>
         <body>
-          {/* <InitializeColorMode /> */}
           <Main />
           <NextScript />
         </body>

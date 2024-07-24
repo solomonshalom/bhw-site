@@ -29,7 +29,13 @@ const Page = () => (
       title="Tom and Theresa Preston-Werner are Giving $500K"
       description="We’re thrilled to announce Tom and Theresa Preston-Werner have donated $500k to Hack Club, a global nonprofit network of high school builders & coding clubs."
       image="https://workshop-cards.hackclub.com/Preston-Werner%20Gift%20Announcement.png?fontSize=175px&brand=HQ"
-      script defer src="https://cloud.umami.is/script.js" data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
+      script={[
+        {
+          defer: true,
+          src: "https://cloud.umami.is/script.js",
+          "data-website-id": "57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
+        }
+      ]}
     />
     <ForceTheme theme="light" />
     <Nav />

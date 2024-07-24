@@ -189,7 +189,6 @@ const Spinning = styled(Image)`
 const NotFoundPage = () => (
   <>
     <Meta as={Head} title="404" 
-    script defer src="https://cloud.umami.is/script.js" data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
     />
     <ForceTheme theme="dark" />
     <Nav color="primary" dark />

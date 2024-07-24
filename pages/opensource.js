@@ -52,12 +52,27 @@ export const BankProject = ({ name, url }) => (
 
 const Page = ({ repos }) => (
   <>
+    <Head>
+      <title>Open Source</title>
+      <meta
+        name="description"
+        content="Explore our finances, code, planning documents and more."
+      />
+      <meta
+        name="image"
+        content="https://workshop-cards.hackclub.com/Open%20Source.png?theme=dark&fontSize=350px&brand=HQ"
+      />
+      <script
+        async
+        src="https://cloud.umami.is/script.js"
+        data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
+      ></script>
+    </Head>
     <Meta
       as={Head}
       title="Open Source"
       description="Explore our finances, code, planning documents and more."
       image="https://workshop-cards.hackclub.com/Open%20Source.png?theme=dark&fontSize=350px&brand=HQ"
-      script defer src="https://cloud.umami.is/script.js" data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
     />
     <ForceTheme theme="light" />
     <Nav color="text" />
@@ -80,7 +95,7 @@ const Page = ({ repos }) => (
           Open Source at Bethel Buildathon Club
         </Heading>
         <Heading as="h2" variant="subtitle" sx={{ mt: 3, color: 'text' }}>
-          Explore the winnning and other participating repositories!
+          Explore the winning and other participating repositories!
         </Heading>
         <Button
           variant="outline"
@@ -100,15 +115,8 @@ const Page = ({ repos }) => (
         h2: { variant: 'text.headline' }
       }}
     >
-
       {repos
-        .sort(function (a, b) {
-          var keyA = a.stargazers_count,
-            keyB = b.stargazers_count
-          if (keyA < keyB) return 1
-          if (keyA > keyB) return -1
-          return 0
-        })
+        .sort((a, b) => b.stargazers_count - a.stargazers_count)
         .map(repo => (
           <Flex
             key={repo.id}
@@ -136,7 +144,7 @@ const Page = ({ repos }) => (
                 mr: 3,
                 flexGrow: 1,
                 color: 'muted',
-                whiteSpace: ' nowrap',
+                whiteSpace: 'nowrap',
                 overflow: 'hidden',
                 textOverflow: 'ellipsis'
               }}

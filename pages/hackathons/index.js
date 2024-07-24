@@ -65,6 +65,13 @@ const Feature = ({ icon, color, name, desc, children, sx, ...props }) => (
 export default function Hackathons({ data }) {
   return (
     <>
+      <Head>
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
+        ></script>
+      </Head>
       <Box as="main" key="main">
         <Nav />
         <ForceTheme theme="light" />
@@ -73,138 +80,123 @@ export default function Hackathons({ data }) {
           title="Hackathons"
           description="Welcome to the Bethel Buildathon. It's not an extracurricular or a club. It's not a class or a lecture. Hackathons are a playground to build things for fun and meet others doing the same."
           image="https://cloud-hkscyg8sg-hack-club-bot.vercel.app/0og-image.png"
-          script defer src="https://cloud.umami.is/script.js" data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
         />
         <Box as="main">
           <Landing />
-
           <Overview />
-
           <Box as="section" sx={{ py: [4, 5, 6], color: 'black' }}>
-      <Container
-        sx={{
-          maxWidth: [null, 'copyUltra'],
-          svg: { filter: 'drop-shadow(0 2px 3px rgba(0,0,0,.125))' }
-        }}
-      >
-        <Box as="header" sx={{ textAlign: [null, 'center'], pb: [4, 5] }}>
-          <Text as="p" variant="eyebrow">
-            Got Questions?
-          </Text>
-          <Heading as="h2" variant="title">
-            Here's some cool{' '}
-            <Text
-              as="span"
+            <Container
               sx={{
-                borderRadius: 'default',
-                px: 2,
-                mx: [-2, 0],
-                bg: 'rgb(91, 255, 205)',
-                color: '#095365',
-                display: 'inline-block',
-                whiteSpace: ['wrap', 'nowrap']
+                maxWidth: [null, 'copyUltra'],
+                svg: { filter: 'drop-shadow(0 2px 3px rgba(0,0,0,.125))' }
               }}
             >
-              FAQs!
-            </Text>
-          </Heading>
-        </Box>
-        <Grid
-          columns={[null, 1]}
-          gap={[2, 3]}
-          sx={{ alignItems: 'end', span: { color: 'white' } }}
-        >
-          <Feature
-            icon="send-fill"
-            color="#5d114c"
-            name="How can I apply and join the community"
-            desc={
-              <>
-                you can apply by clicking here or through the (numerous) "Apply"
-                or "Join Us" buttons scattered across the site!
-                <br />
-                <br />
-                Once done, you can join our <Link href="/discord">Discord community</Link>, where you’ll be
-                able ask questions & chat, share projects, & (WIP) live events.
-              </>
-            }
-          />
+              <Box as="header" sx={{ textAlign: [null, 'center'], pb: [4, 5] }}>
+                <Text as="p" variant="eyebrow">
+                  Got Questions?
+                </Text>
+                <Heading as="h2" variant="title">
+                  Here's some cool{' '}
+                  <Text
+                    as="span"
+                    sx={{
+                      borderRadius: 'default',
+                      px: 2,
+                      mx: [-2, 0],
+                      bg: 'rgb(91, 255, 205)',
+                      color: '#095365',
+                      display: 'inline-block',
+                      whiteSpace: ['wrap', 'nowrap']
+                    }}
+                  >
+                    FAQs!
+                  </Text>
+                </Heading>
+              </Box>
+              <Grid
+                columns={[null, 1]}
+                gap={[2, 3]}
+                sx={{ alignItems: 'end', span: { color: 'white' } }}
+              >
+                <Feature
+                  icon="send-fill"
+                  color="#5d114c"
+                  name="How can I apply and join the community"
+                  desc={
+                    <>
+                      you can apply by clicking here or through the (numerous) "Apply"
+                      or "Join Us" buttons scattered across the site!
+                      <br />
+                      <br />
+                      Once done, you can join our <Link href="/discord">Discord community</Link>, where you’ll be
+                      able ask questions & chat, share projects, & (WIP) live events.
+                    </>
+                  }
+                />
+                <Feature
+                  icon="bolt"
+                  color="green"
+                  name="Will we get swags?"
+                  desc={
+                    <>
+                      Yes! At EOD, builders will walk away with a collection of artifacts from the event (Regardless if you win :D)! 
+                      <br />
+                      <br />
+                      P.S You may get some rare, one-off, special edition swags too ;D
+                    </>
+                  }
+                />
+                <Feature
+                  name="When, where, and how?"
+                  desc={
+                    <>
+                      It's happening on the 7th of September at the{' '} <a href="https://bethelagindia.org">Bethel AG Church</a>, Malayalam!
+                      <br />
+                      The event will take place as a hybrid, with an in-person and online event happening simultaneously.
+                    </>
+                  }
+                  icon="event-code"
+                  color="blue"
+                />
+                <Feature
+                  icon="purse"
+                  color="orange"
+                  name="Will we be provided Internet and any other requirements?"
+                  desc={
+                    <>
+                      Yep! All particpants will be provided with access to the Internet and charging stations will also be set! 
+                    </>
+                  }
+                />
+              </Grid>
               <Feature
-                icon="bolt"
-                color="green"
-                name="Will we get swags?"
+                icon="welcome"
+                color="rgb(255,88,88)"
+                name="Will I be supported during the buildathon?"
                 desc={
                   <>
-                    Yes! At EOD, builders will walk away with a collection of artifacts from the event (Regardless if you win :D)! 
-                    <br />
-                    <br />
-                    P.S You may get some rare, one-off, special edition swags too ;D
+                    Absolutely! You will also have the oppertunity to seek help 
+                    from designers, musicians, engineers, and as such!
                   </>
                 }
-              />{/*
-              <Feature
-                icon="docs"
-                color="red"
-                name="Meeting content"
-                desc={
-                  <>
-                    Yep! You will have access to over 10+ workshops and many talks that will get you up and running
-                    in no time, no matter if you're a beginner or an experienced buildathon machine, there's something for everyone!
-                  </>
-                }
-              />*/}
-              <Feature
-                name="When, where, and how?"
-                desc={
-                  <>
-                    It's happening on the 7th of September at the{' '} <a href="https://bethelagindia.org">Bethel AG Church</a>, Malayalam!
-                    <br />
-                    The event will take place as a hybrid, with an in-person and online event happening simultaneously.
-                  </>
-                }
-                icon="event-code"
-                color="blue"
+                as="aside"
+                sx={{
+                  display: 'grid',
+                  gridGap: [0, 4],
+                  gridTemplateColumns: [null, 'auto 1fr'],
+                  alignItems: 'start',
+                  justifyContent: 'start',
+                  bg: 'rgba(255,88,88,0.125)',
+                  p: [3, 4],
+                  mt: [3, 4],
+                  borderRadius: 'extra',
+                  span: { transform: 'none', width: 'min-intrinsic' },
+                  svg: { color: 'white' }
+                }}
               />
-              <Feature
-                icon="purse"
-                color="orange"
-                name="Will we be provided Internet and any other requirements?"
-                desc={
-                  <>
-                    Yep! All particpants will be provided with access to the Internet and charging stations will also be set! 
-                  </>
-                }
-              />
-        </Grid>
-        <Feature
-          icon="welcome"
-          color="rgb(255,88,88)"
-          name="Will I be supported during the buildathon?"
-          desc={
-            <>
-              Absolutely! You will also have the oppertunity to seek help 
-              from designers, musicians, engineers, and as such!
-            </>
-          }
-          as="aside"
-          sx={{
-            display: 'grid',
-            gridGap: [0, 4],
-            gridTemplateColumns: [null, 'auto 1fr'],
-            alignItems: 'start',
-            justifyContent: 'start',
-            bg: 'rgba(255,88,88,0.125)',
-            p: [3, 4],
-            mt: [3, 4],
-            borderRadius: 'extra',
-            span: { transform: 'none', width: 'min-intrinsic' },
-            svg: { color: 'white' }
-          }}
-        />
-      </Container>
-    </Box>
-    <Slack />
-
+            </Container>
+          </Box>
+          <Slack />
           <KeepExploring />
         </Box>
       </Box>
@@ -212,6 +204,7 @@ export default function Hackathons({ data }) {
     </>
   )
 }
+
 export async function getStaticProps() {
   let data
   try {

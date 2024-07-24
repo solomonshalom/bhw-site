@@ -54,7 +54,13 @@ const ShipPage = ({ posts = [] }) => (
       name="Ship"
       description={`Hack Clubbers ship projects: a real-time list of the projects created by the Hack Club high school community in the last month.`}
       image="https://assets.hackclub.com/log/2020-05-22-ship.png"
-      script defer src="https://cloud.umami.is/script.js" data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
+      script={[
+        {
+          defer: true,
+          src: "https://cloud.umami.is/script.js",
+          "data-website-id": "57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
+        }
+      ]}
     />
     <Nav />
     <Box

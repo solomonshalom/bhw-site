@@ -15,12 +15,18 @@ import AnnouncementHolder from '../components/announcements/holder'
 
 const PrepPage = () => (
   <>
+    <Head>
+      <script
+        defer
+        src="https://cloud.umami.is/script.js"
+        data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
+      ></script>
+    </Head>
     <Meta
       as={Head}
       title="Configuring your workstation for the Buildathon!"
       description="Configuring your workstation for the buildathon!"
       image="https://assets.hackclub.com/log/HC-500k@1080w.png"
-      script defer src="https://cloud.umami.is/script.js" data-website-id="57b3767b-b825-4b2a-bed8-4afe9d8f9af1"
     />
     <ForceTheme theme="light" />
     <Nav />
