@@ -733,7 +733,7 @@ function Page({ slackData, events, carouselCards }) {
                     Get'em Pizza
                   </Heading>
                   <Text sx={{ fontSize: 22 }}>
-                    That's right! Being part of BHH is more than just coding or
+                    That's right! Being part of Bethel Buildathon is more than just coding or
                     designing, it's also about eating some of the best pizza in
                     town!
                   </Text>

@@ -111,28 +111,6 @@ const ShipPage = ({ posts = [] }) => (
     </Box>
     <Box
       as="section"
-      id="projects"
-      sx={{
-        bg: 'blue',
-        color: 'white',
-        py: 4,
-        backgroundImage: 'url(/ship/wave.svg)',
-        backgroundSize: '200% auto',
-        '@media (prefers-reduced-motion: no-preference)': {
-          animation: `${waves} 15s linear forwards infinite`
-        }
-      }}
-    >
-      <Heading
-        as="h2"
-        variant="title"
-        sx={{ px: 3, mb: 4, textAlign: 'center' }}
-      >
-        Recently shipped…
-      </Heading>
-    </Box>
-    <Box
-      as="section"
       sx={{
         color: 'black',
         bg: 'white',
@@ -145,8 +123,8 @@ const ShipPage = ({ posts = [] }) => (
           Want to ship your own projects?
         </Heading>
         <Text variant="subtitle" sx={{ lineHeight: 'caption', mb: 3 }}>
-          The #ship channel on the Bethel&nbsp;Hacks Discord is where many
-          teenagers from around the world share what they’re working on & help
+          The #ship channel on the Bethel Buildathon Discord is where many
+          from around the world share what they’re working on & help
           each other.
         </Text>
         <NextLink href="" passHref>
