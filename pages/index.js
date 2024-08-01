@@ -181,8 +181,8 @@ function Page({ slackData, events, carouselCards }) {
             gradient="linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.45))"
           />
           <Announcement
-            copy="Build in public at Bethel Buildathon, September 7"
-            caption="Make the coolest tech, get the coolest swag!"
+            copy="Only top 50 particpants make it to IRL!"
+            caption="That's right, register fast! Or you will have to join virtually 💀"
             href="https://forms.gle/bsiNwYkxkEU7rbq26"
             imgSrc="https://cloud-gyu8zgkki-hack-club-bot.vercel.app/0_______.png"
           />
