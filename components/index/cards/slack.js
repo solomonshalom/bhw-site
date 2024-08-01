@@ -102,7 +102,7 @@ export default function Slack({ data, slackKey, events }) {
             with them.
           </Text>
           <Event events={events} />
-          <Buttons id="13" link="https://discord.gg/DDd4Uw4SFT" icon="slack" primary="purple">
+          <Buttons id="13" link="https://discord.gg/YrDM2AGzXa" icon="slack" primary="purple">
             Join our Discord
           </Buttons>
           <Grid

@@ -281,7 +281,7 @@ export default function Philosophy() {
           >
             Apply
           </Button>
-          <NextLink href="https://discord.gg/DDd4Uw4SFT" passHref>
+          <NextLink href="https://discord.gg/YrDM2AGzXa" passHref>
             <Button sx={{ bg: 'white', color: 'red' }} as="a">
               Join our Discord
             </Button>

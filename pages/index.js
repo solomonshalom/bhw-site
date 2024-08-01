@@ -884,7 +884,7 @@ function Page({ slackData, events, carouselCards }) {
                   }
                 }}
                 as="a"
-                href="https://discord.gg/DDd4Uw4SFT"
+                href="https://discord.gg/YrDM2AGzXa"
                 variant="interactive"
                 target="_blank"
                 rel="noopener"
