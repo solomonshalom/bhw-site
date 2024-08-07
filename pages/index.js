@@ -182,7 +182,7 @@ function Page({ slackData, events, carouselCards }) {
           />
           <Announcement
             copy="Only top 50 particpants make it to IRL!"
-            caption="That's right, register fast! Or you will have to join virtually 💀"
+            caption="Or you will have to join virtually 💀"
             href="https://forms.gle/bsiNwYkxkEU7rbq26"
             imgSrc="https://cloud-gyu8zgkki-hack-club-bot.vercel.app/0_______.png"
           />
