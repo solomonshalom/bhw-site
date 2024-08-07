@@ -150,7 +150,7 @@ export default function Philosophy() {
                 }}
                 caps
               >
-                The Bethel Buildathon
+                TBB
               </Heading>
               <Heading
                 fontSize={[3, 4]}
